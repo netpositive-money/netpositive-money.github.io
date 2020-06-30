@@ -22,3 +22,7 @@
 1. We are designing a website and social media channels in order to disseminate information about the problem, the current state of research and discussion about it, as well as our approach:
 2. We are developing an opinion on what measures (such as offsetting, certicates, ...) seem appropriate. Then we motivate Bitcoin stakeholders (hodlers, miners, exchanges, businesses, etc.) to donate to providers of such measures.
 3. We publicly account for how much was donated, how much CO2 is offset by that, and what fraction that is of Bitcoin's estimated CO2 output - measured in time from the genesis block on. We do this while protecting the privacy of anonymous donors on one hand, as well as helping public donors use their contribution for PR on the other.
+
+## If you want to help
+
+We are still in the bootstrapping phase. If you feel the urge to help us get this off the ground, you are very welcome to say hi at <info@netpositive.money>, or use issues, pull requests etc. at out github repository <https://github.com/netpositive-money/netpositive-money.github.io>
