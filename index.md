@@ -1,6 +1,6 @@
-**netpositive.money**
+# netpositive.money
 
-# Mission Statement
+## Mission Statement
 
 **Motivation**
 
