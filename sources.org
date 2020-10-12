@@ -1,0 +1,9 @@
+* Bitooda mining dashboard [[http://bitooda.io/public-files/Bitcoin%20Mining%20Hashrate%20and%20Power%20Analysis.pdf]]
+  current mining stats
+* [[https://www.aniccaresearch.tech/blog/bitcoin-minings-three-body-problem]]
+  explains seasonalities in Bitcoin Mining
+* [[https://www.cbeci.org/]]
+  a live and well founded Bitcoin Energy Use calculation
+* [[https://digiconomist.net/bitcoin-energy-consumption]]
+  Alex de Vries' very biased views on the topic. But it does include links to further studies (those that support his views, mostly his own), and his estimations are getting
+  closer to cbeci's and others'
