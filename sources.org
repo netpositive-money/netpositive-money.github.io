@@ -24,3 +24,10 @@ current mining stats
 ** Offsetbitcoin.org
   What we do. Done. 2 years earlier.
   [[https://offsetbitcoin.org]]
+
+** Introducing CBPI: A New Way To Measure Bitcoin Network Electrical Consumption
+
+ not actually very new, but interesting article contrasting several evaluation
+ methods Tl;Dr: They get closer all the time. We know better how much energy is
+ spent every day. (Co2 - not so much)
+ https://bitcoinmagazine.com/articles/introducing-cbpi-a-new-way-to-measure-bitcoin-network-electrical-consumption
