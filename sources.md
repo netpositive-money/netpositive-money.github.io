@@ -1,17 +1,3 @@
-
-# Table of Contents
-
-1.  [Sources](#org7c3b207)
-    1.  [Cambridge Bitcoin Electricity Consumption Index](#org2a9265c)
-    2.  [3rd Global Cryptoasset Benchmarking Study](#orgec543ee)
-    3.  [Bitcoin Mining&rsquo;s Three Body Problem](#orgfa2185a)
-    4.  [Bitooda mining dashboard](#orgfeb25da)
-    5.  [Digiconomist](#orgd609b76)
-    6.  [Offsetbitcoin.org](#org3633fab)
-    7.  [Introducing CBPI: A New Way To Measure Bitcoin Network Electrical Consumption](#org2fb7b79)
-
-
-
 <a id="org7c3b207"></a>
 
 # Sources
@@ -75,3 +61,21 @@ methods Tl;Dr: They get closer all the time. We know better how much energy is
 spent every day. (Co2 - not so much)
 <https://bitcoinmagazine.com/articles/introducing-cbpi-a-new-way-to-measure-bitcoin-network-electrical-consumption>
 
+## The Carbon Footprint of Bitcoin
+Christian Stoll, Lena Klaaßen, and Ulrich Gallersdörfer 
+in Joule
+
+appears to be the currently best actual estimate of Co2 emissions
+<https://www.cell.com/joule/pdf/S2542-4351(19)30255-7.pdf>
+
+## Bitcoin’s future carbon footprint
+
+Preprint by the above authors plus Shize Qin and Da Zhang. Extremely
+speculative tea leaf reading making too many assumptions. Still very interesting
+as probably the first written account of many factors going into this question.
+https://arxiv.org/ftp/arxiv/papers/2011/2011.02612.pdf
+
+## Proof of Work, a pictorial essay
+by Adam Gibson. Slightly rambling, might still be the clearest explanation of
+what the actual value of PoW is.
+https://joinmarket.me/blog/blog/pow-a-pictorial-essay/
