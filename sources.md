@@ -61,21 +61,33 @@ methods Tl;Dr: They get closer all the time. We know better how much energy is
 spent every day. (Co2 - not so much)
 <https://bitcoinmagazine.com/articles/introducing-cbpi-a-new-way-to-measure-bitcoin-network-electrical-consumption>
 
+<a id="stoll18"></a>
 ## The Carbon Footprint of Bitcoin
 Christian Stoll, Lena Klaaßen, and Ulrich Gallersdörfer 
 in Joule
 
-appears to be the currently best actual estimate of Co2 emissions
+one of the earliest scientific estimates of Bitcoin's Co2 footprint
 <https://www.cell.com/joule/pdf/S2542-4351(19)30255-7.pdf>
 
+<a id="koehler19"></a>
+## Life Cycle Assessment of Bitcoin Mining
+Susanne Köhler and Massimo Pizzol in Environ. Sci. Technol.
+
+appears to be the latest and currently best actual estimate of Co2 emissions;
+pioneered the use of the Lice Cycle Assessment method for Bitcoin; finds that,
+at least regarding Co2, impacts beyond electricity (waste etc.) are negligible
+https://pubs.acs.org/doi/abs/10.1021/acs.est.9b05687
+
+<a id="stoll20"></a>
 ## Bitcoin’s future carbon footprint
 
-Preprint by the above authors plus Shize Qin and Da Zhang. Extremely
-speculative tea leaf reading making too many assumptions. Still very interesting
-as probably the first written account of many factors going into this question.
-https://arxiv.org/ftp/arxiv/papers/2011/2011.02612.pdf
+Preprint by the authors of (#the-carbon-footprint-of-bitcoin) plus Shize Qin and
+Da Zhang. Extremely speculative tea leaf reading making too many assumptions.
+Still very interesting as probably the first written account of many factors
+going into this question.
+<https://arxiv.org/ftp/arxiv/papers/2011/2011.02612.pdf>
 
 ## Proof of Work, a pictorial essay
 by Adam Gibson. Slightly rambling, might still be the clearest explanation of
 what the actual value of PoW is.
-https://joinmarket.me/blog/blog/pow-a-pictorial-essay/
+<https://joinmarket.me/blog/blog/pow-a-pictorial-essay/>
