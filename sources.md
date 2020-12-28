@@ -87,7 +87,13 @@ Still very interesting as probably the first written account of many factors
 going into this question.
 <https://arxiv.org/ftp/arxiv/papers/2011/2011.02612.pdf>
 
+<a id="gibson20"></a>
 ## Proof of Work, a pictorial essay
 by Adam Gibson. Slightly rambling, might still be the clearest explanation of
 what the actual value of PoW is.
 <https://joinmarket.me/blog/blog/pow-a-pictorial-essay/>
+
+<a id="songaste20"></a>
+## The Cost of Bitcoin Mining Has Never Really Increased
+by Yo-Der Song and Tomaso Aste. Gives an interesting perspective: The cost of Bitcoin mining has remained astonishingly constant at about 1% of the value transferred.
+<https://www.researchgate.net/publication/341436370_The_Cost_of_Bitcoin_Mining_Has_Never_Really_Increased>
