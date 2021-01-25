@@ -80,7 +80,7 @@ develop in the future, but it will not grow exponentially forever.
 
 ## Can't we just change Bitcoin?
   
-tl;dr: No. Bitcoin's most cherished value proposition is it's resistance to
+tl;dr: No. Bitcoin's most cherished value proposition is its resistance to
 changing central economic properties. Proof-of-work is an important economic
 principle, even if there were a technical alternative. But most importantly,
 there aren't any known alternatives with similar properties.
