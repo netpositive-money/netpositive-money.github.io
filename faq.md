@@ -118,8 +118,8 @@ tell the world that we are sure that Bitcoin is a net positive money.
 We do not want to take your money. In the spirit of Bitcoin, this is a voluntary
 and decentralized effort. So ideally, you select the cause and the amount you
 want to give, estimate the amount of Co2 offset, and report that to us, as
-anonymously or publicly as you want. In order to make that easier for you, we've
-curated a list of charities that we believe are helpful and that work with us to
+anonymously or publicly as you want. In order to make that easier for you, we are
+curating a list of charities that we believe are helpful and that work with us to
 automatically report the numbers so we can measure our impact as bitcoiners. And
 we have made the [calculator page](https://netpositive.money/calculator) to give
 you an idea of how much Co2 you might want to offset.
