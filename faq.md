@@ -193,21 +193,21 @@ force in the fight against climate change. They reach from speculative to very
 speculative IMHO, but that doesn't mean they can't come true. Here's a
 selection:
 
-    * Bitcoin miners are seeking out the cheapest forms of electric energy on the planet, pretty much independent of location, and are guaranteeing a minimum price for it. 
+  * Bitcoin miners are seeking out the cheapest forms of electric energy on the planet, pretty much independent of location, and are guaranteeing a minimum price for it. 
     
-        This can have many interesting consequences: It builds more market demand for research and deployment of new energy sources. But without regulatory oversight, this might also make fossil energy sources even more profitable.
+    This can have many interesting consequences: It builds more market demand for research and deployment of new energy sources. But without regulatory oversight, this might also make fossil energy sources even more profitable.
         
-        So far, we have seen tentative examples of both: Miners have been used to [finance overprovisioning of renewable energy](https://www.forbes.com/sites/christopherhelman/2020/05/21/how-this-billionaire-backed-crypto-startup-gets-paid-to-not-mine-bitcoin/?sh=2a5016a87596) as well as [reactivating formerly unprofitable oil fields](https://www.upstreamdata.ca/post/saving-stranded-gas-distributed-bitcoin-mining-to-the-rescue).
+    So far, we have seen tentative examples of both: Miners have been used to [finance overprovisioning of renewable energy](https://www.forbes.com/sites/christopherhelman/2020/05/21/how-this-billionaire-backed-crypto-startup-gets-paid-to-not-mine-bitcoin/?sh=2a5016a87596) as well as [reactivating formerly unprofitable oil fields](https://www.upstreamdata.ca/post/saving-stranded-gas-distributed-bitcoin-mining-to-the-rescue).
     
-    * Bitcoin might replace parts of the legacy financial system including gold mining. 
+  * Bitcoin might replace parts of the legacy financial system including gold mining. 
     
-        Gold mining is an environmentally hazardous process and might become less profitable if Bitcoin takes over part of the market premium that gold commands now. 
+    Gold mining is an environmentally hazardous process and might become less profitable if Bitcoin takes over part of the market premium that gold commands now. 
     
-    * Bitcoin is implementing the idea of sound money. That is, the Bitcoin supply is scarce (even more predictably than gold). This implies that it should always become more valuable over time. Therefore, saving Bitcoin is more appealing than saving fiat money, which tends to become less valuable over time. 
+  * Bitcoin is implementing the idea of sound money. That is, the Bitcoin supply is scarce (even more predictably than gold). This implies that it should always become more valuable over time. Therefore, saving Bitcoin is more appealing than saving fiat money, which tends to become less valuable over time. 
     
-      In order not to depreciate, fiat money always has to be invested. But every investment carries both risk and environmental costs. Bitcoin might become an alternative that is both less risky (in the long run) and less environmentally problematic than the average investment. Thus, people might be incentivized to hold Bitcoin over longer time frames, and this holding time might be, say, less carbon intensive, than having the same amount of buying power being spent potentially multiple times in the economy.
+    In order not to depreciate, fiat money always has to be invested. But every investment carries both risk and environmental costs. Bitcoin might become an alternative that is both less risky (in the long run) and less environmentally problematic than the average investment. Thus, people might be incentivized to hold Bitcoin over longer time frames, and this holding time might be, say, less carbon intensive, than having the same amount of buying power being spent potentially multiple times in the economy.
         
-    * From it's inception, Bitcoin has been a counter movement to the legacy banking system built on credit expansion. Many people see this system of money production as a key driver for inequality, unlimited economic growth and environmental hazards. Bitcoin might be the foundation of a different system that could address some of these problems differently.
+  * From it's inception, Bitcoin has been a counter movement to the legacy banking system built on credit expansion. Many people see this system of money production as a key driver for inequality, unlimited economic growth and environmental hazards. Bitcoin might be the foundation of a different system that could address some of these problems differently.
 
 ## If Bitcoin could be eventually helpful against climate change, why do you want to do anything at all?
   
