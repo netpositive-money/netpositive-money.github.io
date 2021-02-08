@@ -1,17 +1,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>https://netpositive.money/new/</loc>
+<loc>https://netpositive.money/</loc>
 </url>
 <url>
-<loc>https://netpositive.money/new/blog</loc>
+<loc>https://netpositive.money/about</loc>
 </url>
 <url>
-<loc>https://netpositive.money/new/blog/hello</loc>
+<loc>https://netpositive.money/calculator</loc>
 </url>
 <url>
-<loc>https://netpositive.money/new/calculator</loc>
+<loc>https://netpositive.money/faq</loc>
 </url>
 <url>
-<loc>https://netpositive.money/new/faq</loc>
+<loc>https://netpositive.money/sources</loc>
 </url>
 </urlset>
