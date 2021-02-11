@@ -1,9 +1,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
 <channel>
 <title>elm-pages Blog</title>
-<description>Bitcoiners contributing to climate change solutions</description>
+<description>Starter blog for elm-pages</description>
 <link>https://elm-pages.com/blog</link>
-<lastBuildDate>Tue, 09 Feb 2021 15:54:48 +0000</lastBuildDate>
+<lastBuildDate>Wed, 03 Feb 2021 12:26:13 +0000</lastBuildDate>
 <generator>elm-pages</generator>
+<item>
+<title>Hello `elm-pages`! 🚀</title>
+<description>Here's an intro for my blog post to get you interested in reading more...</description>
+<link>https://elm-pages-starter.netlify.com/blog/hello</link>
+<guid>https://elm-pages-starter.netlify.com/blog/hello</guid>
+<pubDate>Sat, 21 Sep 2019 00:00:00 GMT</pubDate>
+</item>
 </channel>
 </rss>
