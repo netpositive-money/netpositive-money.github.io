@@ -1,27 +1,20 @@
-# elm-pages-starter
+# netpositive.money website 
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/dillonkearns/elm-pages-starter)
+This is written in elm, and heavily relies on elm-pages (it's a modified version of https://github.com/dillonkearns/elm-pages-starter).
 
-This is an example repo to get you up and running with `elm-pages`.
-
-The entrypoint file is `index.js`. That file imports `src/Main.elm`. The `content` folder is turned into your static pages. The rest is mostly determined by logic in the Elm code! Learn more with the resources below.
+The entrypoint file is `beta-index.js`. That file imports `src/Main.elm`. The `content` folder is turned into your static pages. The rest is mostly determined by logic in the Elm code! Learn more with the resources below.
 
 ## Setup Instructions
-Click "Use this template" on this Github page to fork the repo.
 
-Or git clone it:
-
-```
-git clone git@github.com:dillonkearns/elm-pages-starter.git
-```
-
-Then install and run the dev server
+After cloning the main repo do:
 
 ```
-cd elm-pages-starter
+cd elm-pages
 npm install
-npm start # starts a local dev server using `elm-pages develop`
+npx elm-pages-beta
 ```
+
+since we are using the beta build process (but not yet the beta template engine).
 
 From there you can tweak the `content` folder or change the `src/Main.elm` file.
 
