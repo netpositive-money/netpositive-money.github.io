@@ -1,0 +1,19 @@
+{
+  "name": "elm-pages-example",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "start": "elm-pages develop",
+    "serve": "npm run build && http-server ./dist -a localhost -p 3000 -c-1",
+    "build": "elm-pages build"
+  },
+  "postinstall": "elm-tooling install",
+  "dependencies": {
+    "elm-pages": "^1.5.4"
+  },
+  "devDependencies": {
+    "elm-optimize-level-2": "^0.1.5",
+    "elm-tooling": "^1.0.0",
+    "http-server": "^0.12.3"
+  }
+}
