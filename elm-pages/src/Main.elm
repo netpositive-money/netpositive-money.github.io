@@ -312,7 +312,7 @@ headingRenderer = {
                 Block.H6 ->
                     Html.h6)
         [id <| rawTextToId rawText] children
-                    }
+    }
 
 styledToString : List Inline -> String
 styledToString list =

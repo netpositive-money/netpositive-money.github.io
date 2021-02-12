@@ -1,6 +1,6 @@
 ---
 title: sources
-type: page
+type: tocpage
 ---
 
 ## What People Get Wrong About Bitcoin's Climate Footprint

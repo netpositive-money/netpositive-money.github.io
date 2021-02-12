@@ -41,7 +41,7 @@ beyond shock and awe. That's because Bitcoin's primary value is not as a payment
 network, so the number of on-chain transactions is not an interesting metric for
 it. This can be seen easily: On one hand the [number of onchain
 transactions](https://bitinfocharts.com/comparison/bitcoin-transactions.html)
-has always been limited --- and that limit has been pretty much hit constantly
+has always been limited &mdash; and that limit has been pretty much hit constantly
 since at least 2019. On the other hand, the value of Bitcoin, as well as the
 estimated number of its users, has been rising over many orders of magnitude
 since 2009. How can this be possible?
@@ -96,7 +96,7 @@ block reward, which in turn is composed of the block subsidy ("new bitcoins
 being mined") and the mining fees ("what people pay to get their transactions
 into a block"). The block subsidy is halving every 210.000 blocks (about 4
 years), which has happened thrice already, so it has gone down from 50 BTC to
-6.25 bitcoin today and is further exponentially declining --- when calculated in
+6.25 bitcoin today and is further exponentially declining &mdash; when calculated in
 BTC. The mining fees have substantially picked up over the last few years and
 are now at about 15% of the block reward. It is important for Bitcoin's future
 security (when the subsidy has declined further) that these remain substantial.
@@ -168,7 +168,7 @@ topic. I recommend reading it. That said, here's me trying to explain it a littl
 
 Proof-of-work is short data that allows for cheaply verifying the fact that it
 was (with overwhelming probability) expensive to obtain. This short data (a 256
-bit hash in Bitcoin) can also be referencing other --- often larger --- data
+bit hash in Bitcoin) can also be referencing other &mdash; often larger &mdash; data
 sets, and thus testifies those must have existed when the proof-of-work was
 generated. It is serving multiple important functions in Bitcoin. I think these
 are the two most irreplacable ones:
@@ -192,9 +192,9 @@ Secondly, because it is very expensive to make, proof-of-work is the fairest
 distributed way of distributing a new asset that we know of. In the limit,
 miners spend as many dollars on hardware, energy and work as the bitcoin are
 worth that they receive in return. But because there is a lot of uncertainty in
-the process --- hard-to-forecast things like the number of competitors, the
+the process &mdash; hard-to-forecast things like the number of competitors, the
 price of electricity, hardware improvements and the bitcoin price can change
-mining profitability drastically --- there is a often premium to be earned over
+mining profitability drastically &mdash; there is a often premium to be earned over
 the pure cost, which keeps miners interested.
 
 ## Couldn't we just use something else like proof-of-stake or proof-of-anything-else?
@@ -278,7 +278,7 @@ That's why we want to act now.
 
 ## How could we help fight against climate change?
   
-Bitcoin is money. Bitcoiners --- hodlers, miners, exchanges, businesses --- are
+Bitcoin is money. Bitcoiners &mdash; hodlers, miners, exchanges, businesses &mdash; are
 making money. Money can help solve problems. So we want to encourage you to give
 some of that money to causes that you believe can make a difference in the fight
 against climate change. And tell us about it, so we can count it, and one day
