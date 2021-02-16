@@ -10,6 +10,21 @@ Nic Carter explains much of what I've written on in the [FAQ](faq) concisely in 
 
 <!---<a id="org2a9265c"></a>--->
 
+## Beyond the Energy Techlash: The Real Climate Impacts of Information Technology
+
+A fact-based reexamination by ITIF of sensational claims about the climate impacts of broader IT, including a section on Bitcoin. ITIF also has a Clean Energy Innovation Policy Program that we are encouraging people to donate to because it appears both very efficient and fitting to Bitcoin's ethos. 
+<https://itif.org/publications/2020/07/06/beyond-energy-techlash-real-climate-impacts-information-technology>
+
+## Bitcoin energy use - mined the gap
+
+Also a good explanation and rational look at FUD about Bitcoin mining's impact by the International Energy Agency. Unfortunately, some unexamined shitcoining promotion at the end.
+<https://www.iea.org/commentaries/bitcoin-energy-use-mined-the-gap>
+
+## Implausible projections overestimate near-term Bitcoin CO2 emissions
+
+A brutal scientific takedown of an unspeakably bad article on Bitcoin mining that appeared earlier in the same prestigious journal and was reported everywhere in the media. I wonder why this factual repudiation didn't receive the same attention.
+<https://www.nature.com/articles/s41558-019-0535-4>
+
 ## Cambridge Bitcoin Electricity Consumption Index
 
 a live and scientific Bitcoin energy use calculation
@@ -53,7 +68,9 @@ closer to cbeci&rsquo;s and others&rsquo;
 
 ## Offsetbitcoin.org
 
-What we do. Done. 2 years earlier.
+What we do. Done. 2 years earlier. We only found this pretty late, and it
+appears the initative has stalled a bit. We also couldn't reach them for
+collaboration so far. A great example to live up to anyway:
 <https://offsetbitcoin.org>
 
 
