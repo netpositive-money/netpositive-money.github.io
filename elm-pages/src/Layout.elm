@@ -185,6 +185,7 @@ navbarLinks currentPath =
     [ highlightableLink currentPath Pages.pages.about.directory "about"
     , highlightableLink currentPath Pages.pages.faq.directory "FAQ"
     , highlightableLink currentPath Pages.pages.calculator.directory "calculator"
+    , highlightableLink currentPath Pages.pages.partners.directory "recommendations"
     , highlightableLink currentPath Pages.pages.sources.directory "sources"
     , githubRepoLink
     ]
