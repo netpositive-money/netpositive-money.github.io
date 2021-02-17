@@ -66,7 +66,7 @@ factor =
 
 
 
---ktCo2/day/Twh/year
+--ktCO2/day/Twh/year
 --
 
 
@@ -75,7 +75,7 @@ offset =
     0.049
 
 
--- MtCo2
+-- MtCO2
 --
 
 
@@ -431,7 +431,7 @@ view data tbtc model =
                               [ lazy text ("Selected: " ++ datumToTimeString startDatum ++ " to " ++ datumToTimeString endDatum)]
                           , paragraph []
                               [ lazy text
-                                ("Total Co2 in this time frame: "
+                                ("Total CO2 in this time frame: "
                                      ++ (String.fromFloat <| round100 <| abs (endDatum.amount - startDatum.amount))
                                      ++ " Mt"
                                 )
@@ -457,13 +457,13 @@ view data tbtc model =
                                            [ paragraph [] [ lazy text
                                                                ("This is equivalent to "
                                                                     ++ (String.fromFloat <| round100 <| perBtcAmount * btc)
-                                                                    ++ " t Co2.")]
+                                                                    ++ " t CO2.")]
                                            , paragraph [] [text "Happy offsetting, and don't forget to tell us about it so we can keep count!"]
                                            ]
                                )
                              ++
                           [ paragraph []
-                          [ lazy text ("The horizontal line at " ++ String.fromFloat offset ++ " Mt signifies the amount of Co2 that has already been offset today. ")
+                          [ lazy text ("The horizontal line at " ++ String.fromFloat offset ++ " Mt signifies the amount of CO2 that has already been offset today. ")
                           , lazy text ("Calculated from the Genesis block at January 3, 2009, this means we've offset Bitcoin's history approximately until " ++ findOffsetDate compound ++ ".")
                           ]]
 

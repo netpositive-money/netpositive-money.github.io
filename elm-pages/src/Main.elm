@@ -197,7 +197,7 @@ head metadata =
                         , siteName = "netpositive.money"
                         , image =
                             { url = images.forest931706_640
-                            , alt = "elm-pages logo"
+                            , alt = "a beautiful forest"
                             , dimensions = Nothing
                             , mimeType = Nothing
                             }
@@ -213,7 +213,7 @@ head metadata =
                         , siteName = "netpositive.money"
                         , image =
                             { url = images.forest931706_640
-                            , alt = "elm-pages logo"
+                            , alt = "a beautiful forest"
                             , dimensions = Nothing
                             , mimeType = Nothing
                             }
@@ -229,7 +229,7 @@ head metadata =
                         , siteName = "netpositive.money"
                         , image =
                             { url = images.forest931706_640
-                            , alt = "elm-pages logo"
+                            , alt = "a beautiful forest"
                             , dimensions = Nothing
                             , mimeType = Nothing
                             }

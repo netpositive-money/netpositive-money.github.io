@@ -141,7 +141,7 @@ footprint of energy production in that region, they are probably overestimating.
 In fact, there are two key questions here, and the second one has not
 been addressed at all in academic research, as far as we know:
 
-* how much Co2 is emitted by the energy production?
+* how much CO2 is emitted by the energy production?
 
 * what would have happened otherwise, if the Bitcoin mining didn't happen?
 
