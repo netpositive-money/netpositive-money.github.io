@@ -41,3 +41,4 @@ This website was designed in [elm](https://elm-lang.org/) using
 some smaller libraries. We are grateful to everybody who contributed to these
 
 [Large Tree icon](https://icons8.com/icons/set/large-tree) icon by [Icons8](https://icons8.com)
+[Forest summary card photo](https://pixabay.com/users/free-photos-242387/) by [Pixabay](https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=931706)
