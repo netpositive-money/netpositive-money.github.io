@@ -72,9 +72,14 @@ Force](https://www.catf.us/), a US charity that describes their mission like thi
 
 Not only do they have an impressive track record and are seen by many as one of
 the most effective climate change charities, we find that their mission aligns
-nicely with Bitcoin's ethos.
+nicely with Bitcoin's ethos. With regard to their expected cost effectiveness,
+Founder's Pledge currently estimates
+[here](https://docs.google.com/spreadsheets/d/1q6srpmt5VkdXLGfYzqHqkU3hvGUwPKjA67uxqYI0Upw/edit#gid=0)
+that a cost of $1.26 per tonne of CO2 averted is realistic. However, the range
+is pretty high between $0.35 in the optimistic and $4.40 in the pessimistic
+case.
 
-Very similar in this regard is the [ITIF's Clean Energy Innovation
+A relatively similar endeavour is the [ITIF's Clean Energy Innovation
 Program.](https://lets-fund.org/clean-energy/):
 
 > Innovation is central to addressing global climate change while increasing
@@ -86,7 +91,10 @@ Program.](https://lets-fund.org/clean-energy/):
 The ITIF has even authored a
 [report](sources#beyondtheenergytechlash:therealclimateimpactsofinformationtechnology)
 that clears up popular myths about IT and climate change and specifically talks
-about Bitcoin as well.
+about Bitcoin as well. We haven't found direct cost effectiveness estimates per
+ton of CO2 averted, but Let's Fund estimates that each dollar invested should
+yield $28 in additional clean energy research funds (with $0.4 in the most
+pessimistic and $375 in the most optimistic scenario).
 
 Founder's Pledge Climate Change Fund, as well as Effektiv-Spenden also give to
 [Carbon180](https://founderspledge.com/stories/carbon180-high-impact-funding-opportunity),
@@ -111,12 +119,31 @@ For Germans (and maybe other Europeans, though they would probably not get a tax
 refund), it's more effective to go through our [special donation
 page](https://www.effektiv-spenden.org/spendenaktionen/?cfd=11dfe) at
 Effektiv-Spenden, which supports CATF, Carbon180 and the ITIF Clean Energy
-Program and Carbon180. 
+Program. 
 
 If you want to support one of the above charities specifically, please let us
 know so we can try and build the infrastructure to make that easier &mdash; or
 just do it yourself and let us know about it. The same goes if you want a
 different organisation or fund that, say, might be tax-free in your country.
 
+## How much should I give?
 
+As much as you can, of course! We will need all the help we can get if we want
+to be able to claim that Bitcoin is net positive one day. But here are some pointers:
+
+* If you are a hodler (individual or institutional), we recommend taking a look at our [calculator](calculator) to get an estimate of the amount of CO2 that could be attributable to the utility you got from hodling bitcoin.
+* If you are a miner, you should be able to get a good estimate of your own carbon footprint.
+* If you are an exchange, this might be a more difficult question. We're happy to help you find out, please contact us at <info@netpositive.money>!
+* If you are an influencer, you might have brought tons of people into Bitcoin. Why not use your influence to point these people to our initiative?
+
+Now let's say you have found an amount of CO2 that you would like to offset. How
+much should you give and to whom to offset that? You might just go to one of the
+standard offset providers and give them about $20/t. Seeing as you will probably
+find that that is not really a lot of money (less than 0.4% of your bitcoin
+value even if you held them from the start), you might just do that AND then
+give the same amount to one of the [effective
+funds](partners#shutupandtakemymoney!) we recommend. That way you just probably
+increased your positive climate impact 20-fold and still have a safe offset. Now
+you can be reasonably sure that personally, your Bitcoin engagement has been net
+positive for the climate. Of course, we're very happy if you go beyond that.
 
