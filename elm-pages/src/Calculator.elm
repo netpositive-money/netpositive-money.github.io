@@ -52,6 +52,8 @@ import List exposing (sum)
 import Layout exposing (maxWidth)
 import Element exposing (width)
 import Shared exposing (..)
+import Element.Font exposing (color)
+import Palette
 
 
 subscriptions : Model -> Sub Msg
@@ -406,12 +408,12 @@ view data tbtc model =
                                         derived from electricity consumption
                                         data provided by the
                                         """
-                                 , link []{
+                                 , link [color Palette.color.primary]{
                                             url = "https://cbeci.org/"
                                           , label=text "Cambridge Centre for Alternative Finance"
                                       }
                                  , text " by multiplication with a factor taken from a "
-                                 , link []{
+                                 , link [color Palette.color.primary]{
                                         url="https://www.cell.com/joule/pdf/S2542-4351(19)30255-7.pdf"
                                         , label = text "paper by Stoll et. al."
                                       }

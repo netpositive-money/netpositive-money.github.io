@@ -1,8 +1,8 @@
 ---
-title: Recommended Organisations
+title: Recommendations
 type: tocpage
 ---
-# Who should you support?
+## Who should you support?
 
 Of course, that is your decision alone. When we started researching this
 decision, however, we found out that it is not an easy one to make. There are

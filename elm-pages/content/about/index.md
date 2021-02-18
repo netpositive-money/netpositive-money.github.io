@@ -1,10 +1,7 @@
 ---
-title: netpositive.money
+title: About Netpositive.Money
 type: page
 ---
-
-# netpositive.money
-
 ## Mission Statement
 
 **Motivation**
@@ -30,7 +27,15 @@ type: page
 
 ## If you want to help
 
-We are still in the bootstrapping phase. If you feel the urge to help us get this off the ground, you are very welcome to say hi at <info@netpositive.money>, or use issues, pull requests etc. at out github repository <https://github.com/netpositive-money/netpositive-money.github.io>
+Please start by donating to one of our [recommended organisations](partners) and
+spreading the word about us! If you want to go further, we can always use
+pointers to new research and ideas for improving this website and refining our approach.
+
+## How to reach us
+
+* twitter: [@netposmon](https://twitter.com/netposmon)
+* email: <info@netpositive.money>
+* github: <https://github.com/netpositive-money/netpositive-money.github.io>
 
 ## Thank you
 
@@ -38,9 +43,13 @@ This website was designed in [elm](https://elm-lang.org/) using
 [elm-pages](https://elm-pages.com/),
 [line-charts](https://terezka.github.io/line-charts/),
 [elm-ui](https://package.elm-lang.org/packages/mdgriffith/elm-ui/latest/) and
-some smaller libraries. We are grateful to everybody who contributed to these
-projects.
+some smaller libraries. 
 
 [Large Tree icon](https://icons8.com/icons/set/large-tree) icon by [Icons8](https://icons8.com)
 
-[Forest summary card photo](https://pixabay.com/users/free-photos-242387/) by [Pixabay](https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=931706)
+[Forest summary card photo](https://pixabay.com/photos/forest-mist-nature-trees-mystic-931706) by [Pixabay](https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=931706)
+
+The data on our [calculator page](calculator) has been pulled from the APIs by the [Cambridge Centre for Alternative Finance](https://cbeci.org/) (power usage) and [blockchain.info](https://blockchain.info) (number of bitcoins mined).
+
+We are grateful to everybody who contributed to these
+projects.

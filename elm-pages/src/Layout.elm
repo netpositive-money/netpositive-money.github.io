@@ -187,5 +187,6 @@ navbarLinks currentPath =
     , highlightableLink currentPath Pages.pages.calculator.directory "calculator"
     , highlightableLink currentPath Pages.pages.partners.directory "recommendations"
     , highlightableLink currentPath Pages.pages.sources.directory "sources"
+    , highlightableLink currentPath Pages.pages.results.directory "results"
     , githubRepoLink
     ]
