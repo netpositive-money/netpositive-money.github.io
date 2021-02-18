@@ -1,4 +1,4 @@
-module Layout exposing (view, maxWidth)
+module Layout exposing (view, maxWidth, headline)
 
 import DocumentSvg
 import Element exposing (Element)
@@ -17,6 +17,9 @@ import Pages.PagePath as PagePath exposing (PagePath)
 import Palette
 import FontAwesome
 import Shared exposing (..)
+import Html exposing (text)
+import Element exposing (html)
+import Element exposing (paragraph)
 
 maxWidth : number
 maxWidth = 1000
@@ -55,7 +58,7 @@ view model document page =
                    , Element.width (Element.fill |> Element.maximum maxWidth)
                    , Element.centerX
                    ]
-                 document.body
+                   ((paragraph[][headline document.title])::document.body)
              ]
         )
         |> Element.layout
@@ -65,7 +68,10 @@ view model document page =
                 , Font.color (Element.rgba255 0 0 0 0.8)
                 ]
     }
-        
+
+headline: String -> Element Msg
+headline s = Html.h1 [] [text s] |> html
+
 
 header : PagePath Pages.PathKey -> String ->  Element Msg
 header currentPath title =

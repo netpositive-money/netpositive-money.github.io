@@ -31,6 +31,7 @@ import Html exposing (h1)
 import Element exposing (el)
 import Element exposing (html)
 import Html exposing (text)
+import Element exposing (column)
 
 
 
@@ -155,20 +156,19 @@ pageView data tbtc model siteMetadata page viewForPage =
             { title = metadata.title
             , body = case viewForPage of
                          (t,b) ->
-                             [headline metadata.title,b]
+                             [b]
             }
 
         Metadata.Calculator metadata ->
             { title = metadata.title
-            , body = headline metadata.title ::
-                Calculator.view data tbtc model
+            , body = Calculator.view data tbtc model
             }
 
         Metadata.TocPage metadata ->
             { title = metadata.title
             , body = case viewForPage of
                          (t,b) ->
-                             [headline metadata.title,tocView t <| toString page.path, b]
+                             [tocView t <| toString page.path, b]
 
             }
 
@@ -176,8 +176,8 @@ pageView data tbtc model siteMetadata page viewForPage =
 
 commonHeadTags : List (Head.Tag Pages.PathKey)
 commonHeadTags =
-    [ Head.rssLink "/blog/feed.xml"
-    , Head.sitemapLink "/sitemap.xml"
+    [
+    Head.sitemapLink "/sitemap.xml"
     ]
 
 
@@ -255,8 +255,6 @@ siteTagline : String
 siteTagline =
     "Bitcoiners contributing to climate change solutions"
 
-headline: String -> Element Msg
-headline s = h1 [] [text s] |> html
 
 type alias TableOfContents =
     List { anchorId : String, name : String, level : Int }
