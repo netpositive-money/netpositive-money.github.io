@@ -200,9 +200,9 @@ the pure cost, which keeps miners interested.
 
 tl;dr: As far as we know, there is no free lunch here. 
 
-Proof-of-stake is very similar in concept to perpetual motion: It tries securing
-an asset by making it expensive in the asset itself to forge multiple new
-histories while rewarding honest behavior with the asset itself. There is no
+Proof-of-stake is similar in concept to perpetual motion: It tries securing
+an asset against forging of multiple new histories by pricing punishment
+in terms of the asset itself while rewarding honest behavior with the asset itself. There is no
 indication that this is possible, in spite of many market participants making
 claims to the contrary, just like with perpetual motion.
 
