@@ -211,7 +211,7 @@ what security properties are even being pursued.
 It's possible to just define all practical problems away in theory.
 When these systems are finally built, and inevitably attacks are surfacing, the
 system is simply made even more complex, which might rule out one concrete
-attack, but opens up several others. Notice that this slight of hand wouldn't
+attack, but opens up several others. Notice that this sleight of hand wouldn't
 even be possible in a truly decentralized system like Bitcoin, because the
 system [can't simply be changed](#cant-we-just-change-bitcoin) by a few insiders.
 
@@ -290,7 +290,7 @@ and decentralized effort. So ideally, you select the cause and the amount you
 want to give, estimate the amount of CO2 offset, and report that to us, as
 anonymously or publicly as you want. In order to make that easier for you, we
 are curating a [list of organisations](partners) that we believe are helpful and
-that work with us to automatically report the numbers so we can measure our
+that work with us to automatically report the numbers, so we can measure our
 impact as bitcoiners. And we have made the [calculator
 page](https://netpositive.money/calculator) to give you an idea of how much CO2
 you might want to offset.
