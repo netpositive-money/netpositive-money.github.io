@@ -30,9 +30,9 @@ import Shared exposing (Msg(..))
 import Html exposing (h1)
 import Element exposing (el)
 import Element exposing (html)
-import Html exposing (text)
+import Html
 import Element exposing (column)
-
+import Html.Attributes as Attr
 
 
 manifest : Manifest.Config Pages.PathKey
@@ -315,7 +315,33 @@ headingRenderer = {
 
                 Block.H6 ->
                     Html.h6)
-        [id <| rawTextToId rawText] children
+            [id <| rawTextToId rawText] children
+     , image =
+        \imageInfo ->
+            case imageInfo.title of
+                Just title ->
+                    Html.img
+                        [ Attr.src imageInfo.src
+                        , Attr.alt imageInfo.alt
+                        , Attr.title title
+                        , Attr.style "object-fit" "contain"
+                        , Attr.style "width" "100%"
+                        , Attr.style "height" "auto"
+
+                        ]
+                        []
+
+                Nothing ->
+                    Html.img
+                        [ Attr.src imageInfo.src
+                        , Attr.alt imageInfo.alt
+                        , Attr.style "object-fit" "contain"
+                        , Attr.style "width" "100%"
+                        , Attr.style "height" "auto"
+                        ]
+                        []
+
+
     }
 
 styledToString : List Inline -> String

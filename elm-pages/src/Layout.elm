@@ -1,6 +1,5 @@
 module Layout exposing (view, maxWidth, headline)
 
-import DocumentSvg
 import Element exposing (Element)
 import Element.Background
 import Element.Border
@@ -10,7 +9,7 @@ import Element.Events
 import Html exposing (Html)
 import Html.Attributes as Attr
 import Metadata exposing (Metadata)
-import Pages exposing (pages)
+import Pages 
 import Pages.Directory as Directory exposing (Directory)
 import Pages.ImagePath as ImagePath
 import Pages.PagePath as PagePath exposing (PagePath)
@@ -20,6 +19,7 @@ import Shared exposing (..)
 import Html exposing (text)
 import Element exposing (html)
 import Element exposing (paragraph)
+import Html.Attributes exposing (style)
 
 maxWidth : number
 maxWidth = 1000
