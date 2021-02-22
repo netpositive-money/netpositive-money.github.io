@@ -117,7 +117,7 @@ Now for the third metric. Energy use depends on many factors. Mining cost is
 probably the most obvious one. Availability, longevity and cost of mining
 equipment have to be taken into account as well, and they are also changing in
 interesting ways. However, the most interesting aspect in this is probably the
-price of the electricity used. As Bitcoin mining has become a more mature,
+price of the electricity used. As Bitcoin mining has become more mature,
 miners have become both industrial size energy users and mobile enough to seek
 out the cheapest energy on earth. This has fascinating consequences:
 
@@ -166,8 +166,8 @@ Adam Gibson wrote a slightly rambling but still quite elegant
 topic. I recommend reading it. That said, here's me trying to explain it a little more concisely:
 
 Proof-of-work is short data that allows for cheaply verifying the fact that it
-was (with overwhelming probability) expensive to obtain. This short data (a 256
-bit hash in Bitcoin) can also be referencing other &mdash; often larger &mdash; data
+was (with overwhelming probability) expensive to obtain. This short data (a 256-bit
+hash in Bitcoin) can also be referencing other &mdash; often larger &mdash; data
 sets, and thus testifies those must have existed when the proof-of-work was
 generated. It is serving multiple important functions in Bitcoin. I think these
 are the two most irreplacable ones:
@@ -188,12 +188,12 @@ giving you made-up version of history in which you received money that in
 reality was spent to someone else.
   
 Secondly, because it is very expensive to make, proof-of-work is the fairest
-distributed way of distributing a new asset that we know of. In the limit,
-miners spend as many dollars on hardware, energy and work as the bitcoin are
+distributed way of distributing a new asset that we know of.
+Miners spend at most as many dollars on hardware, energy and work as the bitcoin are
 worth that they receive in return. But because there is a lot of uncertainty in
 the process &mdash; hard-to-forecast things like the number of competitors, the
 price of electricity, hardware improvements and the bitcoin price can change
-mining profitability drastically &mdash; there is a often premium to be earned over
+mining profitability drastically &mdash; there is often a premium to be earned over
 the pure cost, which keeps miners interested.
 
 ## Couldn't we just use something else like proof-of-stake or proof-of-anything-else?
