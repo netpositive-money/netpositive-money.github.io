@@ -206,9 +206,9 @@ in terms of the asset itself while rewarding honest behavior with the asset itse
 indication that this is possible, in spite of many market participants making
 claims to the contrary, just like with perpetual motion.
 
-One popular misleading approach is making the system so complex that it is not
-at all clear even to experts what security properties are even being tried to
-achieve. It's possible to just define all practical problems away in theory.
+One popular misleading approach is to make the system so complex that even experts cannot determine
+what security properties are even being pursued.
+It's possible to just define all practical problems away in theory.
 When these systems are finally built, and inevitably attacks are surfacing, the
 system is simply made even more complex, which might rule out one concrete
 attack, but opens up several others. Notice that this slight of hand wouldn't
