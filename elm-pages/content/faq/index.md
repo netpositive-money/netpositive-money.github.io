@@ -189,7 +189,7 @@ reality was spent to someone else.
   
 Secondly, because it is very expensive to make, proof-of-work is the fairest
 distributed way of distributing a new asset that we know of.
-Miners spend at most as many dollars on hardware, energy and work as the bitcoin are
+Miners spend almost as many dollars on hardware, energy and work as the bitcoin are
 worth that they receive in return. But because there is a lot of uncertainty in
 the process &mdash; hard-to-forecast things like the number of competitors, the
 price of electricity, hardware improvements and the bitcoin price can change

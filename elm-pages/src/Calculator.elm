@@ -56,6 +56,7 @@ import Element.Font exposing (color)
 import Palette
 
 
+
 subscriptions : Model -> Sub Msg
 subscriptions model =
     Sub.batch [ onResize SetScreenSize ]
@@ -426,11 +427,11 @@ view data tbtc model =
                                       """ ]
                           , paragraph [Font.size 12] [html <| chart2 compound model]
                           , paragraph []
-                          [ lazy (Input.text [alignLeft]){placeholder=Nothing, text=s, onChange=(ChangeStart compound),label=labelAbove[]<| text"start month" }
-                          , lazy (Input.text [alignRight]){placeholder=Nothing, text=e, onChange=(ChangeEnd compound),label=labelAbove[]<| text"end month" }
+                          [ lazy (Input.text [alignLeft]){placeholder=Nothing, text=left 7 s, onChange=(ChangeStart compound),label=labelAbove[]<| text"start month" }
+                          , lazy (Input.text [alignRight]){placeholder=Nothing, text=left 7 e, onChange=(ChangeEnd compound),label=labelAbove[]<| text"end month" }
                           ]
                           , paragraph []
-                              [ lazy text ("Selected: " ++ datumToTimeString startDatum ++ " to " ++ datumToTimeString endDatum)]
+                              [ lazy text ("Selected: " ++ (left 7 <| datumToTimeString startDatum) ++ " to " ++ (left 7 <| datumToTimeString endDatum))]
                           , paragraph []
                               [ lazy text
                                 ("Total CO2 in this time frame: "
