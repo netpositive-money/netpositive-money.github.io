@@ -50,8 +50,7 @@ since 2009. How can this be possible?
   
 * Its current usage is thus more comparable to gold, which is also rarely used in transactions. I have never seen anybody calculate the energy cost of gold mining plus handling divided by the number of physical gold shipments. Probably because that's as misleading a number as the equivalent in Bitcoin.
   
-* Just as with gold, there are ways to make even small transactions quickly and cheaply with Bitcoin. Most real-world transactions use one of these
-  off-chain methods. Probably the most popular today are custodial services like exchanges. Sending bitcoin from one customer to another on a service like this just requires changing two numbers in their database and is the equivalent of gold in a bank changing owners. It's hard to say how many such transactions there are, since there are many "bitcoin banks" and their numbers are proprietary, but it's safe to say they dwarf on-chain transactions by orders of magnitude.
+* Just as with gold, there are ways to make even small transactions quickly and cheaply with Bitcoin. Most real-world transactions use one of these off-chain methods. Probably the most popular today are custodial services like exchanges. Sending bitcoin from one customer to another on a service like this just requires changing two numbers in their database and is the equivalent of gold in a bank changing owners. It's hard to say how many such transactions there are, since there are many "bitcoin banks" and their numbers are proprietary, but it's safe to say they dwarf on-chain transactions by orders of magnitude.
   
 * Unlike gold, there are methods of transacting Bitcoin off-chain that require less trust in intermediaries, such as the Lightning Network or Blockstream's Liquid federation. With a growing demand in transactions, such alternatives are refined and gain popularity, without this being reflected in the above numbers. With the Lightning Network, it's even difficult to estimate how many transactions are being performed, since there is no central ledger recording them all.
   
@@ -118,7 +117,7 @@ Now for the third metric. Energy use depends on many factors. Mining cost is
 probably the most obvious one. Availability, longevity and cost of mining
 equipment have to be taken into account as well, and they are also changing in
 interesting ways. However, the most interesting aspect in this is probably the
-price of the electricity used. As Bitcoin mining has become a more mature,
+price of the electricity used. As Bitcoin mining has become more mature,
 miners have become both industrial size energy users and mobile enough to seek
 out the cheapest energy on earth. This has fascinating consequences:
 
@@ -167,8 +166,8 @@ Adam Gibson wrote a slightly rambling but still quite elegant
 topic. I recommend reading it. That said, here's me trying to explain it a little more concisely:
 
 Proof-of-work is short data that allows for cheaply verifying the fact that it
-was (with overwhelming probability) expensive to obtain. This short data (a 256
-bit hash in Bitcoin) can also be referencing other &mdash; often larger &mdash; data
+was (with overwhelming probability) expensive to obtain. This short data (a 256-bit
+hash in Bitcoin) can also be referencing other &mdash; often larger &mdash; data
 sets, and thus testifies those must have existed when the proof-of-work was
 generated. It is serving multiple important functions in Bitcoin. I think these
 are the two most irreplacable ones:
@@ -189,30 +188,30 @@ giving you made-up version of history in which you received money that in
 reality was spent to someone else.
   
 Secondly, because it is very expensive to make, proof-of-work is the fairest
-distributed way of distributing a new asset that we know of. In the limit,
-miners spend as many dollars on hardware, energy and work as the bitcoin are
+distributed way of distributing a new asset that we know of.
+Miners spend at most as many dollars on hardware, energy and work as the bitcoin are
 worth that they receive in return. But because there is a lot of uncertainty in
 the process &mdash; hard-to-forecast things like the number of competitors, the
 price of electricity, hardware improvements and the bitcoin price can change
-mining profitability drastically &mdash; there is a often premium to be earned over
+mining profitability drastically &mdash; there is often a premium to be earned over
 the pure cost, which keeps miners interested.
 
 ## Couldn't we just use something else like proof-of-stake or proof-of-anything-else?
 
 tl;dr: As far as we know, there is no free lunch here. 
 
-Proof-of-stake is very similar in concept to perpetual motion: It tries securing
-an asset by making it expensive in the asset itself to forge multiple new
-histories while rewarding honest behavior with the asset itself. There is no
+Proof-of-stake is similar in concept to perpetual motion: It tries securing
+an asset against forging of multiple new histories by pricing punishment
+in terms of the asset itself while rewarding honest behavior with the asset itself. There is no
 indication that this is possible, in spite of many market participants making
 claims to the contrary, just like with perpetual motion.
 
-One popular misleading approach is making the system so complex that it is not
-at all clear even to experts what security properties are even being tried to
-achieve. It's possible to just define all practical problems away in theory.
+One popular misleading approach is to make the system so complex that even experts cannot determine
+what security properties are even being pursued.
+It's possible to just define all practical problems away in theory.
 When these systems are finally built, and inevitably attacks are surfacing, the
 system is simply made even more complex, which might rule out one concrete
-attack, but opens up several others. Notice that this slight of hand wouldn't
+attack, but opens up several others. Notice that this sleight of hand wouldn't
 even be possible in a truly decentralized system like Bitcoin, because the
 system [can't simply be changed](#cant-we-just-change-bitcoin) by a few insiders.
 
@@ -291,7 +290,7 @@ and decentralized effort. So ideally, you select the cause and the amount you
 want to give, estimate the amount of CO2 offset, and report that to us, as
 anonymously or publicly as you want. In order to make that easier for you, we
 are curating a [list of organisations](partners) that we believe are helpful and
-that work with us to automatically report the numbers so we can measure our
+that work with us to automatically report the numbers, so we can measure our
 impact as bitcoiners. And we have made the [calculator
 page](https://netpositive.money/calculator) to give you an idea of how much CO2
 you might want to offset.
