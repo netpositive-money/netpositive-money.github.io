@@ -33,6 +33,13 @@ import Element exposing (html)
 import Html
 import Element exposing (column)
 import Html.Attributes as Attr
+import Html exposing (Attribute)
+import Json.Encode
+import Svg.Attributes exposing (offset)
+import List.Extra exposing (find)
+import Pages.ImagePath exposing (Dimensions)
+import Pages.Internal exposing (Internal)
+import Pages.ImagePath exposing (dimensions)
 
 
 manifest : Manifest.Config Pages.PathKey
@@ -41,7 +48,7 @@ manifest =
     , categories = [ Pages.Manifest.Category.education ]
     , displayMode = Manifest.Standalone
     , orientation = Manifest.Portrait
-    , description = "netpositive.money - Bitcoiners contributing to climate change solutions "
+    , description = "netpositive.money - Bitcoiners contributing to climate change solutions"
     , iarcRatingId = Nothing
     , name = "netpositive.money"
     , themeColor = Just Color.white
@@ -327,7 +334,7 @@ headingRenderer = {
                         , Attr.style "object-fit" "contain"
                         , Attr.style "width" "100%"
                         , Attr.style "height" "auto"
-
+                        , srcset (srcsetstring imageInfo.src)
                         ]
                         []
 
@@ -338,11 +345,36 @@ headingRenderer = {
                         , Attr.style "object-fit" "contain"
                         , Attr.style "width" "100%"
                         , Attr.style "height" "auto"
+                        , srcset (srcsetstring imageInfo.src)
                         ]
                         []
 
 
     }
+
+-- builds a srcset from images that agree in filename until "_"
+
+srcsetstring = findImages >>
+               List.map (\img -> Pages.ImagePath.toString img ++ " " ++
+                   case dimensions img of
+                       Just d -> (String.fromInt d.width)++"w"
+                       Nothing -> ""
+                   ) >>
+               String.join ","
+
+findImages : String -> List (Pages.ImagePath.ImagePath Pages.PathKey)
+findImages src = List.filterMap
+                    ( \imagepath ->
+                        let path = Pages.ImagePath.toString imagepath in
+                          if String.contains (Maybe.withDefault src <| List.head <| String.split "_" src) path
+                          then Just imagepath else Nothing
+                    )
+                 Pages.allImages
+
+srcset : String -> Attribute msg
+srcset set =
+  Attr.property "srcset" (Json.Encode.string set)
+
 
 styledToString : List Inline -> String
 styledToString list =

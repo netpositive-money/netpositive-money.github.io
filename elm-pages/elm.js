@@ -6244,37 +6244,137 @@ var $author$project$Pages$directoryWithoutIndex = function (path) {
 	return A3($dillonkearns$elm_pages$Pages$Directory$withoutIndex, $author$project$Pages$PathKey, $author$project$Pages$allPages, path);
 };
 var $author$project$Pages$images = {
-	articleCovers: {
-		directory: $author$project$Pages$directoryWithoutIndex(
-			_List_fromArray(
-				['articleCovers'])),
-		hello: A2(
-			$author$project$Pages$buildImage,
-			_List_fromArray(
-				['article-covers', 'hello.jpg']),
-			{height: 1561, width: 2000}),
-		mountains: A2(
-			$author$project$Pages$buildImage,
-			_List_fromArray(
-				['article-covers', 'mountains.jpg']),
-			{height: 1600, width: 2400})
-	},
-	author: {
-		dillon: A2(
-			$author$project$Pages$buildImage,
-			_List_fromArray(
-				['author', 'dillon.jpg']),
-			{height: 3035, width: 3035}),
-		directory: $author$project$Pages$directoryWithoutIndex(
-			_List_fromArray(
-				['author']))
-	},
+	androidChrome144x144: A2(
+		$author$project$Pages$buildImage,
+		_List_fromArray(
+			['android-chrome-144x144.png']),
+		{height: 144, width: 144}),
+	androidChrome192x192: A2(
+		$author$project$Pages$buildImage,
+		_List_fromArray(
+			['android-chrome-192x192.png']),
+		{height: 192, width: 192}),
+	androidChrome256x256: A2(
+		$author$project$Pages$buildImage,
+		_List_fromArray(
+			['android-chrome-256x256.png']),
+		{height: 256, width: 256}),
+	androidChrome36x36: A2(
+		$author$project$Pages$buildImage,
+		_List_fromArray(
+			['android-chrome-36x36.png']),
+		{height: 36, width: 36}),
+	androidChrome384x384: A2(
+		$author$project$Pages$buildImage,
+		_List_fromArray(
+			['android-chrome-384x384.png']),
+		{height: 384, width: 384}),
+	androidChrome48x48: A2(
+		$author$project$Pages$buildImage,
+		_List_fromArray(
+			['android-chrome-48x48.png']),
+		{height: 48, width: 48}),
+	androidChrome512x512: A2(
+		$author$project$Pages$buildImage,
+		_List_fromArray(
+			['android-chrome-512x512.png']),
+		{height: 512, width: 512}),
+	androidChrome72x72: A2(
+		$author$project$Pages$buildImage,
+		_List_fromArray(
+			['android-chrome-72x72.png']),
+		{height: 72, width: 72}),
+	androidChrome96x96: A2(
+		$author$project$Pages$buildImage,
+		_List_fromArray(
+			['android-chrome-96x96.png']),
+		{height: 96, width: 96}),
+	appleTouchIcon: A2(
+		$author$project$Pages$buildImage,
+		_List_fromArray(
+			['apple-touch-icon.png']),
+		{height: 180, width: 180}),
+	appleTouchIcon1024x1024: A2(
+		$author$project$Pages$buildImage,
+		_List_fromArray(
+			['apple-touch-icon-1024x1024.png']),
+		{height: 1024, width: 1024}),
+	appleTouchIcon114x114: A2(
+		$author$project$Pages$buildImage,
+		_List_fromArray(
+			['apple-touch-icon-114x114.png']),
+		{height: 114, width: 114}),
+	appleTouchIcon120x120: A2(
+		$author$project$Pages$buildImage,
+		_List_fromArray(
+			['apple-touch-icon-120x120.png']),
+		{height: 120, width: 120}),
+	appleTouchIcon144x144: A2(
+		$author$project$Pages$buildImage,
+		_List_fromArray(
+			['apple-touch-icon-144x144.png']),
+		{height: 144, width: 144}),
+	appleTouchIcon152x152: A2(
+		$author$project$Pages$buildImage,
+		_List_fromArray(
+			['apple-touch-icon-152x152.png']),
+		{height: 152, width: 152}),
+	appleTouchIcon167x167: A2(
+		$author$project$Pages$buildImage,
+		_List_fromArray(
+			['apple-touch-icon-167x167.png']),
+		{height: 167, width: 167}),
+	appleTouchIcon180x180: A2(
+		$author$project$Pages$buildImage,
+		_List_fromArray(
+			['apple-touch-icon-180x180.png']),
+		{height: 180, width: 180}),
+	appleTouchIcon57x57: A2(
+		$author$project$Pages$buildImage,
+		_List_fromArray(
+			['apple-touch-icon-57x57.png']),
+		{height: 57, width: 57}),
+	appleTouchIcon60x60: A2(
+		$author$project$Pages$buildImage,
+		_List_fromArray(
+			['apple-touch-icon-60x60.png']),
+		{height: 60, width: 60}),
+	appleTouchIcon72x72: A2(
+		$author$project$Pages$buildImage,
+		_List_fromArray(
+			['apple-touch-icon-72x72.png']),
+		{height: 72, width: 72}),
+	appleTouchIcon76x76: A2(
+		$author$project$Pages$buildImage,
+		_List_fromArray(
+			['apple-touch-icon-76x76.png']),
+		{height: 76, width: 76}),
+	appleTouchIconPrecomposed: A2(
+		$author$project$Pages$buildImage,
+		_List_fromArray(
+			['apple-touch-icon-precomposed.png']),
+		{height: 180, width: 180}),
 	directory: $author$project$Pages$directoryWithoutIndex(_List_Nil),
 	elmLogo: A2(
 		$author$project$Pages$buildImage,
 		_List_fromArray(
 			['elm-logo.svg']),
 		{height: 323, width: 323}),
+	favicon16x16: A2(
+		$author$project$Pages$buildImage,
+		_List_fromArray(
+			['favicon-16x16.png']),
+		{height: 16, width: 16}),
+	favicon32x32: A2(
+		$author$project$Pages$buildImage,
+		_List_fromArray(
+			['favicon-32x32.png']),
+		{height: 32, width: 32}),
+	favicon48x48: A2(
+		$author$project$Pages$buildImage,
+		_List_fromArray(
+			['favicon-48x48.png']),
+		{height: 48, width: 48}),
 	forest931706_1280: A2(
 		$author$project$Pages$buildImage,
 		_List_fromArray(
@@ -6379,7 +6479,7 @@ var $author$project$Main$manifest = {
 	backgroundColor: $elm$core$Maybe$Just($avh4$elm_color$Color$white),
 	categories: _List_fromArray(
 		[$dillonkearns$elm_pages$Pages$Manifest$Category$education]),
-	description: 'netpositive.money - Bitcoiners contributing to climate change solutions ',
+	description: 'netpositive.money - Bitcoiners contributing to climate change solutions',
 	displayMode: $dillonkearns$elm_pages$Pages$Manifest$Standalone,
 	iarcRatingId: $elm$core$Maybe$Nothing,
 	icons: _List_Nil,
@@ -7175,6 +7275,253 @@ var $dillonkearns$elm_markdown$Markdown$Renderer$defaultHtmlRenderer = {
 	}
 };
 var $elm$html$Html$Attributes$id = $elm$html$Html$Attributes$stringProperty('id');
+var $elm$virtual_dom$VirtualDom$property = F2(
+	function (key, value) {
+		return A2(
+			_VirtualDom_property,
+			_VirtualDom_noInnerHtmlOrFormAction(key),
+			_VirtualDom_noJavaScriptOrHtmlUri(value));
+	});
+var $elm$html$Html$Attributes$property = $elm$virtual_dom$VirtualDom$property;
+var $author$project$Main$srcset = function (set) {
+	return A2(
+		$elm$html$Html$Attributes$property,
+		'srcset',
+		$elm$json$Json$Encode$string(set));
+};
+var $elm$core$Basics$composeR = F3(
+	function (f, g, x) {
+		return g(
+			f(x));
+	});
+var $dillonkearns$elm_pages$Pages$ImagePath$dimensions = function (imagePath) {
+	if (imagePath.$ === 'Internal') {
+		var dims = imagePath.b;
+		return $elm$core$Maybe$Just(dims);
+	} else {
+		return $elm$core$Maybe$Nothing;
+	}
+};
+var $author$project$Pages$allImages = _List_fromArray(
+	[
+		A2(
+		$author$project$Pages$buildImage,
+		_List_fromArray(
+			['android-chrome-144x144.png']),
+		{height: 144, width: 144}),
+		A2(
+		$author$project$Pages$buildImage,
+		_List_fromArray(
+			['android-chrome-192x192.png']),
+		{height: 192, width: 192}),
+		A2(
+		$author$project$Pages$buildImage,
+		_List_fromArray(
+			['android-chrome-256x256.png']),
+		{height: 256, width: 256}),
+		A2(
+		$author$project$Pages$buildImage,
+		_List_fromArray(
+			['android-chrome-36x36.png']),
+		{height: 36, width: 36}),
+		A2(
+		$author$project$Pages$buildImage,
+		_List_fromArray(
+			['android-chrome-384x384.png']),
+		{height: 384, width: 384}),
+		A2(
+		$author$project$Pages$buildImage,
+		_List_fromArray(
+			['android-chrome-48x48.png']),
+		{height: 48, width: 48}),
+		A2(
+		$author$project$Pages$buildImage,
+		_List_fromArray(
+			['android-chrome-512x512.png']),
+		{height: 512, width: 512}),
+		A2(
+		$author$project$Pages$buildImage,
+		_List_fromArray(
+			['android-chrome-72x72.png']),
+		{height: 72, width: 72}),
+		A2(
+		$author$project$Pages$buildImage,
+		_List_fromArray(
+			['android-chrome-96x96.png']),
+		{height: 96, width: 96}),
+		A2(
+		$author$project$Pages$buildImage,
+		_List_fromArray(
+			['apple-touch-icon-1024x1024.png']),
+		{height: 1024, width: 1024}),
+		A2(
+		$author$project$Pages$buildImage,
+		_List_fromArray(
+			['apple-touch-icon-114x114.png']),
+		{height: 114, width: 114}),
+		A2(
+		$author$project$Pages$buildImage,
+		_List_fromArray(
+			['apple-touch-icon-120x120.png']),
+		{height: 120, width: 120}),
+		A2(
+		$author$project$Pages$buildImage,
+		_List_fromArray(
+			['apple-touch-icon-144x144.png']),
+		{height: 144, width: 144}),
+		A2(
+		$author$project$Pages$buildImage,
+		_List_fromArray(
+			['apple-touch-icon-152x152.png']),
+		{height: 152, width: 152}),
+		A2(
+		$author$project$Pages$buildImage,
+		_List_fromArray(
+			['apple-touch-icon-167x167.png']),
+		{height: 167, width: 167}),
+		A2(
+		$author$project$Pages$buildImage,
+		_List_fromArray(
+			['apple-touch-icon-180x180.png']),
+		{height: 180, width: 180}),
+		A2(
+		$author$project$Pages$buildImage,
+		_List_fromArray(
+			['apple-touch-icon-57x57.png']),
+		{height: 57, width: 57}),
+		A2(
+		$author$project$Pages$buildImage,
+		_List_fromArray(
+			['apple-touch-icon-60x60.png']),
+		{height: 60, width: 60}),
+		A2(
+		$author$project$Pages$buildImage,
+		_List_fromArray(
+			['apple-touch-icon-72x72.png']),
+		{height: 72, width: 72}),
+		A2(
+		$author$project$Pages$buildImage,
+		_List_fromArray(
+			['apple-touch-icon-76x76.png']),
+		{height: 76, width: 76}),
+		A2(
+		$author$project$Pages$buildImage,
+		_List_fromArray(
+			['apple-touch-icon-precomposed.png']),
+		{height: 180, width: 180}),
+		A2(
+		$author$project$Pages$buildImage,
+		_List_fromArray(
+			['apple-touch-icon.png']),
+		{height: 180, width: 180}),
+		A2(
+		$author$project$Pages$buildImage,
+		_List_fromArray(
+			['elm-logo.svg']),
+		{height: 323, width: 323}),
+		A2(
+		$author$project$Pages$buildImage,
+		_List_fromArray(
+			['favicon-16x16.png']),
+		{height: 16, width: 16}),
+		A2(
+		$author$project$Pages$buildImage,
+		_List_fromArray(
+			['favicon-32x32.png']),
+		{height: 32, width: 32}),
+		A2(
+		$author$project$Pages$buildImage,
+		_List_fromArray(
+			['favicon-48x48.png']),
+		{height: 48, width: 48}),
+		A2(
+		$author$project$Pages$buildImage,
+		_List_fromArray(
+			['forest-931706_1280.jpg']),
+		{height: 720, width: 1280}),
+		A2(
+		$author$project$Pages$buildImage,
+		_List_fromArray(
+			['forest-931706_1920.jpg']),
+		{height: 1080, width: 1920}),
+		A2(
+		$author$project$Pages$buildImage,
+		_List_fromArray(
+			['forest-931706_640.jpg']),
+		{height: 360, width: 640}),
+		A2(
+		$author$project$Pages$buildImage,
+		_List_fromArray(
+			['github.svg']),
+		{height: 24, width: 24}),
+		A2(
+		$author$project$Pages$buildImage,
+		_List_fromArray(
+			['icon-png.png']),
+		{height: 75, width: 50}),
+		A2(
+		$author$project$Pages$buildImage,
+		_List_fromArray(
+			['icon.svg']),
+		{height: 75, width: 50}),
+		A2(
+		$author$project$Pages$buildImage,
+		_List_fromArray(
+			['icons8-large-tree-48.png']),
+		{height: 48, width: 48})
+	]);
+var $elm$core$List$head = function (list) {
+	if (list.b) {
+		var x = list.a;
+		var xs = list.b;
+		return $elm$core$Maybe$Just(x);
+	} else {
+		return $elm$core$Maybe$Nothing;
+	}
+};
+var $dillonkearns$elm_pages$Pages$ImagePath$toString = function (path) {
+	if (path.$ === 'Internal') {
+		var rawPath = path.a;
+		return A2($elm$core$String$join, '/', rawPath);
+	} else {
+		var url = path.a;
+		return url;
+	}
+};
+var $author$project$Main$findImages = function (src) {
+	return A2(
+		$elm$core$List$filterMap,
+		function (imagepath) {
+			var path = $dillonkearns$elm_pages$Pages$ImagePath$toString(imagepath);
+			return A2(
+				$elm$core$String$contains,
+				A2(
+					$elm$core$Maybe$withDefault,
+					src,
+					$elm$core$List$head(
+						A2($elm$core$String$split, '_', src))),
+				path) ? $elm$core$Maybe$Just(imagepath) : $elm$core$Maybe$Nothing;
+		},
+		$author$project$Pages$allImages);
+};
+var $author$project$Main$srcsetstring = A2(
+	$elm$core$Basics$composeR,
+	$author$project$Main$findImages,
+	A2(
+		$elm$core$Basics$composeR,
+		$elm$core$List$map(
+			function (img) {
+				return $dillonkearns$elm_pages$Pages$ImagePath$toString(img) + (' ' + function () {
+					var _v0 = $dillonkearns$elm_pages$Pages$ImagePath$dimensions(img);
+					if (_v0.$ === 'Just') {
+						var d = _v0.a;
+						return $elm$core$String$fromInt(d.width) + 'w';
+					} else {
+						return '';
+					}
+				}());
+			}),
+		$elm$core$String$join(',')));
 var $elm$virtual_dom$VirtualDom$style = _VirtualDom_style;
 var $elm$html$Html$Attributes$style = $elm$virtual_dom$VirtualDom$style;
 var $author$project$Main$headingRenderer = _Utils_update(
@@ -7220,11 +7567,10 @@ var $author$project$Main$headingRenderer = _Utils_update(
 							$elm$html$Html$Attributes$alt(imageInfo.alt),
 							$elm$html$Html$Attributes$title(title),
 							A2($elm$html$Html$Attributes$style, 'object-fit', 'contain'),
-							A2($elm$html$Html$Attributes$style, 'width', 'auto'),
-							A2(
-							$elm$html$Html$Attributes$style,
-							'max-width',
-							$elm$core$String$fromInt(200))
+							A2($elm$html$Html$Attributes$style, 'width', '100%'),
+							A2($elm$html$Html$Attributes$style, 'height', 'auto'),
+							$author$project$Main$srcset(
+							$author$project$Main$srcsetstring(imageInfo.src))
 						]),
 					_List_Nil);
 			} else {
@@ -7235,11 +7581,10 @@ var $author$project$Main$headingRenderer = _Utils_update(
 							$elm$html$Html$Attributes$src(imageInfo.src),
 							$elm$html$Html$Attributes$alt(imageInfo.alt),
 							A2($elm$html$Html$Attributes$style, 'object-fit', 'contain'),
-							A2($elm$html$Html$Attributes$style, 'width', 'auto'),
-							A2(
-							$elm$html$Html$Attributes$style,
-							'max-width',
-							$elm$core$String$fromInt(200))
+							A2($elm$html$Html$Attributes$style, 'width', '100%'),
+							A2($elm$html$Html$Attributes$style, 'height', 'auto'),
+							$author$project$Main$srcset(
+							$author$project$Main$srcsetstring(imageInfo.src))
 						]),
 					_List_Nil);
 			}
@@ -7753,13 +8098,6 @@ var $elm$virtual_dom$VirtualDom$node = function (tag) {
 	return _VirtualDom_node(
 		_VirtualDom_noScript(tag));
 };
-var $elm$virtual_dom$VirtualDom$property = F2(
-	function (key, value) {
-		return A2(
-			_VirtualDom_property,
-			_VirtualDom_noInnerHtmlOrFormAction(key),
-			_VirtualDom_noJavaScriptOrHtmlUri(value));
-	});
 var $mdgriffith$elm_ui$Internal$Style$AllChildren = F2(
 	function (a, b) {
 		return {$: 'AllChildren', a: a, b: b};
@@ -16255,11 +16593,6 @@ var $dillonkearns$elm_markdown$Markdown$InlineParser$AutolinkType = function (a)
 	return {$: 'AutolinkType', a: a};
 };
 var $elm$regex$Regex$contains = _Regex_contains;
-var $elm$core$Basics$composeR = F3(
-	function (f, g, x) {
-		return g(
-			f(x));
-	});
 var $dillonkearns$elm_markdown$Markdown$InlineParser$decodeUrlRegex = A2(
 	$elm$core$Maybe$withDefault,
 	$elm$regex$Regex$never,
@@ -16297,15 +16630,6 @@ var $dillonkearns$elm_markdown$Markdown$InlineParser$autolinkToMatch = function 
 		$dillonkearns$elm_markdown$Markdown$InlineParser$Match(match));
 };
 var $elm$regex$Regex$findAtMost = _Regex_findAtMost;
-var $elm$core$List$head = function (list) {
-	if (list.b) {
-		var x = list.a;
-		var xs = list.b;
-		return $elm$core$Maybe$Just(x);
-	} else {
-		return $elm$core$Maybe$Nothing;
-	}
-};
 var $dillonkearns$elm_markdown$Markdown$Helpers$insideSquareBracketRegex = '[^\\[\\]\\\\]*(?:\\\\.[^\\[\\]\\\\]*)*';
 var $dillonkearns$elm_markdown$Markdown$InlineParser$refLabelRegex = A2(
 	$elm$core$Maybe$withDefault,
@@ -24252,15 +24576,6 @@ var $dillonkearns$elm_pages$Pages$Manifest$orientationToString = function (orien
 			return 'portrait-primary';
 		default:
 			return 'portrait-secondary';
-	}
-};
-var $dillonkearns$elm_pages$Pages$ImagePath$toString = function (path) {
-	if (path.$ === 'Internal') {
-		var rawPath = path.a;
-		return A2($elm$core$String$join, '/', rawPath);
-	} else {
-		var url = path.a;
-		return url;
 	}
 };
 var $dillonkearns$elm_pages$Pages$Manifest$Category$toString = function (_v0) {
@@ -34088,7 +34403,7 @@ var $author$project$Calculator$view = F3(
 										$mdgriffith$elm_ui$Element$text('start month')),
 									onChange: $author$project$Shared$ChangeStart(compound),
 									placeholder: $elm$core$Maybe$Nothing,
-									text: s
+									text: A2($elm$core$String$left, 7, s)
 								}),
 								A2(
 								$mdgriffith$elm_ui$Element$Lazy$lazy,
@@ -34102,7 +34417,7 @@ var $author$project$Calculator$view = F3(
 										$mdgriffith$elm_ui$Element$text('end month')),
 									onChange: $author$project$Shared$ChangeEnd(compound),
 									placeholder: $elm$core$Maybe$Nothing,
-									text: e
+									text: A2($elm$core$String$left, 7, e)
 								})
 							])),
 						A2(
@@ -34113,7 +34428,13 @@ var $author$project$Calculator$view = F3(
 								A2(
 								$mdgriffith$elm_ui$Element$Lazy$lazy,
 								$mdgriffith$elm_ui$Element$text,
-								'Selected: ' + ($author$project$Calculator$datumToTimeString(startDatum) + (' to ' + $author$project$Calculator$datumToTimeString(endDatum))))
+								'Selected: ' + (A2(
+									$elm$core$String$left,
+									7,
+									$author$project$Calculator$datumToTimeString(startDatum)) + (' to ' + A2(
+									$elm$core$String$left,
+									7,
+									$author$project$Calculator$datumToTimeString(endDatum)))))
 							])),
 						A2(
 						$mdgriffith$elm_ui$Element$paragraph,
