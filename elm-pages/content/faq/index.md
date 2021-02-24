@@ -147,7 +147,7 @@ been addressed at all in academic research, as far as we know:
 There is substantial evidence that for both of these questions, the trend is
 positive. States will tolerate miners abusing fossil energy subsidies only so
 long. As pointed out [in another
-question](faq/#howcouldbitcoinbeanetpositiveforcefortheenvironment?), energy
+question](faq#howcouldbitcoinbeanetpositiveforcefortheenvironment?), energy
 providers are using Bitcoin mining in order to overprovision renewable energy.
 Mining is used in place of flaring or even just venting surplus natural gas.
 However, there are also reports of mining making stranded oil or gas fields
@@ -213,7 +213,7 @@ When these systems are finally built, and inevitably attacks are surfacing, the
 system is simply made even more complex, which might rule out one concrete
 attack, but opens up several others. Notice that this sleight of hand wouldn't
 even be possible in a truly decentralized system like Bitcoin, because the
-system [can't simply be changed](#cant-we-just-change-bitcoin) by a few insiders.
+system [can't simply be changed](faq#can'twejustchangebitcoin?) by a few insiders.
 
 Notice too, that even if securing the ledger with proof-of-stake were feasible,
 that wouldn't solve the distribution problem at all.
