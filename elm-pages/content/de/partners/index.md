@@ -2,6 +2,34 @@
 title: Recommendations
 type: tocpage
 ---
+## Shut up and take my money!
+
+If you want to get started, just use one of the links in this section! You can
+read more about our choices below.
+
+For most people we recommend just donating through [Founder's Pledge Climate
+Change
+Fund](https://app.effectivealtruism.org/funds/partners/founders-pledge-climate-change-fund?utm_source=netpositive.money&utm_medium=site&utm_campaign=bitcoin).
+They currently support CATF, Carbon180 and TerraPraxis. The above is a special
+link that enables them (via Google Analytics) to track the amount of donations
+coming from us so we can then evaluate how much Bitcoiners have contributed.
+These donations should be tax-exempt in the US and UK.
+
+For Germans (and maybe other Europeans, though they would probably not get a tax
+refund), it's more effective to go through our [special donation
+page](https://www.effektiv-spenden.org/spendenaktionen/?cfd=11dfe) at
+Effektiv-Spenden, which supports CATF, Carbon180 and the ITIF Clean Energy
+Program. 
+
+If you prefer classical offsetting, here's [our link to myclimate
+International](https://co2.myclimate.org/en/contribution_calculators/new?ps=netpositiv_money).
+Donations should be tax-deductible at least in Switzerland.
+
+Again, Germans get a different link, [this one is for myclimate
+Germany](https://germany.myclimate.org/en/contribution_calculators/new?ps=netpositiv_money).
+
+
+
 ## Who should you support?
 
 Of course, that is your decision alone. When we started researching this
@@ -59,7 +87,7 @@ Fund.](https://lets-fund.org/clean-energy/)
 
 So who do these researchers recommend? Most of these recommendations are on the
 effective (but more speculative) side, just because the numbers promise so much
-more bang for the buck here. But we're talking to some classical offsetting
+more bang for the buck here. But we're getting to some classical offsetting
 providers as well.
 
 Probably the most recommended in the research we looked at is [Clean Air Task
@@ -105,26 +133,24 @@ Finally,
 is featured by the Founder's Pledge Fund, and they are focused on advanced
 nuclear power.
 
-## Shut up and take my money!
+On the classical offsetting side, we are starting with
+[myclimate](https://www.myclimate.org/), a renowned Swiss organisation with a
+long track record and broad portfolio. In their own words:
 
-For most people we recommend just donating through [Founder's Pledge
-Climate Change
-Fund](https://app.effectivealtruism.org/funds/partners/founders-pledge-climate-change-fund?utm_source=netpositive.money&utm_medium=site&utm_campaign=bitcoin).
-They currently support CATF, Carbon180 and TerraPraxis. The above is a special
-link that enables them (via Google Analytics) to track the amount of donations
-coming from us so we can then evaluate how much Bitcoiners have contributed.
-These donations should be tax-exempt in the US and UK.
+> CO₂ emissions are currently compensated voluntarily
+> by means of more than 125 climate protection projects in 37 countries.
+> Emissions are reduced there by replacing fossil energy resources with
+> renewable energies, and by implementing local afforestation measures with
+> smallholder farmers and energy-​efficient technologies. myclimate climate
+> protection projects meet the highest standards (Gold Standard, Plan Vivo),
+> which are not only proven to reduce greenhouse gases locally and regionally,
+> but also make a positive contribution to sustainable development.
 
-For Germans (and maybe other Europeans, though they would probably not get a tax
-refund), it's more effective to go through our [special donation
-page](https://www.effektiv-spenden.org/spendenaktionen/?cfd=11dfe) at
-Effektiv-Spenden, which supports CATF, Carbon180 and the ITIF Clean Energy
-Program. 
+Of course, all this certainty comes with a price tag. They calculate about $33/t
+CO2.
 
-If you want to support one of the above charities specifically, please let us
-know so we can try and build the infrastructure to make that easier &mdash; or
-just do it yourself and let us know about it. The same goes if you want a
-different organisation or fund that, say, might be tax-free in your country.
+
+
 
 ## How much should I give?
 
@@ -146,4 +172,19 @@ funds](partners#shutupandtakemymoney!) we recommend. That way you just probably
 increased your positive climate impact 20-fold and still have a safe offset. Now
 you can be reasonably sure that personally, your Bitcoin engagement has been net
 positive for the climate. Of course, we're very happy if you go beyond that.
+
+## Can I donate in Bitcoin? When Lightning, Sir?
+
+At the moment, our recommended organisations don't yet support directly giving
+in Bitcoin. While you're waiting for that, why not throw your filthy fiat at
+them and show them it would be worth their while to get a shot at your precious
+Bitcoin? Or just contact them and ask if you could lend them a hand in getting
+it done!
+
+## Where is my favorite organisation/my country?
+
+If you want to support a different organisation or fund that, say, might be
+tax-free in your country, please let us know so we can try and build the
+infrastructure to make that easier &mdash; or even better, just do it yourself
+and let us know about it.
 
