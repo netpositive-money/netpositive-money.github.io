@@ -40,6 +40,7 @@ import List.Extra exposing (find)
 import Pages.ImagePath exposing (Dimensions)
 import Pages.Internal exposing (Internal)
 import Pages.ImagePath exposing (dimensions)
+import Element exposing (text)
 
 
 manifest : Manifest.Config Pages.PathKey
@@ -75,7 +76,7 @@ main =
         , view = view
         , update = Calculator.update
         , subscriptions = subscriptions
-        , documents = [ markdownDocument ]
+        , documents = [ markdownDocument, htmlDocument ]
         , manifest = manifest
         , canonicalSiteUrl = canonicalSiteUrl
         , onPageChange = Just OnPageChange
@@ -106,7 +107,14 @@ generateFiles siteMetadata =
         ]
 
 
-markdownDocument : { extension : String, metadata : Json.Decode.Decoder Metadata, body : String -> Result error (TableOfContents, (Element Msg)) }
+htmlDocument : { extension: String, metadata : Json.Decode.Decoder Metadata, body : String -> Result error (TableOfContents, (Element Msg)) }
+htmlDocument =
+    { extension = "html"
+    , metadata = Metadata.decoder
+    , body = \htmlbody -> Ok ([], text htmlbody)
+    }
+
+markdownDocument : { extension: String, metadata : Json.Decode.Decoder Metadata, body : String -> Result error (TableOfContents, (Element Msg)) }
 markdownDocument =
     { extension = "md"
     , metadata = Metadata.decoder

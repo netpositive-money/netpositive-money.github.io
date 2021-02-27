@@ -6142,30 +6142,62 @@ var $author$project$Pages$content = _List_fromArray(
 	[
 		_Utils_Tuple2(
 		_List_Nil,
+		{body: $elm$core$Maybe$Nothing, extension: 'html', frontMatter: '{}'}),
+		_Utils_Tuple2(
+		_List_fromArray(
+			['de']),
 		{body: $elm$core$Maybe$Nothing, extension: 'md', frontMatter: '{\"title\":\"Welcome, friend of the earth!\",\"type\":\"page\"}'}),
 		_Utils_Tuple2(
 		_List_fromArray(
-			['about']),
+			['en']),
+		{body: $elm$core$Maybe$Nothing, extension: 'md', frontMatter: '{\"title\":\"Welcome, friend of the earth!\",\"type\":\"page\"}'}),
+		_Utils_Tuple2(
+		_List_fromArray(
+			['de', 'about']),
 		{body: $elm$core$Maybe$Nothing, extension: 'md', frontMatter: '{\"title\":\"About Netpositive.Money\",\"type\":\"page\"}'}),
 		_Utils_Tuple2(
 		_List_fromArray(
-			['calculator']),
+			['de', 'calculator']),
 		{body: $elm$core$Maybe$Nothing, extension: 'md', frontMatter: '{\"title\":\"Bitcoin CO2 Footprint Calculator\",\"type\":\"calculator\"}'}),
 		_Utils_Tuple2(
 		_List_fromArray(
-			['faq']),
+			['de', 'faq']),
 		{body: $elm$core$Maybe$Nothing, extension: 'md', frontMatter: '{\"title\":\"FAQ\",\"type\":\"tocpage\"}'}),
 		_Utils_Tuple2(
 		_List_fromArray(
-			['partners']),
+			['de', 'partners']),
 		{body: $elm$core$Maybe$Nothing, extension: 'md', frontMatter: '{\"title\":\"Recommendations\",\"type\":\"tocpage\"}'}),
 		_Utils_Tuple2(
 		_List_fromArray(
-			['results']),
+			['de', 'results']),
 		{body: $elm$core$Maybe$Nothing, extension: 'md', frontMatter: '{\"title\":\"Results\",\"type\":\"page\"}'}),
 		_Utils_Tuple2(
 		_List_fromArray(
-			['sources']),
+			['de', 'sources']),
+		{body: $elm$core$Maybe$Nothing, extension: 'md', frontMatter: '{\"title\":\"Sources\",\"type\":\"tocpage\"}'}),
+		_Utils_Tuple2(
+		_List_fromArray(
+			['en', 'about']),
+		{body: $elm$core$Maybe$Nothing, extension: 'md', frontMatter: '{\"title\":\"About Netpositive.Money\",\"type\":\"page\"}'}),
+		_Utils_Tuple2(
+		_List_fromArray(
+			['en', 'calculator']),
+		{body: $elm$core$Maybe$Nothing, extension: 'md', frontMatter: '{\"title\":\"Bitcoin CO2 Footprint Calculator\",\"type\":\"calculator\"}'}),
+		_Utils_Tuple2(
+		_List_fromArray(
+			['en', 'faq']),
+		{body: $elm$core$Maybe$Nothing, extension: 'md', frontMatter: '{\"title\":\"FAQ\",\"type\":\"tocpage\"}'}),
+		_Utils_Tuple2(
+		_List_fromArray(
+			['en', 'partners']),
+		{body: $elm$core$Maybe$Nothing, extension: 'md', frontMatter: '{\"title\":\"Recommendations\",\"type\":\"tocpage\"}'}),
+		_Utils_Tuple2(
+		_List_fromArray(
+			['en', 'results']),
+		{body: $elm$core$Maybe$Nothing, extension: 'md', frontMatter: '{\"title\":\"Results\",\"type\":\"page\"}'}),
+		_Utils_Tuple2(
+		_List_fromArray(
+			['en', 'sources']),
 		{body: $elm$core$Maybe$Nothing, extension: 'md', frontMatter: '{\"title\":\"Sources\",\"type\":\"tocpage\"}'})
 	]);
 var $elm$json$Json$Decode$value = _Json_decodeValue;
@@ -6214,23 +6246,47 @@ var $author$project$Pages$allPages = _List_fromArray(
 	[
 		$author$project$Pages$buildPage(
 		_List_fromArray(
-			['about'])),
+			['de', 'about'])),
 		$author$project$Pages$buildPage(
 		_List_fromArray(
-			['calculator'])),
+			['de', 'calculator'])),
 		$author$project$Pages$buildPage(
 		_List_fromArray(
-			['faq'])),
-		$author$project$Pages$buildPage(_List_Nil),
+			['de', 'faq'])),
 		$author$project$Pages$buildPage(
 		_List_fromArray(
-			['partners'])),
+			['de'])),
 		$author$project$Pages$buildPage(
 		_List_fromArray(
-			['results'])),
+			['de', 'partners'])),
 		$author$project$Pages$buildPage(
 		_List_fromArray(
-			['sources']))
+			['de', 'results'])),
+		$author$project$Pages$buildPage(
+		_List_fromArray(
+			['de', 'sources'])),
+		$author$project$Pages$buildPage(
+		_List_fromArray(
+			['en', 'about'])),
+		$author$project$Pages$buildPage(
+		_List_fromArray(
+			['en', 'calculator'])),
+		$author$project$Pages$buildPage(
+		_List_fromArray(
+			['en', 'faq'])),
+		$author$project$Pages$buildPage(
+		_List_fromArray(
+			['en'])),
+		$author$project$Pages$buildPage(
+		_List_fromArray(
+			['en', 'partners'])),
+		$author$project$Pages$buildPage(
+		_List_fromArray(
+			['en', 'results'])),
+		$author$project$Pages$buildPage(
+		_List_fromArray(
+			['en', 'sources'])),
+		$author$project$Pages$buildPage(_List_Nil)
 	]);
 var $dillonkearns$elm_pages$Pages$Directory$Directory = F3(
 	function (a, b, c) {
@@ -6419,56 +6475,120 @@ var $author$project$Pages$directoryWithIndex = function (path) {
 	return A3($dillonkearns$elm_pages$Pages$Directory$withIndex, $author$project$Pages$PathKey, $author$project$Pages$allPages, path);
 };
 var $author$project$Pages$pages = {
-	about: {
+	de: {
+		about: {
+			directory: $author$project$Pages$directoryWithIndex(
+				_List_fromArray(
+					['de', 'about'])),
+			index: $author$project$Pages$buildPage(
+				_List_fromArray(
+					['de', 'about']))
+		},
+		calculator: {
+			directory: $author$project$Pages$directoryWithIndex(
+				_List_fromArray(
+					['de', 'calculator'])),
+			index: $author$project$Pages$buildPage(
+				_List_fromArray(
+					['de', 'calculator']))
+		},
 		directory: $author$project$Pages$directoryWithIndex(
 			_List_fromArray(
-				['about'])),
+				['de'])),
+		faq: {
+			directory: $author$project$Pages$directoryWithIndex(
+				_List_fromArray(
+					['de', 'faq'])),
+			index: $author$project$Pages$buildPage(
+				_List_fromArray(
+					['de', 'faq']))
+		},
 		index: $author$project$Pages$buildPage(
 			_List_fromArray(
-				['about']))
-	},
-	calculator: {
-		directory: $author$project$Pages$directoryWithIndex(
-			_List_fromArray(
-				['calculator'])),
-		index: $author$project$Pages$buildPage(
-			_List_fromArray(
-				['calculator']))
+				['de'])),
+		partners: {
+			directory: $author$project$Pages$directoryWithIndex(
+				_List_fromArray(
+					['de', 'partners'])),
+			index: $author$project$Pages$buildPage(
+				_List_fromArray(
+					['de', 'partners']))
+		},
+		results: {
+			directory: $author$project$Pages$directoryWithIndex(
+				_List_fromArray(
+					['de', 'results'])),
+			index: $author$project$Pages$buildPage(
+				_List_fromArray(
+					['de', 'results']))
+		},
+		sources: {
+			directory: $author$project$Pages$directoryWithIndex(
+				_List_fromArray(
+					['de', 'sources'])),
+			index: $author$project$Pages$buildPage(
+				_List_fromArray(
+					['de', 'sources']))
+		}
 	},
 	directory: $author$project$Pages$directoryWithIndex(_List_Nil),
-	faq: {
+	en: {
+		about: {
+			directory: $author$project$Pages$directoryWithIndex(
+				_List_fromArray(
+					['en', 'about'])),
+			index: $author$project$Pages$buildPage(
+				_List_fromArray(
+					['en', 'about']))
+		},
+		calculator: {
+			directory: $author$project$Pages$directoryWithIndex(
+				_List_fromArray(
+					['en', 'calculator'])),
+			index: $author$project$Pages$buildPage(
+				_List_fromArray(
+					['en', 'calculator']))
+		},
 		directory: $author$project$Pages$directoryWithIndex(
 			_List_fromArray(
-				['faq'])),
+				['en'])),
+		faq: {
+			directory: $author$project$Pages$directoryWithIndex(
+				_List_fromArray(
+					['en', 'faq'])),
+			index: $author$project$Pages$buildPage(
+				_List_fromArray(
+					['en', 'faq']))
+		},
 		index: $author$project$Pages$buildPage(
 			_List_fromArray(
-				['faq']))
+				['en'])),
+		partners: {
+			directory: $author$project$Pages$directoryWithIndex(
+				_List_fromArray(
+					['en', 'partners'])),
+			index: $author$project$Pages$buildPage(
+				_List_fromArray(
+					['en', 'partners']))
+		},
+		results: {
+			directory: $author$project$Pages$directoryWithIndex(
+				_List_fromArray(
+					['en', 'results'])),
+			index: $author$project$Pages$buildPage(
+				_List_fromArray(
+					['en', 'results']))
+		},
+		sources: {
+			directory: $author$project$Pages$directoryWithIndex(
+				_List_fromArray(
+					['en', 'sources'])),
+			index: $author$project$Pages$buildPage(
+				_List_fromArray(
+					['en', 'sources']))
+		}
 	},
-	index: $author$project$Pages$buildPage(_List_Nil),
-	partners: {
-		directory: $author$project$Pages$directoryWithIndex(
-			_List_fromArray(
-				['partners'])),
-		index: $author$project$Pages$buildPage(
-			_List_fromArray(
-				['partners']))
-	},
-	results: {
-		directory: $author$project$Pages$directoryWithIndex(
-			_List_fromArray(
-				['results'])),
-		index: $author$project$Pages$buildPage(
-			_List_fromArray(
-				['results']))
-	},
-	sources: {
-		directory: $author$project$Pages$directoryWithIndex(
-			_List_fromArray(
-				['sources'])),
-		index: $author$project$Pages$buildPage(
-			_List_fromArray(
-				['sources']))
-	}
+	index: $author$project$Pages$buildPage(_List_Nil)
 };
 var $avh4$elm_color$Color$RgbaSpace = F4(
 	function (a, b, c, d) {
@@ -6487,7 +6607,7 @@ var $author$project$Main$manifest = {
 	orientation: $dillonkearns$elm_pages$Pages$Manifest$Portrait,
 	shortName: $elm$core$Maybe$Just('netpositive.money'),
 	sourceIcon: $author$project$Pages$images.icons8LargeTree48,
-	startUrl: $author$project$Pages$pages.index,
+	startUrl: $author$project$Pages$pages.en.index,
 	themeColor: $elm$core$Maybe$Just($avh4$elm_color$Color$white)
 };
 var $dillonkearns$elm_markdown$Markdown$Block$headingLevelToInt = function (headingLevel) {
@@ -36404,6 +36524,37 @@ var $author$project$Layout$logoLink = A2(
 				])),
 		url: '/'
 	});
+var $author$project$Layout$De = {$: 'De'};
+var $author$project$Layout$En = {$: 'En'};
+var $dillonkearns$elm_pages$Pages$PagePath$toPath = function (path) {
+	if (path.$ === 'Internal') {
+		var rawPath = path.a;
+		return rawPath;
+	} else {
+		var url = path.a;
+		return _List_Nil;
+	}
+};
+var $author$project$Layout$currentLang = function (key) {
+	var _v0 = $elm$core$List$head(
+		$dillonkearns$elm_pages$Pages$PagePath$toPath(key));
+	if ((_v0.$ === 'Just') && (_v0.a === 'de')) {
+		return $author$project$Layout$De;
+	} else {
+		return $author$project$Layout$En;
+	}
+};
+var $author$project$Layout$currentLangSelector = function (s) {
+	if (s.$ === 'En') {
+		return function ($) {
+			return $.en;
+		};
+	} else {
+		return function ($) {
+			return $.de;
+		};
+	}
+};
 var $mdgriffith$elm_ui$Element$image = F2(
 	function (attrs, _v0) {
 		var src = _v0.src;
@@ -36547,16 +36698,53 @@ var $author$project$Layout$highlightableLink = F3(
 					$dillonkearns$elm_pages$Pages$Directory$indexPath(linkDirectory))
 			});
 	});
+var $author$project$Layout$otherLang = function (l) {
+	if (l.$ === 'De') {
+		return 'en';
+	} else {
+		return '';
+	}
+};
+var $author$project$Layout$languageLink = function (key) {
+	var l = $author$project$Layout$currentLang(key);
+	return A2(
+		$mdgriffith$elm_ui$Element$link,
+		_List_Nil,
+		{
+			label: $mdgriffith$elm_ui$Element$text(
+				function () {
+					if (l.$ === 'En') {
+						return 'Deutsch';
+					} else {
+						return 'English';
+					}
+				}()),
+			url: A2(
+				$elm$core$String$join,
+				'/',
+				A2(
+					$elm$core$List$cons,
+					$author$project$Layout$otherLang(l),
+					A2(
+						$elm$core$List$drop,
+						1,
+						$dillonkearns$elm_pages$Pages$PagePath$toPath(key))))
+		});
+};
 var $author$project$Layout$navbarLinks = function (currentPath) {
+	var lang = $author$project$Layout$currentLangSelector(
+		$author$project$Layout$currentLang(currentPath));
+	var prefix = lang($author$project$Pages$pages);
 	return _List_fromArray(
 		[
-			A3($author$project$Layout$highlightableLink, currentPath, $author$project$Pages$pages.about.directory, 'about'),
-			A3($author$project$Layout$highlightableLink, currentPath, $author$project$Pages$pages.faq.directory, 'FAQ'),
-			A3($author$project$Layout$highlightableLink, currentPath, $author$project$Pages$pages.calculator.directory, 'calculator'),
-			A3($author$project$Layout$highlightableLink, currentPath, $author$project$Pages$pages.partners.directory, 'recommendations'),
-			A3($author$project$Layout$highlightableLink, currentPath, $author$project$Pages$pages.sources.directory, 'sources'),
-			A3($author$project$Layout$highlightableLink, currentPath, $author$project$Pages$pages.results.directory, 'results'),
-			$author$project$Layout$githubRepoLink
+			A3($author$project$Layout$highlightableLink, currentPath, prefix.about.directory, 'about'),
+			A3($author$project$Layout$highlightableLink, currentPath, prefix.faq.directory, 'FAQ'),
+			A3($author$project$Layout$highlightableLink, currentPath, prefix.calculator.directory, 'calculator'),
+			A3($author$project$Layout$highlightableLink, currentPath, prefix.partners.directory, 'recommendations'),
+			A3($author$project$Layout$highlightableLink, currentPath, prefix.sources.directory, 'sources'),
+			A3($author$project$Layout$highlightableLink, currentPath, prefix.results.directory, 'results'),
+			$author$project$Layout$githubRepoLink,
+			$author$project$Layout$languageLink(currentPath)
 		]);
 };
 var $mdgriffith$elm_ui$Internal$Model$Navigation = {$: 'Navigation'};

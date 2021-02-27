@@ -20,6 +20,7 @@ import Html exposing (text)
 import Element exposing (html)
 import Element exposing (paragraph)
 import Html.Attributes exposing (style)
+import Svg.Attributes exposing (offset)
 
 maxWidth : number
 maxWidth = 1000
@@ -188,11 +189,41 @@ logoLinkMobile =
 
 navbarLinks : PagePath Pages.PathKey -> List (Element Msg)
 navbarLinks currentPath =
-    [ highlightableLink currentPath Pages.pages.about.directory "about"
-    , highlightableLink currentPath Pages.pages.faq.directory "FAQ"
-    , highlightableLink currentPath Pages.pages.calculator.directory "calculator"
-    , highlightableLink currentPath Pages.pages.partners.directory "recommendations"
-    , highlightableLink currentPath Pages.pages.sources.directory "sources"
-    , highlightableLink currentPath Pages.pages.results.directory "results"
-    , githubRepoLink
-    ]
+    case currentLang currentPath of
+        En ->
+            [ highlightableLink currentPath Pages.pages.about.directory "about"
+            , highlightableLink currentPath Pages.pages.faq.directory "FAQ"
+            , highlightableLink currentPath Pages.pages.calculator.directory "calculator"
+            , highlightableLink currentPath Pages.pages.partners.directory "recommendations"
+            , highlightableLink currentPath Pages.pages.sources.directory "sources"
+            , highlightableLink currentPath Pages.pages.results.directory "results"
+            , githubRepoLink
+            , Element.link [] {
+                      label = Element.text "DE"
+                  ,   url = String.join "/" ("de"::(List.drop 1 <| PagePath.toPath currentPath))
+                  }
+            ]
+        De ->
+            [ highlightableLink currentPath Pages.pages.de.about.directory "Über uns"
+            , highlightableLink currentPath Pages.pages.de.faq.directory "Fragen"
+            , highlightableLink currentPath Pages.pages.de.calculator.directory "Rechner"
+            , highlightableLink currentPath Pages.pages.de.partners.directory "Empfehlungen"
+            , highlightableLink currentPath Pages.pages.de.sources.directory "Quellen"
+            , highlightableLink currentPath Pages.pages.de.results.directory "Ergebnisse"
+            , githubRepoLink
+            , Element.link [] {
+                      label = Element.text "EN"
+                  ,   url = String.join "/" (List.drop 1 <| PagePath.toPath currentPath)
+                  }
+            ]
+
+
+
+currentLang : PagePath Pages.PathKey -> Lang
+currentLang key = case List.head (PagePath.toPath key) of
+                      Just "de" -> De
+                      _         -> En
+
+
+
+type Lang = En | De
