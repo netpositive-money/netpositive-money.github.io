@@ -406,4 +406,4 @@ gatherHeadings blocks =
 rawTextToId rawText =
     rawText
         |> String.toLower
-        |> String.replace " " ""
+        |> String.filter Char.isAlphaNum
