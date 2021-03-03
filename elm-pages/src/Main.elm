@@ -333,34 +333,35 @@ headingRenderer = {
             [id <| rawTextToId rawText] children
      , image =
         \imageInfo ->
-            case imageInfo.title of
-                Just title ->
-                    Html.img
-                        [ Attr.src imageInfo.src
-                        , Attr.alt imageInfo.alt
-                        , Attr.title title
-                        , Attr.style "object-fit" "contain"
-                        , Attr.style "width" "100%"
-                        , Attr.style "height" "auto"
-                        , srcset (srcsetstring imageInfo.src)
-                        ]
-                        []
-
-                Nothing ->
-                    Html.img
-                        [ Attr.src imageInfo.src
-                        , Attr.alt imageInfo.alt
-                        , Attr.style "object-fit" "contain"
-                        , Attr.style "width" "100%"
-                        , Attr.style "height" "auto"
-                        , srcset (srcsetstring imageInfo.src)
-                        ]
-                        []
-
+            Html.img (
+             [ Attr.src imageInfo.src
+             , Attr.alt imageInfo.alt
+             , srcset (srcsetstring imageInfo.src)
+             ]
+                 ++
+                 (case imageInfo.title of
+                      Just title -> [Attr.title title]
+                      Nothing -> [])
+                 ++ (imageDimensions imageInfo.src)
+            ) []
 
     }
 
 -- builds a srcset from images that agree in filename until "_"
+
+
+imageDimensions = findImages >>
+                  List.head >>
+                  Maybe.andThen dimensions >>
+                  Maybe.map (\d ->
+                        [ Attr.style "width" (String.fromInt d.width)
+                        , Attr.style "height" (String.fromInt d.height)]
+                            ) >>
+                  Maybe.withDefault
+                        [ Attr.style "width" "100%"
+                        , Attr.style "height" "auto"]
+
+
 
 srcsetstring = findImages >>
                List.map (\img -> Pages.ImagePath.toString img ++ " " ++

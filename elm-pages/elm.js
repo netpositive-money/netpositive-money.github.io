@@ -5485,11 +5485,15 @@ var $author$project$Main$generateFiles = function (siteMetadata) {
 					siteMetadata))
 			]));
 };
-var $author$project$Shared$SetScreenSize = F2(
-	function (a, b) {
-		return {$: 'SetScreenSize', a: a, b: b};
-	});
-var $author$project$Calculator$emptySelection = {end: $elm$core$Maybe$Nothing, start: $elm$core$Maybe$Nothing};
+var $author$project$Metadata$Calculator = function (a) {
+	return {$: 'Calculator', a: a};
+};
+var $author$project$Metadata$Page = function (a) {
+	return {$: 'Page', a: a};
+};
+var $author$project$Metadata$TocPage = function (a) {
+	return {$: 'TocPage', a: a};
+};
 var $elm$core$Result$Err = function (a) {
 	return {$: 'Err', a: a};
 };
@@ -5831,7 +5835,65 @@ var $elm$core$Result$isOk = function (result) {
 		return false;
 	}
 };
+var $elm$json$Json$Decode$andThen = _Json_andThen;
+var $elm$json$Json$Decode$fail = _Json_fail;
+var $elm$json$Json$Decode$field = _Json_decodeField;
 var $elm$json$Json$Decode$map = _Json_map1;
+var $elm$json$Json$Decode$string = _Json_decodeString;
+var $author$project$Metadata$decoder = A2(
+	$elm$json$Json$Decode$andThen,
+	function (pageType) {
+		switch (pageType) {
+			case 'page':
+				return A2(
+					$elm$json$Json$Decode$map,
+					function (title) {
+						return $author$project$Metadata$Page(
+							{title: title});
+					},
+					A2($elm$json$Json$Decode$field, 'title', $elm$json$Json$Decode$string));
+			case 'calculator':
+				return A2(
+					$elm$json$Json$Decode$map,
+					function (title) {
+						return $author$project$Metadata$Calculator(
+							{title: title});
+					},
+					A2($elm$json$Json$Decode$field, 'title', $elm$json$Json$Decode$string));
+			case 'tocpage':
+				return A2(
+					$elm$json$Json$Decode$map,
+					function (title) {
+						return $author$project$Metadata$TocPage(
+							{title: title});
+					},
+					A2($elm$json$Json$Decode$field, 'title', $elm$json$Json$Decode$string));
+			default:
+				return $elm$json$Json$Decode$fail('Unexpected page type ' + pageType);
+		}
+	},
+	A2($elm$json$Json$Decode$field, 'type', $elm$json$Json$Decode$string));
+var $mdgriffith$elm_ui$Internal$Model$Text = function (a) {
+	return {$: 'Text', a: a};
+};
+var $mdgriffith$elm_ui$Element$text = function (content) {
+	return $mdgriffith$elm_ui$Internal$Model$Text(content);
+};
+var $author$project$Main$htmlDocument = {
+	body: function (htmlbody) {
+		return $elm$core$Result$Ok(
+			_Utils_Tuple2(
+				_List_Nil,
+				$mdgriffith$elm_ui$Element$text(htmlbody)));
+	},
+	extension: 'html',
+	metadata: $author$project$Metadata$decoder
+};
+var $author$project$Shared$SetScreenSize = F2(
+	function (a, b) {
+		return {$: 'SetScreenSize', a: a, b: b};
+	});
+var $author$project$Calculator$emptySelection = {end: $elm$core$Maybe$Nothing, start: $elm$core$Maybe$Nothing};
 var $elm$json$Json$Decode$map2 = _Json_map2;
 var $elm$json$Json$Decode$succeed = _Json_succeed;
 var $elm$virtual_dom$VirtualDom$toHandlerInt = function (handler) {
@@ -6142,15 +6204,35 @@ var $author$project$Pages$content = _List_fromArray(
 	[
 		_Utils_Tuple2(
 		_List_Nil,
-		{body: $elm$core$Maybe$Nothing, extension: 'html', frontMatter: '{}'}),
+		{body: $elm$core$Maybe$Nothing, extension: 'md', frontMatter: '{\"title\":\"Welcome, friend of the earth!\",\"type\":\"page\"}'}),
+		_Utils_Tuple2(
+		_List_fromArray(
+			['about']),
+		{body: $elm$core$Maybe$Nothing, extension: 'md', frontMatter: '{\"title\":\"About Netpositive.Money\",\"type\":\"page\"}'}),
+		_Utils_Tuple2(
+		_List_fromArray(
+			['calculator']),
+		{body: $elm$core$Maybe$Nothing, extension: 'md', frontMatter: '{\"title\":\"Bitcoin CO2 Footprint Calculator\",\"type\":\"calculator\"}'}),
 		_Utils_Tuple2(
 		_List_fromArray(
 			['de']),
 		{body: $elm$core$Maybe$Nothing, extension: 'md', frontMatter: '{\"title\":\"Welcome, friend of the earth!\",\"type\":\"page\"}'}),
 		_Utils_Tuple2(
 		_List_fromArray(
-			['en']),
-		{body: $elm$core$Maybe$Nothing, extension: 'md', frontMatter: '{\"title\":\"Welcome, friend of the earth!\",\"type\":\"page\"}'}),
+			['faq']),
+		{body: $elm$core$Maybe$Nothing, extension: 'md', frontMatter: '{\"title\":\"FAQ\",\"type\":\"tocpage\"}'}),
+		_Utils_Tuple2(
+		_List_fromArray(
+			['partners']),
+		{body: $elm$core$Maybe$Nothing, extension: 'md', frontMatter: '{\"title\":\"Recommendations\",\"type\":\"tocpage\"}'}),
+		_Utils_Tuple2(
+		_List_fromArray(
+			['results']),
+		{body: $elm$core$Maybe$Nothing, extension: 'md', frontMatter: '{\"title\":\"Results\",\"type\":\"page\"}'}),
+		_Utils_Tuple2(
+		_List_fromArray(
+			['sources']),
+		{body: $elm$core$Maybe$Nothing, extension: 'md', frontMatter: '{\"title\":\"Sources\",\"type\":\"tocpage\"}'}),
 		_Utils_Tuple2(
 		_List_fromArray(
 			['de', 'about']),
@@ -6174,30 +6256,6 @@ var $author$project$Pages$content = _List_fromArray(
 		_Utils_Tuple2(
 		_List_fromArray(
 			['de', 'sources']),
-		{body: $elm$core$Maybe$Nothing, extension: 'md', frontMatter: '{\"title\":\"Sources\",\"type\":\"tocpage\"}'}),
-		_Utils_Tuple2(
-		_List_fromArray(
-			['en', 'about']),
-		{body: $elm$core$Maybe$Nothing, extension: 'md', frontMatter: '{\"title\":\"About Netpositive.Money\",\"type\":\"page\"}'}),
-		_Utils_Tuple2(
-		_List_fromArray(
-			['en', 'calculator']),
-		{body: $elm$core$Maybe$Nothing, extension: 'md', frontMatter: '{\"title\":\"Bitcoin CO2 Footprint Calculator\",\"type\":\"calculator\"}'}),
-		_Utils_Tuple2(
-		_List_fromArray(
-			['en', 'faq']),
-		{body: $elm$core$Maybe$Nothing, extension: 'md', frontMatter: '{\"title\":\"FAQ\",\"type\":\"tocpage\"}'}),
-		_Utils_Tuple2(
-		_List_fromArray(
-			['en', 'partners']),
-		{body: $elm$core$Maybe$Nothing, extension: 'md', frontMatter: '{\"title\":\"Recommendations\",\"type\":\"tocpage\"}'}),
-		_Utils_Tuple2(
-		_List_fromArray(
-			['en', 'results']),
-		{body: $elm$core$Maybe$Nothing, extension: 'md', frontMatter: '{\"title\":\"Results\",\"type\":\"page\"}'}),
-		_Utils_Tuple2(
-		_List_fromArray(
-			['en', 'sources']),
 		{body: $elm$core$Maybe$Nothing, extension: 'md', frontMatter: '{\"title\":\"Sources\",\"type\":\"tocpage\"}'})
 	]);
 var $elm$json$Json$Decode$value = _Json_decodeValue;
@@ -6246,6 +6304,12 @@ var $author$project$Pages$allPages = _List_fromArray(
 	[
 		$author$project$Pages$buildPage(
 		_List_fromArray(
+			['about'])),
+		$author$project$Pages$buildPage(
+		_List_fromArray(
+			['calculator'])),
+		$author$project$Pages$buildPage(
+		_List_fromArray(
 			['de', 'about'])),
 		$author$project$Pages$buildPage(
 		_List_fromArray(
@@ -6267,26 +6331,17 @@ var $author$project$Pages$allPages = _List_fromArray(
 			['de', 'sources'])),
 		$author$project$Pages$buildPage(
 		_List_fromArray(
-			['en', 'about'])),
+			['faq'])),
+		$author$project$Pages$buildPage(_List_Nil),
 		$author$project$Pages$buildPage(
 		_List_fromArray(
-			['en', 'calculator'])),
+			['partners'])),
 		$author$project$Pages$buildPage(
 		_List_fromArray(
-			['en', 'faq'])),
+			['results'])),
 		$author$project$Pages$buildPage(
 		_List_fromArray(
-			['en'])),
-		$author$project$Pages$buildPage(
-		_List_fromArray(
-			['en', 'partners'])),
-		$author$project$Pages$buildPage(
-		_List_fromArray(
-			['en', 'results'])),
-		$author$project$Pages$buildPage(
-		_List_fromArray(
-			['en', 'sources'])),
-		$author$project$Pages$buildPage(_List_Nil)
+			['sources']))
 	]);
 var $dillonkearns$elm_pages$Pages$Directory$Directory = F3(
 	function (a, b, c) {
@@ -6475,6 +6530,22 @@ var $author$project$Pages$directoryWithIndex = function (path) {
 	return A3($dillonkearns$elm_pages$Pages$Directory$withIndex, $author$project$Pages$PathKey, $author$project$Pages$allPages, path);
 };
 var $author$project$Pages$pages = {
+	about: {
+		directory: $author$project$Pages$directoryWithIndex(
+			_List_fromArray(
+				['about'])),
+		index: $author$project$Pages$buildPage(
+			_List_fromArray(
+				['about']))
+	},
+	calculator: {
+		directory: $author$project$Pages$directoryWithIndex(
+			_List_fromArray(
+				['calculator'])),
+		index: $author$project$Pages$buildPage(
+			_List_fromArray(
+				['calculator']))
+	},
 	de: {
 		about: {
 			directory: $author$project$Pages$directoryWithIndex(
@@ -6532,63 +6603,39 @@ var $author$project$Pages$pages = {
 		}
 	},
 	directory: $author$project$Pages$directoryWithIndex(_List_Nil),
-	en: {
-		about: {
-			directory: $author$project$Pages$directoryWithIndex(
-				_List_fromArray(
-					['en', 'about'])),
-			index: $author$project$Pages$buildPage(
-				_List_fromArray(
-					['en', 'about']))
-		},
-		calculator: {
-			directory: $author$project$Pages$directoryWithIndex(
-				_List_fromArray(
-					['en', 'calculator'])),
-			index: $author$project$Pages$buildPage(
-				_List_fromArray(
-					['en', 'calculator']))
-		},
+	faq: {
 		directory: $author$project$Pages$directoryWithIndex(
 			_List_fromArray(
-				['en'])),
-		faq: {
-			directory: $author$project$Pages$directoryWithIndex(
-				_List_fromArray(
-					['en', 'faq'])),
-			index: $author$project$Pages$buildPage(
-				_List_fromArray(
-					['en', 'faq']))
-		},
+				['faq'])),
 		index: $author$project$Pages$buildPage(
 			_List_fromArray(
-				['en'])),
-		partners: {
-			directory: $author$project$Pages$directoryWithIndex(
-				_List_fromArray(
-					['en', 'partners'])),
-			index: $author$project$Pages$buildPage(
-				_List_fromArray(
-					['en', 'partners']))
-		},
-		results: {
-			directory: $author$project$Pages$directoryWithIndex(
-				_List_fromArray(
-					['en', 'results'])),
-			index: $author$project$Pages$buildPage(
-				_List_fromArray(
-					['en', 'results']))
-		},
-		sources: {
-			directory: $author$project$Pages$directoryWithIndex(
-				_List_fromArray(
-					['en', 'sources'])),
-			index: $author$project$Pages$buildPage(
-				_List_fromArray(
-					['en', 'sources']))
-		}
+				['faq']))
 	},
-	index: $author$project$Pages$buildPage(_List_Nil)
+	index: $author$project$Pages$buildPage(_List_Nil),
+	partners: {
+		directory: $author$project$Pages$directoryWithIndex(
+			_List_fromArray(
+				['partners'])),
+		index: $author$project$Pages$buildPage(
+			_List_fromArray(
+				['partners']))
+	},
+	results: {
+		directory: $author$project$Pages$directoryWithIndex(
+			_List_fromArray(
+				['results'])),
+		index: $author$project$Pages$buildPage(
+			_List_fromArray(
+				['results']))
+	},
+	sources: {
+		directory: $author$project$Pages$directoryWithIndex(
+			_List_fromArray(
+				['sources'])),
+		index: $author$project$Pages$buildPage(
+			_List_fromArray(
+				['sources']))
+	}
 };
 var $avh4$elm_color$Color$RgbaSpace = F4(
 	function (a, b, c, d) {
@@ -6607,7 +6654,7 @@ var $author$project$Main$manifest = {
 	orientation: $dillonkearns$elm_pages$Pages$Manifest$Portrait,
 	shortName: $elm$core$Maybe$Just('netpositive.money'),
 	sourceIcon: $author$project$Pages$images.icons8LargeTree48,
-	startUrl: $author$project$Pages$pages.en.index,
+	startUrl: $author$project$Pages$pages.index,
 	themeColor: $elm$core$Maybe$Just($avh4$elm_color$Color$white)
 };
 var $dillonkearns$elm_markdown$Markdown$Block$headingLevelToInt = function (headingLevel) {
@@ -6643,19 +6690,12 @@ var $author$project$Main$gatherHeadings = function (blocks) {
 		},
 		blocks);
 };
-var $elm$core$String$replace = F3(
-	function (before, after, string) {
-		return A2(
-			$elm$core$String$join,
-			after,
-			A2($elm$core$String$split, before, string));
-	});
+var $elm$core$String$filter = _String_filter;
 var $elm$core$String$toLower = _String_toLower;
 var $author$project$Main$rawTextToId = function (rawText) {
-	return A3(
-		$elm$core$String$replace,
-		' ',
-		'',
+	return A2(
+		$elm$core$String$filter,
+		$elm$core$Char$isAlphaNum,
 		$elm$core$String$toLower(rawText));
 };
 var $elm$core$Tuple$second = function (_v0) {
@@ -6928,52 +6968,6 @@ var $author$project$Main$buildToc = function (blocks) {
 		},
 		A2($elm$core$List$map, $elm$core$Tuple$second, headings));
 };
-var $author$project$Metadata$Calculator = function (a) {
-	return {$: 'Calculator', a: a};
-};
-var $author$project$Metadata$Page = function (a) {
-	return {$: 'Page', a: a};
-};
-var $author$project$Metadata$TocPage = function (a) {
-	return {$: 'TocPage', a: a};
-};
-var $elm$json$Json$Decode$andThen = _Json_andThen;
-var $elm$json$Json$Decode$fail = _Json_fail;
-var $elm$json$Json$Decode$field = _Json_decodeField;
-var $elm$json$Json$Decode$string = _Json_decodeString;
-var $author$project$Metadata$decoder = A2(
-	$elm$json$Json$Decode$andThen,
-	function (pageType) {
-		switch (pageType) {
-			case 'page':
-				return A2(
-					$elm$json$Json$Decode$map,
-					function (title) {
-						return $author$project$Metadata$Page(
-							{title: title});
-					},
-					A2($elm$json$Json$Decode$field, 'title', $elm$json$Json$Decode$string));
-			case 'calculator':
-				return A2(
-					$elm$json$Json$Decode$map,
-					function (title) {
-						return $author$project$Metadata$Calculator(
-							{title: title});
-					},
-					A2($elm$json$Json$Decode$field, 'title', $elm$json$Json$Decode$string));
-			case 'tocpage':
-				return A2(
-					$elm$json$Json$Decode$map,
-					function (title) {
-						return $author$project$Metadata$TocPage(
-							{title: title});
-					},
-					A2($elm$json$Json$Decode$field, 'title', $elm$json$Json$Decode$string));
-			default:
-				return $elm$json$Json$Decode$fail('Unexpected page type ' + pageType);
-		}
-	},
-	A2($elm$json$Json$Decode$field, 'type', $elm$json$Json$Decode$string));
 var $elm$html$Html$div = _VirtualDom_node('div');
 var $mdgriffith$elm_ui$Internal$Model$Fill = function (a) {
 	return {$: 'Fill', a: a};
@@ -7395,20 +7389,15 @@ var $dillonkearns$elm_markdown$Markdown$Renderer$defaultHtmlRenderer = {
 	}
 };
 var $elm$html$Html$Attributes$id = $elm$html$Html$Attributes$stringProperty('id');
-var $elm$virtual_dom$VirtualDom$property = F2(
-	function (key, value) {
-		return A2(
-			_VirtualDom_property,
-			_VirtualDom_noInnerHtmlOrFormAction(key),
-			_VirtualDom_noJavaScriptOrHtmlUri(value));
+var $elm$core$Maybe$andThen = F2(
+	function (callback, maybeValue) {
+		if (maybeValue.$ === 'Just') {
+			var value = maybeValue.a;
+			return callback(value);
+		} else {
+			return $elm$core$Maybe$Nothing;
+		}
 	});
-var $elm$html$Html$Attributes$property = $elm$virtual_dom$VirtualDom$property;
-var $author$project$Main$srcset = function (set) {
-	return A2(
-		$elm$html$Html$Attributes$property,
-		'srcset',
-		$elm$json$Json$Encode$string(set));
-};
 var $elm$core$Basics$composeR = F3(
 	function (f, g, x) {
 		return g(
@@ -7624,6 +7613,53 @@ var $author$project$Main$findImages = function (src) {
 		},
 		$author$project$Pages$allImages);
 };
+var $elm$virtual_dom$VirtualDom$style = _VirtualDom_style;
+var $elm$html$Html$Attributes$style = $elm$virtual_dom$VirtualDom$style;
+var $author$project$Main$imageDimensions = A2(
+	$elm$core$Basics$composeR,
+	$author$project$Main$findImages,
+	A2(
+		$elm$core$Basics$composeR,
+		$elm$core$List$head,
+		A2(
+			$elm$core$Basics$composeR,
+			$elm$core$Maybe$andThen($dillonkearns$elm_pages$Pages$ImagePath$dimensions),
+			A2(
+				$elm$core$Basics$composeR,
+				$elm$core$Maybe$map(
+					function (d) {
+						return _List_fromArray(
+							[
+								A2(
+								$elm$html$Html$Attributes$style,
+								'width',
+								$elm$core$String$fromInt(d.width)),
+								A2(
+								$elm$html$Html$Attributes$style,
+								'height',
+								$elm$core$String$fromInt(d.height))
+							]);
+					}),
+				$elm$core$Maybe$withDefault(
+					_List_fromArray(
+						[
+							A2($elm$html$Html$Attributes$style, 'width', '100%'),
+							A2($elm$html$Html$Attributes$style, 'height', 'auto')
+						]))))));
+var $elm$virtual_dom$VirtualDom$property = F2(
+	function (key, value) {
+		return A2(
+			_VirtualDom_property,
+			_VirtualDom_noInnerHtmlOrFormAction(key),
+			_VirtualDom_noJavaScriptOrHtmlUri(value));
+	});
+var $elm$html$Html$Attributes$property = $elm$virtual_dom$VirtualDom$property;
+var $author$project$Main$srcset = function (set) {
+	return A2(
+		$elm$html$Html$Attributes$property,
+		'srcset',
+		$elm$json$Json$Encode$string(set));
+};
 var $author$project$Main$srcsetstring = A2(
 	$elm$core$Basics$composeR,
 	$author$project$Main$findImages,
@@ -7642,8 +7678,6 @@ var $author$project$Main$srcsetstring = A2(
 				}());
 			}),
 		$elm$core$String$join(',')));
-var $elm$virtual_dom$VirtualDom$style = _VirtualDom_style;
-var $elm$html$Html$Attributes$style = $elm$virtual_dom$VirtualDom$style;
 var $author$project$Main$headingRenderer = _Utils_update(
 	$dillonkearns$elm_markdown$Markdown$Renderer$defaultHtmlRenderer,
 	{
@@ -7676,38 +7710,31 @@ var $author$project$Main$headingRenderer = _Utils_update(
 				children);
 		},
 		image: function (imageInfo) {
-			var _v2 = imageInfo.title;
-			if (_v2.$ === 'Just') {
-				var title = _v2.a;
-				return A2(
-					$elm$html$Html$img,
+			return A2(
+				$elm$html$Html$img,
+				_Utils_ap(
 					_List_fromArray(
 						[
 							$elm$html$Html$Attributes$src(imageInfo.src),
 							$elm$html$Html$Attributes$alt(imageInfo.alt),
-							$elm$html$Html$Attributes$title(title),
-							A2($elm$html$Html$Attributes$style, 'object-fit', 'contain'),
-							A2($elm$html$Html$Attributes$style, 'width', '100%'),
-							A2($elm$html$Html$Attributes$style, 'height', 'auto'),
 							$author$project$Main$srcset(
 							$author$project$Main$srcsetstring(imageInfo.src))
 						]),
-					_List_Nil);
-			} else {
-				return A2(
-					$elm$html$Html$img,
-					_List_fromArray(
-						[
-							$elm$html$Html$Attributes$src(imageInfo.src),
-							$elm$html$Html$Attributes$alt(imageInfo.alt),
-							A2($elm$html$Html$Attributes$style, 'object-fit', 'contain'),
-							A2($elm$html$Html$Attributes$style, 'width', '100%'),
-							A2($elm$html$Html$Attributes$style, 'height', 'auto'),
-							$author$project$Main$srcset(
-							$author$project$Main$srcsetstring(imageInfo.src))
-						]),
-					_List_Nil);
-			}
+					_Utils_ap(
+						function () {
+							var _v2 = imageInfo.title;
+							if (_v2.$ === 'Just') {
+								var title = _v2.a;
+								return _List_fromArray(
+									[
+										$elm$html$Html$Attributes$title(title)
+									]);
+							} else {
+								return _List_Nil;
+							}
+						}(),
+						$author$project$Main$imageDimensions(imageInfo.src))),
+				_List_Nil);
 		}
 	});
 var $mdgriffith$elm_ui$Internal$Model$Unstyled = function (a) {
@@ -16755,15 +16782,6 @@ var $dillonkearns$elm_markdown$Markdown$InlineParser$refLabelRegex = A2(
 	$elm$core$Maybe$withDefault,
 	$elm$regex$Regex$never,
 	$elm$regex$Regex$fromString('^\\[\\s*(' + ($dillonkearns$elm_markdown$Markdown$Helpers$insideSquareBracketRegex + ')\\s*\\]')));
-var $elm$core$Maybe$andThen = F2(
-	function (callback, maybeValue) {
-		if (maybeValue.$ === 'Just') {
-			var value = maybeValue.a;
-			return callback(value);
-		} else {
-			return $elm$core$Maybe$Nothing;
-		}
-	});
 var $dillonkearns$elm_markdown$Markdown$Helpers$cleanWhitespaces = function (original) {
 	return original;
 };
@@ -27204,12 +27222,6 @@ var $mdgriffith$elm_ui$Element$Font$size = function (i) {
 		$mdgriffith$elm_ui$Internal$Flag$fontSize,
 		$mdgriffith$elm_ui$Internal$Model$FontSize(i));
 };
-var $mdgriffith$elm_ui$Internal$Model$Text = function (a) {
-	return {$: 'Text', a: a};
-};
-var $mdgriffith$elm_ui$Element$text = function (content) {
-	return $mdgriffith$elm_ui$Internal$Model$Text(content);
-};
 var $author$project$Main$tocView = F2(
 	function (toc, url) {
 		return A2(
@@ -34754,6 +34766,13 @@ var $periodic$elm_csv$Csv$comma = $elm$parser$Parser$symbol(',');
 var $periodic$elm_csv$Csv$cr = $elm$parser$Parser$symbol($periodic$elm_csv$Csv$crs);
 var $periodic$elm_csv$Csv$doubleDoubleQuote = A2($elm$parser$Parser$ignorer, $periodic$elm_csv$Csv$doubleQuote, $periodic$elm_csv$Csv$doubleQuote);
 var $periodic$elm_csv$Csv$lf = $elm$parser$Parser$symbol('\n');
+var $elm$core$String$replace = F3(
+	function (before, after, string) {
+		return A2(
+			$elm$core$String$join,
+			after,
+			A2($elm$core$String$split, before, string));
+	});
 var $periodic$elm_csv$Csv$crc = _Utils_chr('\u000D');
 var $periodic$elm_csv$Csv$textChar = F2(
 	function (sepChar, c) {
@@ -36544,17 +36563,6 @@ var $author$project$Layout$currentLang = function (key) {
 		return $author$project$Layout$En;
 	}
 };
-var $author$project$Layout$currentLangSelector = function (s) {
-	if (s.$ === 'En') {
-		return function ($) {
-			return $.en;
-		};
-	} else {
-		return function ($) {
-			return $.de;
-		};
-	}
-};
 var $mdgriffith$elm_ui$Element$image = F2(
 	function (attrs, _v0) {
 		var src = _v0.src;
@@ -36698,54 +36706,60 @@ var $author$project$Layout$highlightableLink = F3(
 					$dillonkearns$elm_pages$Pages$Directory$indexPath(linkDirectory))
 			});
 	});
-var $author$project$Layout$otherLang = function (l) {
-	if (l.$ === 'De') {
-		return 'en';
-	} else {
-		return '';
-	}
-};
-var $author$project$Layout$languageLink = function (key) {
-	var l = $author$project$Layout$currentLang(key);
-	return A2(
-		$mdgriffith$elm_ui$Element$link,
-		_List_Nil,
-		{
-			label: $mdgriffith$elm_ui$Element$text(
-				function () {
-					if (l.$ === 'En') {
-						return 'Deutsch';
-					} else {
-						return 'English';
-					}
-				}()),
-			url: A2(
-				$elm$core$String$join,
-				'/',
-				A2(
-					$elm$core$List$cons,
-					$author$project$Layout$otherLang(l),
-					A2(
-						$elm$core$List$drop,
-						1,
-						$dillonkearns$elm_pages$Pages$PagePath$toPath(key))))
-		});
-};
 var $author$project$Layout$navbarLinks = function (currentPath) {
-	var lang = $author$project$Layout$currentLangSelector(
-		$author$project$Layout$currentLang(currentPath));
-	var prefix = lang($author$project$Pages$pages);
-	return _List_fromArray(
-		[
-			A3($author$project$Layout$highlightableLink, currentPath, prefix.about.directory, 'about'),
-			A3($author$project$Layout$highlightableLink, currentPath, prefix.faq.directory, 'FAQ'),
-			A3($author$project$Layout$highlightableLink, currentPath, prefix.calculator.directory, 'calculator'),
-			A3($author$project$Layout$highlightableLink, currentPath, prefix.partners.directory, 'recommendations'),
-			A3($author$project$Layout$highlightableLink, currentPath, prefix.sources.directory, 'sources'),
-			A3($author$project$Layout$highlightableLink, currentPath, prefix.results.directory, 'results'),
-			$author$project$Layout$githubRepoLink,
-			$author$project$Layout$languageLink(currentPath)
-		]);
+	var _v0 = $author$project$Layout$currentLang(currentPath);
+	if (_v0.$ === 'En') {
+		return _List_fromArray(
+			[
+				A3($author$project$Layout$highlightableLink, currentPath, $author$project$Pages$pages.about.directory, 'about'),
+				A3($author$project$Layout$highlightableLink, currentPath, $author$project$Pages$pages.faq.directory, 'FAQ'),
+				A3($author$project$Layout$highlightableLink, currentPath, $author$project$Pages$pages.calculator.directory, 'calculator'),
+				A3($author$project$Layout$highlightableLink, currentPath, $author$project$Pages$pages.partners.directory, 'recommendations'),
+				A3($author$project$Layout$highlightableLink, currentPath, $author$project$Pages$pages.sources.directory, 'sources'),
+				A3($author$project$Layout$highlightableLink, currentPath, $author$project$Pages$pages.results.directory, 'results'),
+				$author$project$Layout$githubRepoLink,
+				A2(
+				$mdgriffith$elm_ui$Element$link,
+				_List_Nil,
+				{
+					label: $mdgriffith$elm_ui$Element$text('DE'),
+					url: A2(
+						$elm$core$String$join,
+						'/',
+						A2(
+							$elm$core$List$cons,
+							'de',
+							A2(
+								$elm$core$List$drop,
+								1,
+								$dillonkearns$elm_pages$Pages$PagePath$toPath(currentPath))))
+				})
+			]);
+	} else {
+		return _List_fromArray(
+			[
+				A3($author$project$Layout$highlightableLink, currentPath, $author$project$Pages$pages.de.about.directory, 'Über uns'),
+				A3($author$project$Layout$highlightableLink, currentPath, $author$project$Pages$pages.de.faq.directory, 'Fragen'),
+				A3($author$project$Layout$highlightableLink, currentPath, $author$project$Pages$pages.de.calculator.directory, 'Rechner'),
+				A3($author$project$Layout$highlightableLink, currentPath, $author$project$Pages$pages.de.partners.directory, 'Empfehlungen'),
+				A3($author$project$Layout$highlightableLink, currentPath, $author$project$Pages$pages.de.sources.directory, 'Quellen'),
+				A3($author$project$Layout$highlightableLink, currentPath, $author$project$Pages$pages.de.results.directory, 'Ergebnisse'),
+				$author$project$Layout$githubRepoLink,
+				A2(
+				$mdgriffith$elm_ui$Element$link,
+				_List_Nil,
+				{
+					label: $mdgriffith$elm_ui$Element$text('EN'),
+					url: A2(
+						$elm$core$String$join,
+						'/',
+						A2(
+							$elm$core$List$drop,
+							1,
+							$dillonkearns$elm_pages$Pages$PagePath$toPath(currentPath)))
+				})
+			]);
+	}
 };
 var $mdgriffith$elm_ui$Internal$Model$Navigation = {$: 'Navigation'};
 var $mdgriffith$elm_ui$Element$Region$navigation = $mdgriffith$elm_ui$Internal$Model$Describe($mdgriffith$elm_ui$Internal$Model$Navigation);
@@ -37329,7 +37343,7 @@ var $author$project$Main$main = $dillonkearns$elm_pages$Pages$Platform$toProgram
 			{
 				canonicalSiteUrl: $author$project$Main$canonicalSiteUrl,
 				documents: _List_fromArray(
-					[$author$project$Main$markdownDocument]),
+					[$author$project$Main$markdownDocument, $author$project$Main$htmlDocument]),
 				init: function (_v0) {
 					return $author$project$Calculator$init;
 				},
