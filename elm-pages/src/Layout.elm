@@ -21,6 +21,7 @@ import Element exposing (html)
 import Element exposing (paragraph)
 import Html.Attributes exposing (style)
 import Svg.Attributes exposing (offset)
+import Element exposing (el)
 
 maxWidth : number
 maxWidth = 1000
@@ -172,6 +173,7 @@ githubRepoLink =
                   , Attr.style "width" "20px"
                   , Attr.width d.width
                   , Attr.height d.height][] |> html
+                  |> el [Font.color Palette.color.primary]
         }
 
 logoLinkMobile : Element Msg
