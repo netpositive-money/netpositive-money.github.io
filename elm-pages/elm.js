@@ -7613,8 +7613,18 @@ var $author$project$Main$findImages = function (src) {
 		},
 		$author$project$Pages$allImages);
 };
-var $elm$virtual_dom$VirtualDom$style = _VirtualDom_style;
-var $elm$html$Html$Attributes$style = $elm$virtual_dom$VirtualDom$style;
+var $elm$html$Html$Attributes$height = function (n) {
+	return A2(
+		_VirtualDom_attribute,
+		'height',
+		$elm$core$String$fromInt(n));
+};
+var $elm$html$Html$Attributes$width = function (n) {
+	return A2(
+		_VirtualDom_attribute,
+		'width',
+		$elm$core$String$fromInt(n));
+};
 var $author$project$Main$imageDimensions = A2(
 	$elm$core$Basics$composeR,
 	$author$project$Main$findImages,
@@ -7630,22 +7640,11 @@ var $author$project$Main$imageDimensions = A2(
 					function (d) {
 						return _List_fromArray(
 							[
-								A2(
-								$elm$html$Html$Attributes$style,
-								'width',
-								$elm$core$String$fromInt(d.width)),
-								A2(
-								$elm$html$Html$Attributes$style,
-								'height',
-								$elm$core$String$fromInt(d.height))
+								$elm$html$Html$Attributes$width(d.width),
+								$elm$html$Html$Attributes$height(d.height)
 							]);
 					}),
-				$elm$core$Maybe$withDefault(
-					_List_fromArray(
-						[
-							A2($elm$html$Html$Attributes$style, 'width', '100%'),
-							A2($elm$html$Html$Attributes$style, 'height', 'auto')
-						]))))));
+				$elm$core$Maybe$withDefault(_List_Nil)))));
 var $elm$virtual_dom$VirtualDom$property = F2(
 	function (key, value) {
 		return A2(
@@ -7678,6 +7677,8 @@ var $author$project$Main$srcsetstring = A2(
 				}());
 			}),
 		$elm$core$String$join(',')));
+var $elm$virtual_dom$VirtualDom$style = _VirtualDom_style;
+var $elm$html$Html$Attributes$style = $elm$virtual_dom$VirtualDom$style;
 var $author$project$Main$headingRenderer = _Utils_update(
 	$dillonkearns$elm_markdown$Markdown$Renderer$defaultHtmlRenderer,
 	{
@@ -7717,6 +7718,8 @@ var $author$project$Main$headingRenderer = _Utils_update(
 						[
 							$elm$html$Html$Attributes$src(imageInfo.src),
 							$elm$html$Html$Attributes$alt(imageInfo.alt),
+							A2($elm$html$Html$Attributes$style, 'width', '100%'),
+							A2($elm$html$Html$Attributes$style, 'height', 'auto'),
 							$author$project$Main$srcset(
 							$author$project$Main$srcsetstring(imageInfo.src))
 						]),

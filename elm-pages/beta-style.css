@@ -1,10 +1,6 @@
 @import "/syntax.css";
 @import url("https://use.fontawesome.com/releases/v5.9.0/css/all.css");
 
-img {
-        max-width: 100%;
-        height: auto;
-      }
 
 .dotted-line {
   -webkit-animation: animation-yweh2o 400ms linear infinite;

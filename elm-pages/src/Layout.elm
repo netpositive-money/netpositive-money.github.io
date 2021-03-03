@@ -164,12 +164,14 @@ githubRepoLink : Element Msg
 githubRepoLink =
     Element.newTabLink []
         { url = "https://github.com/netpositive-money/netpositive-money.github.io"
-        , label =
-            Element.image
-                [ Element.width (Element.px 22)
-                , Font.color Palette.color.primary
-                ]
-                { src = ImagePath.toString Pages.images.github, description = "Github repo" }
+        , label = let d = Maybe.withDefault {width = 24, height = 24}
+                          (ImagePath.dimensions Pages.images.github) in
+                  Html.img
+                  [ Attr.src (ImagePath.toString Pages.images.github)
+                  , Attr.alt "Github repo"
+                  , Attr.style "width" "20px"
+                  , Attr.width d.width
+                  , Attr.height d.height][] |> html
         }
 
 logoLinkMobile : Element Msg

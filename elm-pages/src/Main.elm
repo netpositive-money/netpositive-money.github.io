@@ -336,6 +336,8 @@ headingRenderer = {
             Html.img (
              [ Attr.src imageInfo.src
              , Attr.alt imageInfo.alt
+             , Attr.style "width" "100%"
+             , Attr.style "height" "auto"
              , srcset (srcsetstring imageInfo.src)
              ]
                  ++
@@ -354,13 +356,11 @@ imageDimensions = findImages >>
                   List.head >>
                   Maybe.andThen dimensions >>
                   Maybe.map (\d ->
-                        [ Attr.style "width" (String.fromInt d.width)
-                        , Attr.style "height" (String.fromInt d.height)]
+                        [ Attr.width d.width
+                        , Attr.height d.height]
                             ) >>
                   Maybe.withDefault
-                        [ Attr.style "width" "100%"
-                        , Attr.style "height" "auto"]
-
+                        []
 
 
 srcsetstring = findImages >>
