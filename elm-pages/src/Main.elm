@@ -18,29 +18,28 @@ import Pages.Manifest.Category
 import Pages.PagePath exposing (PagePath)
 import Pages.Platform
 import Pages.StaticHttp as StaticHttp
-import Shared exposing (Model,Msg,Data)
-import Calculator exposing (request1,request2)
+import Shared exposing (..)
+import Calculator exposing (request1,request2, calculatorRenderer)
 import Markdown.Block as Block exposing (Block, Inline, HeadingLevel)
 import Markdown.Block exposing (extractInlineText)
 import Markdown.Block exposing (headingLevelToInt)
 import Html.Attributes exposing (id)
 import Markdown.Renderer exposing (defaultHtmlRenderer)
 import Pages.PagePath exposing (toString)
-import Shared exposing (Msg(..))
 import Html exposing (h1)
 import Element exposing (el)
 import Element exposing (html)
 import Html
 import Element exposing (column)
 import Html.Attributes as Attr
-import Html exposing (Attribute)
-import Json.Encode
 import Svg.Attributes exposing (offset)
 import List.Extra exposing (find)
 import Pages.ImagePath exposing (Dimensions)
 import Pages.Internal exposing (Internal)
-import Pages.ImagePath exposing (dimensions)
 import Element exposing (text)
+import Markdown.Html
+import Markdown.Renderer
+
 
 
 manifest : Manifest.Config Pages.PathKey
@@ -61,7 +60,8 @@ manifest =
 
 
 type alias Rendered =
-    (TableOfContents, Element Msg)
+    (TableOfContents, ActiveElement)
+
 
 
 
@@ -76,7 +76,7 @@ main =
         , view = view
         , update = Calculator.update
         , subscriptions = subscriptions
-        , documents = [ markdownDocument, htmlDocument ]
+        , documents = [ markdownDocument ]
         , manifest = manifest
         , canonicalSiteUrl = canonicalSiteUrl
         , onPageChange = Just OnPageChange
@@ -107,14 +107,8 @@ generateFiles siteMetadata =
         ]
 
 
-htmlDocument : { extension: String, metadata : Json.Decode.Decoder Metadata, body : String -> Result error (TableOfContents, (Element Msg)) }
-htmlDocument =
-    { extension = "html"
-    , metadata = Metadata.decoder
-    , body = \htmlbody -> Ok ([], text htmlbody)
-    }
 
-markdownDocument : { extension: String, metadata : Json.Decode.Decoder Metadata, body : String -> Result error (TableOfContents, (Element Msg)) }
+markdownDocument : { extension: String, metadata : Json.Decode.Decoder Metadata, body : String -> Result error Rendered }
 markdownDocument =
     { extension = "md"
     , metadata = Metadata.decoder
@@ -123,12 +117,13 @@ markdownDocument =
             -- Html.div [] [ Markdown.toHtml [] markdownBody ]
             let b = Markdown.Parser.parse markdownBody
                     |> Result.withDefault []
-            in b |> Markdown.Renderer.render headingRenderer
+            in  (\data tbtc model -> b |>
+                Markdown.Renderer.render (calculatorRenderer data tbtc model)
                 |> Result.withDefault [ Html.text "" ]
                 |> Html.div []
                 |> Element.html
                 |> List.singleton
-                |> Element.paragraph [ Element.width Element.fill ]
+                |> Element.paragraph [ Element.width Element.fill ])
                 |> \c -> Ok (buildToc b,c)
     }
 
@@ -165,28 +160,24 @@ pageView :
     -> { path : PagePath Pages.PathKey, frontmatter : Metadata }
     -> Rendered
     -> { title : String, body : List (Element Msg) }
-pageView data tbtc model siteMetadata page viewForPage =
+pageView data tbtc model siteMetadata page (t,f) =
+    let bod =  f data tbtc model in
     case page.frontmatter of
         Metadata.Page metadata ->
             { title = metadata.title
-            , body = case viewForPage of
-                         (t,b) ->
-                             [b]
-            }
-
-        Metadata.Calculator metadata ->
-            { title = metadata.title
-            , body = Calculator.view data tbtc model
-            }
-
+            , body = [bod] }
         Metadata.TocPage metadata ->
             { title = metadata.title
-            , body = case viewForPage of
-                         (t,b) ->
-                             [tocView t <| toString page.path, b]
-
+            , body = [(tocView t <| toString page.path),bod]
+            }
+        Metadata.Calculator metadata ->
+            { title = metadata.title
+            , body = [bod]
             }
 
+
+
+        
 
 
 commonHeadTags : List (Head.Tag Pages.PathKey)
@@ -307,82 +298,11 @@ buildToc blocks =
                 }
             )
 
-headingRenderer = {
-    defaultHtmlRenderer |
-        heading =
-            \{ level, children, rawText } ->
-            (case level of
-                Block.H1 ->
-                    Html.h1
-
-                Block.H2 ->
-
-                    Html.h2
-
-                Block.H3 ->
-                    Html.h3
-
-                Block.H4 ->
-                    Html.h4
-
-                Block.H5 ->
-                    Html.h5
-
-                Block.H6 ->
-                    Html.h6)
-            [id <| rawTextToId rawText] children
-     , image =
-        \imageInfo ->
-            Html.img (
-             [ Attr.src imageInfo.src
-             , Attr.alt imageInfo.alt
-             , Attr.style "width" "100%"
-             , Attr.style "height" "auto"
-             , srcset (srcsetstring imageInfo.src)
-             ]
-                 ++
-                 (case imageInfo.title of
-                      Just title -> [Attr.title title]
-                      Nothing -> [])
-                 ++ (imageDimensions imageInfo.src)
-            ) []
-
-    }
-
--- builds a srcset from images that agree in filename until "_"
 
 
-imageDimensions = findImages >>
-                  List.head >>
-                  Maybe.andThen dimensions >>
-                  Maybe.map (\d ->
-                        [ Attr.width d.width
-                        , Attr.height d.height]
-                            ) >>
-                  Maybe.withDefault
-                        []
 
 
-srcsetstring = findImages >>
-               List.map (\img -> Pages.ImagePath.toString img ++ " " ++
-                   case dimensions img of
-                       Just d -> (String.fromInt d.width)++"w"
-                       Nothing -> ""
-                   ) >>
-               String.join ","
 
-findImages : String -> List (Pages.ImagePath.ImagePath Pages.PathKey)
-findImages src = List.filterMap
-                    ( \imagepath ->
-                        let path = Pages.ImagePath.toString imagepath in
-                          if String.contains (Maybe.withDefault src <| List.head <| String.split "_" src) path
-                          then Just imagepath else Nothing
-                    )
-                 Pages.allImages
-
-srcset : String -> Attribute msg
-srcset set =
-  Attr.property "srcset" (Json.Encode.string set)
 
 
 styledToString : List Inline -> String
@@ -404,7 +324,3 @@ gatherHeadings blocks =
         )
         blocks
 
-rawTextToId rawText =
-    rawText
-        |> String.toLower
-        |> String.filter Char.isAlphaNum

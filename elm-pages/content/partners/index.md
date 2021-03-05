@@ -80,7 +80,7 @@ might be interested in their [climate change executive
 summary.](https://founderspledge.com/stories/climate-change-executive-summary).
 Another great alternative for Germans (and hopefully soon Swiss) is the [website of
 Effektiv Spenden](https://www.effektiv-spenden.org/effektiver-klimaschutz/), who
-also have been inspired by Founder's Pledge but in addition by [Let's
+have also been inspired by Founder's Pledge, but in addition by [Let's
 Fund.](https://lets-fund.org/clean-energy/)
 
 ## Our recommendations
