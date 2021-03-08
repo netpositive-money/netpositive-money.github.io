@@ -7,8 +7,6 @@ import Element.Font as Font exposing (size)
 import Browser.Dom exposing (getViewport)
 import Browser.Events exposing (onResize)
 import Csv
---import Element exposing (Element,text,paragraph,link,html)
---import Element.Input as Input exposing (placeholder,labelAbove)
 import Html
 import Iso8601 exposing (fromTime, toTime)
 import LineChart
@@ -58,6 +56,7 @@ import Html.Attributes exposing (value, placeholder)
 import Html.Events exposing (onInput)
 import Markdown.Renderer exposing (defaultHtmlRenderer)
 import Markdown.Html
+import Html.Attributes exposing (id)
 
 
 subscriptions : Model -> Sub Msg
@@ -411,11 +410,13 @@ calculatorRenderer data tbtc model =
                        , Markdown.Html.tag "co2totalgraph"
                            (\children -> Html.div[Html.Attributes.style "font-size" "12px"][chart2 compound model])
                        , Markdown.Html.tag "inputstart"
-                           (\txt children -> Html.input [ value (left 7 s), onInput (ChangeStart compound) ] [Html.text txt])
+                           (\txt children -> Html.div[][ Html.label[Html.Attributes.for "start"][Html.text txt]
+                                                       , Html.input [id "start", Html.Attributes.type_ "month", value (left 7 s), onInput (ChangeStart compound) ][]])
                        |> Markdown.Html.withAttribute "text"
                        , Markdown.Html.tag "inputend"
-                           (\txt children -> Html.input [ value (left 7 e), onInput (ChangeEnd compound) ] [Html.text txt])
-                       |> Markdown.Html.withAttribute "text"
+                           (\txt children -> Html.div[][ Html.label[Html.Attributes.for "end"][Html.text txt]
+                                                       , Html.input [id "end", Html.Attributes.type_ "month", value (left 7 e), onInput (ChangeEnd compound) ][]])
+                           |> Markdown.Html.withAttribute "text"
                        , Markdown.Html.tag "selectionstart"
                            (\children -> Html.text (left 7 <| datumToTimeString startDatum))
                        , Markdown.Html.tag "selectionend"
@@ -425,7 +426,8 @@ calculatorRenderer data tbtc model =
                        , Markdown.Html.tag "perbtc"
                            (\children -> Html.text (String.fromFloat <| round100 <| perBtcAmount))
                        , Markdown.Html.tag "inputbtc"
-                           (\txt children -> Html.input [ placeholder "0.00000001", value model.btcS, onInput ChangeBtc ] [Html.text txt])
+                           (\txt children -> Html.div[][ Html.label[Html.Attributes.for "btc"][Html.text txt]
+                                                       , Html.input [id "btc", Html.Attributes.type_ "number", placeholder "0.00000001", value model.btcS, onInput ChangeBtc][]])
                        |> Markdown.Html.withAttribute "text"
                        , Markdown.Html.tag "outputtons"
                            (\txt children -> case String.toFloat model.btcS of
@@ -449,89 +451,6 @@ calculatorRenderer data tbtc model =
            (_,_)  -> Markdown.Renderer.defaultHtmlRenderer
 
 
-
--- view : Data-> Data -> Model -> List (SpecialElement) -> List (Element Msg)
--- view data tbtc model viewForPage =
---     let
---         compound = mkcompound data
---         perBtcComp = mkPerBtcComp data tbtc
---         s = model.startString
---         e = model.endString
---         sD = orLazy model.selection.start (\() -> head compound)
---         eD = orLazy model.selection.end (\() -> last compound)
---     in case (sD,eD) of
---            (Just startDatum, Just endDatum) ->
---                List.map
---                    (specialToNormal model)
---                    viewForPage
---                           [ paragraph []
---                                 [ text """
-                          --               The following graph shows the
-                          --               development of Bitcoin mining total CO2
-                          --               emissions in megatons per month. It is
-                          --               derived from electricity consumption
-                          --               data provided by the
-                          --               """
-                          --        , link [color Palette.color.primary]{
-                          --                   url = "https://cbeci.org/"
-                          --                 , label=text "Cambridge Centre for Alternative Finance"
-                          --             }
-                          --        , text " by multiplication with a factor taken from a "
-                          --        , link [color Palette.color.primary]{
-                          --               url="https://www.cell.com/joule/pdf/S2542-4351(19)30255-7.pdf"
-                          --               , label = text "paper by Stoll et. al."
-                          --             }
-                          --        ]
-                          -- , paragraph[Font.size 12][chart1 data model |> html]
-                          -- , paragraph []
-                              -- [ text """The second graph shows the total amount of CO2 emitted by Bitcoin mining
-                              --         obtained by summing up the above data. You can restrict the calculation to a time interval
-                              --         by clicking and dragging or entering the start and end months below.
-                              --         """ ]
-                         -- , paragraph [Font.size 12] [html <| chart2 compound model]
---                           , paragraph []
---                           [ lazy (Input.text [alignLeft]){placeholder=Nothing, text=left 7 s, onChange=(ChangeStart compound),label=labelAbove[]<| text"start month" }
---                           , lazy (Input.text [alignRight]){placeholder=Nothing, text=left 7 e, onChange=(ChangeEnd compound),label=labelAbove[]<| text"end month" }
---                           ]
---                           , paragraph []
---                               [ lazy text ("Selected: " ++ (left 7 <| datumToTimeString startDatum) ++ " to " ++ (left 7 <| datumToTimeString endDatum))]
---                           , paragraph []
---                               [ lazy text
---                                 ("Total CO2 in this time frame: "
---                                      ++ (String.fromFloat <| round100 <| abs (endDatum.amount - startDatum.amount))
---                                      ++ " Mt"
---                                 )
---                           ]
---                           ]
---                             ++ (let
---                                      perBtcAmount =
---                                          co2perBtcIn perBtcComp startDatum endDatum
---                                 in
---                                     [ paragraph []
---                                         [ lazy text
---                                           ("Per bitcoin when divided by the total amount in existence at every day in the interval: "
---                                                ++ (String.fromFloat <| round100 <| perBtcAmount) ++ "t."
---                                           )]
---                                     , paragraph []
---                                         [ Input.text []{ placeholder= Just <| placeholder[] <| text "0.00000001" , text= model.btcS, onChange= ChangeBtc,label=labelAbove[]<| text "How many bitcoin do you want to offset?"  }]
---                                     ]
---                                 ++ case String.toFloat model.btcS of
---                                        Nothing ->
---                                            []
-
---                                        Just btc ->
---                                            [ paragraph [] [ lazy text
---                                                                ("This is equivalent to "
---                                                                     ++ (String.fromFloat <| round100 <| perBtcAmount * btc)
---                                                                     ++ " t CO2.")]
---                                            , paragraph [] [text "Happy offsetting, and don't forget to tell us about it so we can keep count!"]
---                                            ]
---                                )
---                              ++
---                           [ paragraph []
---                           [ lazy text ("The horizontal line at " ++ String.fromFloat offset ++ " Mt signifies the amount of CO2 that has already been offset today. ")
---                           , lazy text ("Calculated from the Genesis block at January 3, 2009, this means we've offset Bitcoin's history approximately until " ++ findOffsetDate compound ++ ".")
---                           ]]
 
 
 

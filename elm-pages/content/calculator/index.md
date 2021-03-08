@@ -17,15 +17,13 @@ below.
                                    
 <co2totalgraph></co2totalgraph>                                   
 
-start month: 
 <inputstart 
- text = "start month"
+ text = "start month: "
 >
 </inputstart>
 
-end month: 
 <inputend
-  text = "end month"
+  text = "end month: "
 >
 </inputend>
 
@@ -35,10 +33,8 @@ Total CO2 emitted in this time frame: <totalco2></totalco2> Mt.
 
 Per BTC when divided by the total amount of bitcoin in existence at the time: <perbtc></perbtc> t.
 
-How many bitcoin do you want to offset?
-
 <inputbtc
- text="How many bitcoin do you want to offset?"
+ text="How many bitcoin do you want to offset? "
 >
 </inputbtc>
 
