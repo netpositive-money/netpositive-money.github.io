@@ -80,7 +80,7 @@ might be interested in their [climate change executive
 summary.](https://founderspledge.com/stories/climate-change-executive-summary).
 Another great alternative for Germans (and hopefully soon Swiss) is the [website of
 Effektiv Spenden](https://www.effektiv-spenden.org/effektiver-klimaschutz/), who
-also have been inspired by Founder's Pledge but in addition by [Let's
+have also been inspired by Founder's Pledge, but in addition by [Let's
 Fund.](https://lets-fund.org/clean-energy/)
 
 ## Our recommendations
@@ -175,11 +175,18 @@ positive for the climate. Of course, we're very happy if you go beyond that.
 
 ## Can I donate in Bitcoin? When Lightning, Sir?
 
-At the moment, our recommended organisations don't yet support directly giving
-in Bitcoin. While you're waiting for that, why not throw your filthy fiat at
-them and show them it would be worth their while to get a shot at your precious
-Bitcoin? Or just contact them and ask if you could lend them a hand in getting
-it done!
+At the moment, most of our recommended organisations don't yet support directly
+giving in Bitcoin. The [Founder's Pledge Climate Change
+Fund](https://app.effectivealtruism.org/funds/partners/founders-pledge-climate-change-fund?utm_source=netpositive.money&utm_medium=site&utm_campaign=bitcoin)
+does, but only manually for donations of at least $1000 (if you do that, please
+remind them to count your donation for us!). Of course, we'd love for them all
+to accept Bitcoin payments, preferably also through Lightning, best of all
+anonymously.
+
+While you're waiting for that, why not throw your filthy fiat
+at them and show them it would be worth their while to get a shot at your
+precious Bitcoin? Or just contact them and ask if you could lend them a hand in
+getting it done!
 
 ## Where is my favorite organisation/my country?
 

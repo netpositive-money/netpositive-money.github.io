@@ -204,7 +204,7 @@ navbarLinks currentPath =
             , githubRepoLink
             , Element.link [] {
                       label = Element.text "DE"
-                  ,   url = String.join "/" ("de"::(List.drop 1 <| PagePath.toPath currentPath))
+                  ,   url = String.join "/" ("de"::(PagePath.toPath currentPath))
                   }
             ]
         De ->
