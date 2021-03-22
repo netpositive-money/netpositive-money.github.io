@@ -28,7 +28,8 @@ Donations should be tax-deductible at least in Switzerland.
 Again, Germans get a different link, [this one is for myclimate
 Germany](https://germany.myclimate.org/en/contribution_calculators/new?ps=netpositiv_money).
 
-
+If you want to help clean up refrigerants, here's [our link to
+Tradewater](https://tradewater.us/offsetnow/?utm_source=netpositive.money&utm_medium=site&utm_campaign=bitcoin#household).
 
 ## Who should you support?
 
@@ -149,7 +150,13 @@ long track record and broad portfolio. In their own words:
 Of course, all this certainty comes with a price tag. They calculate about $33/t
 CO2.
 
+[Tradewater](https://tradewater.us/) offers another great alternative. In the words of Giving Green:
 
+> Tradewater’s mission is to find and destroy refrigerants and other gases with
+> warming potential up to 10,000 times that of carbon dioxide. They work
+> worldwide to find these gases, purchase them, and then destroy them. Priced at
+> $15 per ton of CO2 removed, Tradewater offers one of the most attractive
+> combinations of price and certainty.
 
 
 ## How much should I give?
