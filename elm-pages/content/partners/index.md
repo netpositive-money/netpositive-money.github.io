@@ -15,6 +15,14 @@ link that enables them (via Google Analytics) to track the amount of donations
 coming from us so we can then evaluate how much Bitcoiners have contributed.
 These donations should be tax-exempt in the US and UK.
 
+We have found a great alternative especially for US citizens in
+[every.org](https://www.every.org/@netpositive.money902/). They are a
+meta-charity that is building a social network for donors. So if you go to [our
+page](https://www.every.org/@netpositive.money902/) there, you can donate to The
+Founder's Pledge Climate Change Fund, Carbon180, Climate Action Task Force, or
+Sunrise Movement, and it will get counted for us. They also accept bitcoin
+through Coinbase.
+
 For Germans (and maybe other Europeans, though they would probably not get a tax
 refund), it's more effective to go through our [special donation
 page](https://www.effektiv-spenden.org/spendenaktionen/?cfd=11dfe) at
@@ -129,6 +137,14 @@ Founder's Pledge Climate Change Fund, as well as Effektiv-Spenden also give to
 [Carbon180](https://founderspledge.com/stories/carbon180-high-impact-funding-opportunity),
 who are specifically about championing carbon removal solutions. 
 
+Giving Green also recommends [Sunrise Movement](https://www.sunrisemovement.org/), 
+
+> a US climate activism group that seeks to mobilize popular support and
+> political will for more aggressive climate-change policy under the Green New
+> Deal framework – a commitment to significantly decarbonize the American
+> economy through a set of policies that includes renewable-energy public works
+> programs.
+
 Finally,
 [TerraPraxis](https://founderspledge.com/stories/terrapraxis-high-impact-funding-opportunity)
 is featured by the Founder's Pledge Fund, and they are focused on advanced
@@ -188,12 +204,18 @@ Fund](https://app.effectivealtruism.org/funds/partners/founders-pledge-climate-c
 does, but only manually for donations of at least $1000 (if you do that, please
 remind them to count your donation for us!). Of course, we'd love for them all
 to accept Bitcoin payments, preferably also through Lightning, best of all
-anonymously.
+anonymously. 
 
-While you're waiting for that, why not throw your filthy fiat
-at them and show them it would be worth their while to get a shot at your
-precious Bitcoin? Or just contact them and ask if you could lend them a hand in
-getting it done!
+We've actually found a great work-around to make anonymous Lightning Network
+donations possible: Just use [paywithmoon](https://paywithmoon.com/)! It's a
+browser extension that gives you a one-time use virtual credit card that you can
+pay for with Lightning. For now it only works for US charities and only up to
+$1000, but it works!
+
+If you want deeper Bitcoin/Lightning integration, why not throw your filthy fiat
+at our partners and show them it would be worth their while to get a shot at
+your precious Bitcoin? Or just contact them and ask if you could lend them a
+hand in getting it done!
 
 ## Where is my favorite organisation/my country?
 
