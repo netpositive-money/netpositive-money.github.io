@@ -23,7 +23,7 @@ type: page
 
 1. We are designing a website and social media channels in order to disseminate information about the problem, the current state of research and discussion about it, as well as our approach:
 2. We are developing an opinion on what measures (such as offsetting, certificates, ...) seem appropriate. Then we motivate Bitcoin stakeholders ([hodlers](https://en.wikipedia.org/wiki/Hodl), miners, exchanges, businesses, etc.) to donate to providers of such measures.
-3. We publicly account for how much was donated, how much CO2 is offset by that, and what fraction that is of Bitcoin's estimated CO2 output - measured in time from the genesis block on. We do this while protecting the privacy of anonymous donors on one hand, as well as helping public donors use their contribution for PR on the other.
+3. We publicly account for how much was donated, how much CO2 is offset by that, and what fraction that is of Bitcoin's estimated CO2 output &mdash; measured in time from the genesis block on. We do this while protecting the privacy of anonymous donors on one hand, as well as helping public donors use their contribution for PR on the other.
 
 ## If you want to help
 
