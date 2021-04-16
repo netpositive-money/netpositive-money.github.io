@@ -1,28 +1,23 @@
 ---
-title: Welcome, friend of the earth!
+title: Willkommen, Freund der Erde!
 type: page
 ---
 
-![a beautiful forest](images/forest-931706_640.jpg)
+![ein schöner Wald](images/forest-931706_640.jpg)
 
-We're happy that you have found your way to us. 
+Wir freuen uns, daß Du uns gefunden hast.
 
-## What is this?
+## Was ist das hier?
 
-netpositive.money is an initiative by bitcoiners who want to contribute to
-climate change solutions. Our goal is to make Bitcoin a net positive money. If
-you want to read a more about our approach, please visit our [about
-page.](about)
+Netpositive.money ist eine Initiative von Bitcoinern, die zu Lösungen für den Klimawandel beitragen wollen. Unser Ziel ist es, aus Bitcoin ein netto positives Geld zu machen. Wenn Du mehr über unseren Ansatz erfahren möchtest, besuche bitte unsere [Vorstellungsseite.](de/about)
 
-## What can you do for me?
+## Was könnt Ihr für mich tun?
 
-That depends on who you are. We have assumed you care about global warming (everybody should), but beyond that:
-    
-* If you are a member of the press or just an interested world citizen, we commend you for being interested in a more nuanced discussion of Bitcoin mining's impact on the climate. We hope you have questions. In that case, why not have a look at the most [frequently asked ones](faq)? You can always ask more! Or maybe you're just looking for some [sources](sources) beyond FUD and denial.
-* If you self-describe as a bitcoiner, we commend you for not taking a see-no-evil position. Maybe you have [questions](faq), too. Maybe you already know that you'd like to contribute. Then why not go straight to our [recommendations](partners)? Or maybe you just want an estimate of the personal carbon footprint of your hodlings? We've made a [calculcator tool](calculator) for that!
+Das kommt darauf an, wer Du bist. Wir haben schon mal angenommen, daß Du wegen der globalen Erwärmung besorgt bist (das sollte jeder sein), aber mal davon abgesehen:
 
-If you need to reach us for anything else, our contact data can be found on the [about
-page](about).
+* Wenn Du ein Pressevertreter oder einfach ein interessierter Weltbürger bist, dann freuen wir uns, daß Du Dich für eine nuancierte Diskussion des Einflusses von Bitcoin-Mining auf das Klima interessierst. Wir hoffen Du hast Fragen. Falls das so ist, dann schau Dir doch mal die [meistgestellten](de/faq) an! Du kannst auch gerne mehr stellen. Oder vielleicht suchst Du nur nach einigen [Quellen](de/sources) jenseits von Panikmache und Nichtwahrhabenwollen.
+* Wenn Du Dich als Bitcoiner beschreiben würdest, dann freuen wir uns, daß Du den Kopf nicht in den Sand steckst. Vielleicht hast Du ja auch [Fragen](de/faq). Vielleicht weißt Du auch schon, daß Du mithelfen willst. Warum dann nicht gleich zu unseren [Empfehlungen](de/partners)? Oder Du willst nur eine Schätzung des persönlichen CO2-Fußabdrucks Deiner Bitcoin-Bestände? Dafür haben wir einen [Rechner](de/calculator)!
 
-Thank you again for giving us some of your precious attention, and let's become
-a net positive money!
+Wenn Du uns für irgend etwas anderes erreichen willst, findest Du unsere Kontaktdaten auf der [Über-uns-Seite](de/about).
+
+Danke nochmal, daß Du uns Deine wertvolle Aufmerksamkeit schenkst, und laßt uns ein net positive money werden!
