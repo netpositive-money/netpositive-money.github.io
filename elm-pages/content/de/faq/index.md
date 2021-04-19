@@ -3,329 +3,159 @@ title: FAQ
 type: tocpage
 ---
 
-## Isn't Bitcoin useless anyway?
+## Ist Bitcoin nicht ohnehin nutzlos?
 
-tl;dr: No. Hundreds of millions of people worldwide are finding it useful for a
-lot of different use cases. It's a pretty arrogant stance to assume you know
-better than all of them.
+Nein. Hunderte Millionen Menschen weltweit finden es nützlich für viele verschiedene Anwendungen. Es ist eine ziemlich arrogante Annahme, es besser zu wissen als sie alle.
 
-Bitcoin can be seen as a circuit breaker or relief valve for financial systems
-everywhere. It gives people a way to circumvent financial censorship, capital
-controls or inflation, and it enables permissionless access to an alternative
-financial system. It cannot discriminate against people for whatever reason.
-Let's look at some examples:
+Bitcoin kann als eine Art Stromkreisunterbrecher oder als Überdruckventil für Finanzsysteme verstanden werden. Es gibt den Menschen eine Möglichkeit, finanzielle Zensur, Überwachung von Kapitalströmen oder Inflation zu umgehen, und es ermöglicht einen erlaubnisfreien Zugang zu einem alternativen Finanzsystem. Es kann Menschen nicht diskriminieren, aus welchem Grund auch immer. 
+Lass uns dazu einige Beispiele betrachten:
 
 
-* Here's a [video](https://twitter.com/gladstein/status/1357757736394444800) by [Alex Gladstein](https://twitter.com/gladstein) of the [Human Rights Foundation](https://hrf.org/) enumerating humanitarian causes that Bitcoin has been useful for. Here's a [thread](https://threadreaderapp.com/thread/1340836877595594752.html), if you prefer text.
-  
-* [As a prominent example](https://web.archive.org/web/20201108012753/https://www.forbes.com/sites/rogerhuang/2019/04/26/how-bitcoin-and-wikileaks-saved-each-other/), Wikileaks probably wouldn't exist anymore if it wasn't for Bitcoin enabling donations for them when the US government pressured other payment providers into blocking them.
-  
-* [Here](https://medium.com/open-money-initiative/latin-american-bitcoin-trading-follows-the-heartbeat-of-venezuela-71a28cb86ba0) is a fascinating analysis of Bitcoin serving as a vehicle currency in Latin America.
+* Hier ist ein [Video](https://twitter.com/gladstein/status/1357757736394444800) von [Alex Gladstein](https://twitter.com/gladstein) von der [Human Rights Foundation](https://hrf.org/), das humanitäre Zwecke aufzählt, bei denen sich Bitcoin bereits als nützlich erwiesen hat. Hier ist zudem der schriftliche [Beitrag ](https://threadreaderapp.com/thread/1340836877595594752.html), falls Du Text bevorzugst.
 
-If you find Bitcoin useless for yourself, you should call yourself lucky.
+* [Ein prominentes Beispiel](https://web.archive.org/web/20201108012753/https://www.forbes.com/sites/rogerhuang/2019/04/26/how-bitcoin-and-wikileaks-saved-each-other/) ist Wikileaks, die ohne Bitcoin-Spenden wahrscheinlich nicht mehr existieren würden, nachdem die US-Regierung andere Zahlungsanbieter unter Druck gesetzt hatte, das Unternehmen zu blockieren.
 
-## I have read somewhere that every Bitcoin transaction is ["equivalent to the power consumption of an average U.S. household over 22.86 days."](https://digiconomist.net/bitcoin-energy-consumption). Is that true? Isn't that horrible?
+* [Hier](https://medium.com/open-money-initiative/latin-american-bitcoin-trading-follows-the-heartbeat-of-venezuela-71a28cb86ba0) ist eine faszinierende Analyse von Bitcoins Funktion als sogenannte Vehikelwährung in Lateinamerika.
 
-tl;dr: Most people don't value Bitcoin as a payment mechanism, and even if they
-were, most payments are not recorded on-chain. So calculating the energy cost of
-a transaction is as impossible and nonsensical as it would be for gold.
+Wenn Du Bitcoin für Dich selbst als nutzlos erachtest, solltest Du Dich glücklich schätzen.
 
-It's true in a similar way that [the lack of pirates is causing global
-warming](https://www.forbes.com/sites/erikaandersen/2012/03/23/true-fact-the-lack-of-pirates-is-causing-global-warming/?sh=508707043a67).
-Yes, this is a valid estimation of Bitcoin mining's energy use divided by a
-valid estimation of on-chain transactions, compared to a probably valid
-estimation of household electricity use.
+## Ich habe irgendwo gelesen, dass jede Bitcoin-Transaktion ["dem Stromverbrauch eines durchschnittlichen US-Haushalts über 22,86 Tage entspricht"](https://digiconomist.net/bitcoin-energy-consumption). Ist das wahr? Ist das nicht furchtbar?
 
-However, connecting these three figures in this way doesn't yield any insight
-beyond shock and awe. That's because Bitcoin's primary value is not as a payment
-network, so the number of on-chain transactions is not an interesting metric for
-it. This can be seen easily: On one hand the [number of onchain
-transactions](https://bitinfocharts.com/comparison/bitcoin-transactions.html)
-has always been limited &mdash; and that limit has been pretty much hit constantly
-since at least 2019. On the other hand, the value of Bitcoin, as well as the
-estimated number of its users, has been rising over many orders of magnitude
-since 2009. How can this be possible?
+Kurz: Tatsächlich schätzen die meisten Menschen gar Bitcoin nicht primär als Zahlungsmittel, und selbst wenn sie es täten, werden die meisten Zahlungen gar nicht in die Blockchain aufgenommen. Also ist die Berechnung der Energiekosten einer Transaktion genauso unmöglich und unsinnig wie es bei Gold der Fall wäre.
 
-* In recent years, long term store of value has become Bitcoin's main use case. That is, people use it more for storing their savings than for paying for goods and services.
-  
-* Its current usage is thus more comparable to gold, which is also rarely used in transactions. I have never seen anybody calculate the energy cost of gold mining plus handling divided by the number of physical gold shipments. Probably because that's as misleading a number as the equivalent in Bitcoin.
-  
-* Just as with gold, there are ways to make even small transactions quickly and cheaply with Bitcoin. Most real-world transactions use one of these off-chain methods. Probably the most popular today are custodial services like exchanges. Sending bitcoin from one customer to another on a service like this just requires changing two numbers in their database and is the equivalent of gold in a bank changing owners. It's hard to say how many such transactions there are, since there are many "bitcoin banks" and their numbers are proprietary, but it's safe to say they dwarf on-chain transactions by orders of magnitude.
-  
-* Unlike gold, there are methods of transacting Bitcoin off-chain that require less trust in intermediaries, such as the Lightning Network or Blockstream's Liquid federation. With a growing demand in transactions, such alternatives are refined and gain popularity, without this being reflected in the above numbers. With the Lightning Network, it's even difficult to estimate how many transactions are being performed, since there is no central ledger recording them all.
-  
-## But I have read that Visa transactions are much more economical! 
-  
-That's because these are very different things. Visa transactions are just a few
-companies changing a few numbers in their databases. It's basically just a fancy
-way of signalling an intent to spend something. It's not final. There might not
-be a real transfer of value happening at all (all the "money" is still debt in
-the same bank, just on another account). 
+In vergleichbarer Weise ist es auch wahr, dass [der Mangel an Piraten die globale Erwärmung verursacht](https://www.forbes.com/sites/erikaandersen/2012/03/23/true-fact-the-lack-of-pirates-is-causing-global-warming/?sh=508707043a67). Es handelt es sich um eine plausible Schätzung des Energieverbrauchs des Bitcoin-Minings geteilt durch eine plausible Schätzung der sog. On-Chain-Transaktionen, im Vergleich zu einer wahrscheinlich validen Schätzung des Stromverbrauchs der Haushalte.
 
-On the other hand, a Bitcoin onchain transaction is a real transfer of a bearer
-instrument, comparable to a gold shipment from one central bank to another.
-Those are also quite expensive, I imagine. It's total overkill if you want to
-buy a coffee. For that, it might be enough to just update some numbers in a
-(Bitcoin) bank. Or use the Lightning Network.
-   
-If you have a little time, Nic Carter has [explained it much better than me](https://www.coindesk.com/what-bloomberg-gets-wrong-about-bitcoins-climate-footprint).  
+Diese drei Werte derart zu verbinden, bringt jedoch keine Erkenntnis jenseits von Schock und Ehrfurcht. Das liegt daran, dass der primäre Wert von Bitcoin nicht in seiner Funktion als Zahlungssystem liegt, weswegen die Anzahl der On-Chain-Transaktionen keine geeignete Messgröße darstellt. Dies lässt sich leicht erkennen: Auf der einen Seite ist die [Anzahl der On-Chain Transaktionen](https://bitinfocharts.com/comparison/bitcoin-transactions.html) schon immer begrenzt gewesen und dieses Limit wird spätestens seit 2019 stetig ausgeschöpft. Auf der anderen Seite ist der Wert von Bitcoin, ebenso wie die geschätzte Anzahl seiner Nutzer, seit 2009 um viele Größenordnungen gestiegen. Wie kann das möglich sein?
 
-## Will Bitcoin boil the oceans?
+* In den letzten Jahren ist die langfristige Wertspeicherung zum wichtigsten Anwendungsfall von Bitcoin geworden. Das heißt, die Menschen nutzen ihn mehr zur Aufbewahrung ihrer Ersparnisse als zum Bezahlen von Waren und Dienstleistungen.
 
-tl;dr: No. It does use a lot of energy and this also leads to a lot of CO2
-emissions. See the current best estimates on how much
-[here](https://netpositive.money/calculator). It's hard to predict how this will
-develop in the future, but it will not grow exponentially forever.
+* Seine derzeitige Verwendung ist daher eher mit Gold vergleichbar, das ebenfalls selten für Transaktionen verwendet wird. Ich habe noch nie gesehen, dass jemand die Energiekosten für den Goldabbau plus Handhabung geteilt durch die Anzahl der physischen Goldtransporte berechnet hat. Wahrscheinlich, weil das eine ebenso irreführende Zahl wäre wie das Äquivalent in Bitcoin.
 
-It is difficult to make predictions, especially about the future. This is why
-even within the Bitcoin community, you will find contradicting (but dead-sure)
-prognoses for future hash rate, mining cost, energy use, and CO2 emissions. But
-in the first place, it is important to clearly distinguish those four values.
+* Genau wie bei Gold gibt es Möglichkeiten, auch kleine Transaktionen schnell und günstig mit Bitcoin durchzuführen. Die meisten Transaktionen in der realen Welt verwenden eine sog. Off-Chain-Methode. Die wahrscheinlich populärsten sind heute Verwahrungsdienste wie Börsen. Das Senden von Bitcoin von einem Kunden zu einem anderen bei einem solchen Dienst erfordert nur das Ändern von zwei Zahlen in der Datenbank und ist das Äquivalent zu Gold in einer Bank, das lediglich den Eigentümer wechselt. Es ist schwer zu sagen, wie viele solcher Transaktionen es gibt, da es eine Vielzahl solcher "Bitcoin-Banken" gibt und ihre Zahlen nicht öffentlich sind. Zumindest aber es ist sicher zu sagen, dass sie die On-Chain-Transaktionen um Größenordnungen in den Schatten stellen.
 
-Bitcoin's hash rate has grown in leaps and bounds from some megahashes in the
-beginning to triple digit exahashes (that is, xxx**10^18 hashes per second, or
-xxx million million megahashes) today. That means it has increased several
-trillion fold in 12 years. If electricity demand had scaled up comparably,
-mining would use more energy than is produced in the world by now. But luckily,
-hash rate is not what is important to Bitcoin's economics at all.
+* Im Gegensatz zu Gold gibt es allerdings auch Methoden, Bitcoin "off-chain" zu übertragen, die weniger Vertrauen in Intermediäre erfordern, wie etwa das Lightning Network oder Liquid-Verbund von Blockstream. Mit einer wachsenden Nachfrage an Transaktionen werden solche Alternativen weiterentwickelt und gewinnen an Popularität, ohne dass sich dies in den obigen Zahlen niederschlägt. Beim Lightning Network ist es sogar schwierig abzuschätzen, wie viele Transaktionen durchgeführt werden, da es kein zentrales Register gibt, das alles aufzeichnet.
 
-The metric that ties everything together is the cost of mining. If miners behave
-economically (which they mostly appear to do) it should converge toward the
-block reward, which in turn is composed of the block subsidy ("new bitcoins
-being mined") and the mining fees ("what people pay to get their transactions
-into a block"). The block subsidy is halving every 210.000 blocks (about 4
-years), which has happened thrice already, so it has gone down from 50 BTC to
-6.25 bitcoin today and is further exponentially declining &mdash; when calculated in
-BTC. The mining fees have substantially picked up over the last few years and
-are now at about 15% of the block reward. It is important for Bitcoin's future
-security (when the subsidy has declined further) that these remain substantial.
-How substantial? Nobody knows. The hope is that the market will find out.
+## Aber ich habe gelesen, dass Visa-Transaktionen viel wirtschaftlicher sind!
 
-Of course, when denominated in, say, USD, the cost of mining has not fallen but
-risen exponentially in the past 12 years, because the price of bitcoin has risen
-even more. But it is important to observe that 
+Das liegt daran, dass dies völlig verschiedene Dinge sind. Bei Visa-Transaktionen ändern nur die entsprechenden Unternehmen ein paar Zahlen in ihren Datenbanken . Es ist im Grunde nur eine extravagante Art, die Absicht zu signalisieren, etwas auszugeben. Es ist nicht endgültig. Stattdessen findet womöglich gar kein wirklicher Werttransfer statt (das "Geld" ist immer noch eine Schuld bei der gleichen Bank und verschiebt sich lediglich auf ein anderes Konto).
 
-* mining cost is rising exponentially slower than hash rate (because of technology improvements)
+Auf der anderen Seite ist eine Bitcoin-On-Chain-Transaktion eine reale Übertragung eines Vermögensgegenstands, vergleichbar mit einer Goldlieferung von einer Zentralbank zu einer anderen. Auch diese sind entsprechend teuer. Es wäre völlig übertrieben, auf diese Weise einen Kaffee kaufen zu wollen. Dafür reichte es wohl aus, einfach ein paar Zahlen bei einer (Bitcoin-)Bank zu aktualisieren. Oder  das Lightning Network zu nutzen.
 
-* mining cost is rising exponentially slower than bitcoin price (because of halvenings)
+Wenn Sie ein wenig Zeit haben, hat Nic Carter es [viel besser erklärt als ich](https://www.coindesk.com/what-bloomberg-gets-wrong-about-bitcoins-climate-footprint).
 
-* mining cost in BTC is relatively easy to predict in the near future (as long as it's dominated by subsidies)
+## Wird Bitcoin die Ozeane zum Überkochen bringen?
 
-* mining cost in USD is mostly dependent on the price of bitcoin, has been growing exponentially so far, but might top out when the bitcoin price stops growing by more than 100% every four years
+Kurz: Nein. Es wird zwar viel Energie verbraucht und dies führt auch zu entsprechenden CO2-Emissionen. Die aktuell besten Schätzungen darüber, wie viel, finden Sie [hier](https://netpositive.money/de/calculator). Es ist schwer vorherzusagen, wie sich dies in Zukunft weiter entwickeln wird; allerdings wird das exponentielle Wachstum nicht ewig anhalten.
 
-Now for the third metric. Energy use depends on many factors. Mining cost is
-probably the most obvious one. Availability, longevity and cost of mining
-equipment have to be taken into account as well, and they are also changing in
-interesting ways. However, the most interesting aspect in this is probably the
-price of the electricity used. As Bitcoin mining has become more mature,
-miners have become both industrial size energy users and mobile enough to seek
-out the cheapest energy on earth. This has fascinating consequences:
+Es ist schwierig, Vorhersagen zu machen, besonders über die Zukunft. Das ist der Grund, warum sich sogar innerhalb der Bitcoin Community widersprüchliche (aber todsichere) Prognosen für die zukünftige Entwicklung hinsichtlich Hash-Rate, Mining-Kosten, Energieverbrauch und CO2-Emissionen finden lassen. Aber zunächst ist es wichtig, diese vier Werte klar zu unterscheiden.
 
-* energy use might have grown more than mining cost, due to miners gaining access to cheaper energy 
+Die Hash-Rate von Bitcoin ist rasant von einigen Megahashes zu Beginn auf heute dreistellige Exahashes (das heißt, xxx**10^18 Hashes pro Sekunde, oder xxx Millionen Millionen Megahashes) gewachsen. Das bedeutet, dass sie sich in 12 Jahren einige Billionen mal erhöht hat. Wäre der Strombedarf vergleichbar angestiegen, würde das Mining mittlerweile mehr Energie verbrauchen, als auf der Welt produziert wird. Aber zum Glück ist die Hash-Rate überhaupt nicht das, was für die Ökonomie von Bitcoin wichtig ist.
 
-* the energy that miners use today is mostly very cheap, because it is mostly surplus
+Die Kennzahl, die alles verbindet, sind die Kosten des Minings. Wenn sich die Miner ökonomisch verhalten (was sie meistens zu tun scheinen), sollten sich Kosten und Blockbelohnung über die Zeit immer weiter annähern. Die Blockbelohnung wiederum setzt sich zusammen aus der Blocksubvention ("neue Bitcoins, die gemined werden") und den Mining-Gebühren ("was die Leute bezahlen, um ihre Transaktionen in einen Block zu bekommen"). Die Blocksubvention halbiert sich alle 210.000 Blöcke (ca. 4 Jahre), was bereits dreimal passiert ist, so dass sie von 50 BTC auf heute 6,25 Bitcoin gesunken ist und weiter exponentiell sinkt - wenn man sie in BTC berechnet. Die Mining-Gebühren sind in den letzten Jahren hingegen deutlich angestiegen und liegen derzeit bei etwa 15% der Blockbelohnung. Es ist wichtig für die zukünftige Sicherheit von Bitcoin (wenn die Subvention weiter gesunken ist), dass diese substanziell bleiben. Wie substanziell? Das weiß niemand. Die Hoffnung ist, dass der Markt es herausfinden wird.
 
-* energy use is inversely correlated with energy price. So if regulators succeed in raising the price of dirty energy, miners will use less of it.
-  
-Which brings us to the final and most decisive metric, CO2 emissions. It is the
-most difficult to measure and predict, because it depends critically not only on
-the amount of energy used but on the kind of energy used. Unfortunately, many
-mining operations are not very public. This leads to the existing research (see
-[our sources](sources)) being imprecise in deducing CO2 emissions from energy
-use. Although the estimates of the percentage of renewable energy used in mining
-vary, it is relatively safe to say it exceeds that of most countries by far.
-Since the studies extrapolate from power usage to CO2 emissions by estimating
-the amount of mining in a region and then multiplying by the average carbon
-footprint of energy production in that region, they are probably overestimating.
-In fact, there are two key questions here, and the second one has not
-been addressed at all in academic research, as far as we know:
+Natürlich sind die Kosten für das Mining gerechnet in, sagen wir, USD, nicht gesunken, sondern in den letzten 12 Jahren exponentiell gestiegen, weil der Preis von Bitcoin sogar noch mehr gestiegen ist. Aber es ist dabei wichtig zu beobachten:
 
-* how much CO2 is emitted by the energy production?
+* die Mining-Kosten steigen exponentiell langsamer als die Hash-Rate (aufgrund von technologischen Verbesserungen)
 
-* what would have happened otherwise, if the Bitcoin mining didn't happen?
+* die Mining-Kosten steigen exponentiell langsamer als der Bitcoin-Preis (wegen der Halvenings)
 
-There is substantial evidence that for both of these questions, the trend is
-positive. States will tolerate miners abusing fossil energy subsidies only so
-long. As pointed out [in another
-question](faq#howcouldbitcoinbeanetpositiveforcefortheenvironment?), energy
-providers are using Bitcoin mining in order to overprovision renewable energy.
-Mining is used in place of flaring or even just venting surplus natural gas.
-However, there are also reports of mining making stranded oil or gas fields
-profitable again. It remains important to look closely at all of these examples
-and see if they are really net positive, but one could be forgiven for being
-optimistic.
+* die Mining-Kosten in BTC sind in naher Zukunft relativ leicht vorherzusagen (solange sie von Subventionen dominiert werden)
+
+* die Mining-Kosten in USD hängen größtenteils vom Bitcoin-Preis ab, sind bisher exponentiell gewachsen, könnten aber ihren Höhepunkt erreichen, wenn der Bitcoin-Preis nicht mehr alle vier Jahre um mehr als 100 % wächst.
+
+Nun zur dritten Metrik. Der Energieverbrauch hängt von vielen Faktoren ab. Die Mining-Kosten sind wahrscheinlich der offensichtlichste Faktor. Auch die Verfügbarkeit, die Langlebigkeit und die Kosten der Mining-Ausrüstung müssen berücksichtigt werden, und auch diese verändern sich auf interessante Weise. Der spannendste Aspekt dabei ist jedoch wahrscheinlich der Preis für den verwendeten Strom. Mit zunehmender Entwicklung des Bitcoin-Minings sind die Miner nicht nur zu Energieverbrauchern von industrieller Größe geworden, sondern auch mobil genug, um sich die billigste Energie der Welt zu suchen. Dies hat faszinierende Konsequenzen:
+
+* der Energieverbrauch könnte stärker gestiegen sein als die Mining-Kosten, da die Miner Zugang zu billigerer Energie erhalten haben
+
+* die Energie, die Miner heutzutage verbrauchen, ist meist sehr billig, weil sie meist als Überschuss vorhanden ist
+
+* der Energieverbrauch korreliert negativ mit dem Energiepreis. Wenn es den Aufsichtsbehörden also gelingt, den Preis für schmutzige Energie zu erhöhen, werden Miner weniger davon verbrauchen.
+
+Womit wir bei der letzten und entscheidenden Kennzahl wären, den CO2-Emissionen. Diese ist am schwierigsten zu messen und vorherzusagen, weil sie nicht nur von der Menge der verwendeten Energie, sondern auch von der Art der verwendeten Energie entscheidend abhängt. Leider arbeiten viele Mining-Betreiber nicht sonderlich transparent. Dies führt dazu, dass die vorhandenen Forschungsergebnisse (siehe [unsere Quellen](de/sources)) bei der Bestimmung von CO2-Emissionen anhand der Energienutzung ungenau ist. Obwohl die Schätzungen über den Prozentsatz der beim Mining verwendeten erneuerbaren Energie variieren, kann man relativ sicher sagen, dass er weit über dem durchschnittlichen Niveau der meisten Länder liegt. Da die Studien vom Stromverbrauch auf die CO2-Emissionen extrapolieren, indem sie den Umfang des Minings in einer Region schätzen und dann mit dem durchschnittlichen CO2-Fußabdruck der Energieerzeugung in dieser Region multiplizieren, schätzen sie wahrscheinlich zu hoch. Tatsächlich gibt es hier zwei Schlüsselfragen, und die zweite ist in der akademischen Forschung, soweit wir wissen, überhaupt nicht behandelt worden:
+
+* wie viel CO2 wird bei der Energieerzeugung emittiert?
+
+* was wäre ansonsten passiert, wenn das Bitcoin-Mining nie stattgefunden hätte?
+
+Es gibt substantielle Hinweise darauf, dass der Trend bei beiden Fragen positiv ist. Staaten werden Miner, die Subventionen für fossile Energie missbrauchen, nicht lange tolerieren. Wie bereits in einer [anderen Frage](de/faq#howcouldbitcoinbeanetpositiveforcefortheenvironment) erwähnt, nutzen Energieversorger das Bitcoin-Mining, um Überschüsse an erneuerbarer Energie für Verbrauchsspitzen bereitzustellen. Mining wird anstelle des Abfackelns oder auch nur des Ablassens von überschüssigem Erdgas eingesetzt. Es gibt aber auch Berichte darüber, dass Mining stillgelegte Öl- oder Gasfelder wieder profitabel macht. Es bleibt wichtig, sich all diese Beispiele genau anzuschauen, um zu sehen, ob sie wirklich positiv sind, aber man kann durchaus optimistisch bleiben.
 
 
 
-## Isn't proof-of-work useless? What is it for?
+## Ist Proof-of-Work nicht nutzlos? Wofür ist es gut?
 
-tl;dr: No. It's a subtle topic.
+Kurz: Nein. Das ist ein komplexes Thema.
 
-Adam Gibson wrote a slightly rambling but still quite elegant
-[exposition](https://joinmarket.me/blog/blog/pow-a-pictorial-essay/) on this
-topic. I recommend reading it. That said, here's me trying to explain it a little more concisely:
+Adam Gibson hat eine etwas abschweifende, aber dennoch recht elegante [Darstellung](https://joinmarket.me/blog/blog/pow-a-pictorial-essay/) zu diesem Thema geschrieben. Ich empfehle, sie zu lesen. Abgesehen davon versuche ich hier, es ein wenig kürzer zu erklären:
 
-Proof-of-work is short data that allows for cheaply verifying the fact that it
-was (with overwhelming probability) expensive to obtain. This short data (a 256-bit
-hash in Bitcoin) can also be referencing other &mdash; often larger &mdash; data
-sets, and thus testifies those must have existed when the proof-of-work was
-generated. It is serving multiple important functions in Bitcoin. I think these
-are the two most irreplacable ones:
+Proof-of-Work sind kurze Datensätze, die es erlauben, günstig zu verifizieren, dass sie (mit hoher Wahrscheinlichkeit) teuer zu beschaffen waren. Diese Daten (ein 256-Bit-Hash in Bitcoin) können auch auf andere - oft größere - Datensätze verweisen und bezeugen so, dass diese existiert haben müssen, als der Proof-of-Work erzeugt wurde. Er erfüllt mehrere wichtige Funktionen in Bitcoin. Ich denke, dass dies die zwei unersetzlichsten sind:
 
-Firstly, by looking at the proof-of-work attached to multiple competing versions
-of transaction history ("blockchains"), it is easy to see which history has
-needed more work to write down. The version of history with most work attached
-is deemed the currently valid one by all bitcoin clients. No context or other
-prior knowledge is needed to verify this. As long as a client that has been
-newly connected to the Bitcoin network is able to get one copy of the correct
-history, no amount of falsified histories is going to mislead him, for it is
-easy to spot the most expensive one. This is comparable to trusting a bank
-because is has skyscrapers and lots of people working in them over any amount of
-other "banks" that have just opened a stall in your street. The real bank
-wouldn't go to all these lengths just to trick you into giving them your money.
-Just like miners wouldn't spend giant amounts of work just to trick you by
-giving you made-up version of history in which you received money that in
-reality was spent to someone else.
-  
-Secondly, because it is very expensive to make, proof-of-work is the fairest
-distributed way of distributing a new asset that we know of.
-Miners spend almost as many dollars on hardware, energy and work as the bitcoin are
-worth that they receive in return. But because there is a lot of uncertainty in
-the process &mdash; hard-to-forecast things like the number of competitors, the
-price of electricity, hardware improvements and the bitcoin price can change
-mining profitability drastically &mdash; there is often a premium to be earned over
-the pure cost, which keeps miners interested.
+Erstens kann man anhand des Proof-of-Work, der an mehrere konkurrierende Versionen der Transaktionshistorie ("Blockchains") angehängt ist, leicht erkennen, welche Version der Historie mehr Arbeit benötigt hat, um sie festzuhalten. Die Version mit den meisten Arbeit wird von allen Bitcoin-Clients als die aktuell gültige Version angesehen. Es wird kein Kontext oder anderes Vorwissen benötigt, um dies zu verifizieren. Solange ein Client, der neu mit dem Bitcoin-Netzwerk verbunden wurde, in der Lage ist, eine einzige Kopie der korrekten Historie zu erhalten, wird ihn keine der gefälschten Historien täuschen können, da stets offensichtlich sein wird, welche die aufwendigste Version ist. Dies ist vergleichbar mit dem Vertrauen in eine Bank, das durch Wolkenkratzer und viele Mitarbeiter begründet wird, gegenüber jeder Menge anderer "Banken", die gerade Stände in Deiner Straße eröffnet haben. Die echte Bank würde sich nicht so viel Mühe geben, nur um an Dein Geld zu kommen. Genauso wenig würden Miner riesige Mengen an Arbeitsleistung aufwenden, nur um Dich zu täuschen, indem sie Dir eine erfundene Version der Historie präsentieren, in der Du Geld erhältst, das in Wirklichkeit an jemand anderen ausgegeben wurde.
 
-## Couldn't we just use something else like proof-of-stake or proof-of-anything-else?
+Zweitens ist Proof-of-Work, weil er teuer herzustellen ist, die gerechteste Art der Verteilung eines neuen Assets, die wir kennen. Miner wenden fast so viele Kapital für Hardware, Energie und Arbeitszeit auf, wie sie an Bitcoins im Gegenzug dafür erhalten. Aber aufgrund der recht großen Ungewissheit bei diesem Prozess - schwer vorherzusagende Dinge wie die Anzahl an Konkurrenten, der Strompreis, Hardware-Verbesserungen und Bitcoin-Preis können die Rentabilität des Minings drastisch verändern -können Miner oft einen Gewinn verdienen, was das Interesse am Minen aufrecht hält.
 
-tl;dr: As far as we know, there is no free lunch here. 
+## Könnten wir nicht einfach etwas anderes wie Proof-of-Stake oder Proof-of-xxx verwenden?
 
-Proof-of-stake is similar in concept to perpetual motion: It tries securing
-an asset against forging of multiple new histories by pricing punishment
-in terms of the asset itself while rewarding honest behavior with the asset itself. There is no
-indication that this is possible, in spite of many market participants making
-claims to the contrary, just like with perpetual motion.
+Kurz: Soviel wir wissen, gibt es hier wie überall nichts umsonst.
 
-One popular misleading approach is to make the system so complex that even experts cannot determine
-what security properties are even being pursued.
-It's possible to just define all practical problems away in theory.
-When these systems are finally built, and inevitably attacks are surfacing, the
-system is simply made even more complex, which might rule out one concrete
-attack, but opens up several others. Notice that this sleight of hand wouldn't
-even be possible in a truly decentralized system like Bitcoin, because the
-system [can't simply be changed](faq#can'twejustchangebitcoin?) by a few insiders.
+Proof-of-Stake ist ein ähnliches Konzept wie das des Perpetuum Mobile: Es versucht, einen Vermögenswert gegen das Fälschen mehrerer neuer Historien zu sichern, indem es die Strafe in dem Vermögenswert selbst bemisst, während es ehrliches Verhalten mit dem Vermögenswert selbst belohnt. Es gibt keinen Anhaltspunkt dafür, dass dies funktioniert, obwohl viele Marktteilnehmer das Gegenteil behaupten, genau wie beim Perpetuum Mobile.
 
-Notice too, that even if securing the ledger with proof-of-stake were feasible,
-that wouldn't solve the distribution problem at all.
+Ein beliebter irreführender Ansatz ist es, das System so komplex zu machen, dass selbst Experten nicht feststellen können, welche Sicherheitseigenschaften überhaupt angestrebt werden. Es ist möglich, alle praktischen Probleme einfach in der Theorie wegzudefinieren. Wenn diese Systeme schließlich gebaut werden, und unweigerlich Angriffe auftauchen, wird das System einfach noch komplexer gemacht, was vielleicht einen konkreten Angriff ausschließt, aber mehrere andere eröffnet. Beachte, dass dieser Taschenspielertrick in einem wirklich dezentralen System wie Bitcoin gar nicht möglich wäre, weil das System nicht einfach von ein paar Insidern [verändert werden](de/faq#cantwejustchangebitcoin?) kann.
 
-As for more exotic proof-of-something, there have been many claims made of "the
-better Bitcoin" here as well, but alas, something has always prevented those
-from making real progress. Of course, just because so many extraordinary claims
-have been made and serious researchers have failed to come up with a better
-system for 12 years now, doesn't mean it's impossible. Just not something we can
-rely on for now.
+Beachte auch, dass selbst wenn es möglich wäre, das Register mit Proof-of-Stake gegen Manipulation zu sichern, dies das Verteilungsproblem überhaupt nicht lösen würde.
 
-## Can't we just change Bitcoin?
-  
-No. Bitcoin's most cherished value proposition is its resistance to
-changing central economic properties. Proof-of-work is an important economic
-principle, even if there were a technical alternative. But most importantly,
-there aren't any known alternatives with similar properties.
+Was noch exotischere "Beweisverfahren" angeht, so wurden auch hier viele Behauptungen über "den besseren Bitcoin" aufgestellt, aber leider hat etwas immer verhindert, dass diese wirkliche Fortschritte machen. Natürlich, nur weil so viele abenteuerliche Behauptungen aufgestellt wurden und seriöse Forscher seit 12 Jahren nicht mit einem besseren System aufwarten konnten, heißt das nicht, dass es unmöglich ist ein besseres Verfahren zu finden. Allerdings ist das nichts, auf das wir uns im Moment verlassen können.
 
-## Can't we just ban Bitcoin?
+## Können wir nicht einfach Bitcoin ändern?
 
-No. It was designed to withstand opposition from state level adversaries.
-Banning it would require a global totalitarian regime. Do you really want that?
+Nein. Bitcoins wichtigste Eigenschaft ist seine Resistenz gegen die Veränderung zentraler wirtschaftlicher Merkmale. Proof-of-Work bleibt dabei ein wichtiges ökonomisches Prinzip, selbst wenn es eine technische Alternative gäbe. Aber am wichtigsten ist, dass es bislang keine bekannten Alternativen mit ähnlichen Eigenschaften gibt.
 
-## How could Bitcoin be a net positive force for the environment? 
+## Können wir Bitcoin nicht einfach verbieten?
 
-tl;dr: It could help finance renewable energy developments, remove subsidies for
-fossil energy, replace legacy environmental hazards such as gold mining,
-incentivize people to save instead of spend, and maybe even be the foundation of
-a more sustainable economic system.
+Nein. Bitcoin wurde entwickelt, um der Einwirkung durch staatlichen Akteuren zu widerstehen. Es zu verbieten würde ein globales totalitäres Regime erfordern. Willst Du das wirklich?
 
-Many Bitcoiners have written passionate pieces full of conviction about this
-topic. Here's a [twitter thread full of
-them.](https://twitter.com/mtcbtc/status/1346813481257984001?s=2) What I don't
-like about most of these pieces is the utter conviction that feels really
-inappropriate.
+## Wie könnte Bitcoin eine positive Wirkung auf die Umwelt haben?
 
-There are indeed all kinds of arguments why Bitcoin might be a net positive
-force in the fight against climate change. They reach from speculative to very
-speculative IMHO, but that doesn't mean they can't come true. Here's a
-selection:
+Kurz: Es könnte dabei helfen, die Entwicklung erneuerbarer Energien zu finanzieren, Subventionen für fossile Energien abzuschaffen, Umweltschäden durch überholte Systeme wie weiteren Goldabbau zu verringern, Anreize zum Sparen statt zum Ausgeben zu schaffen und vielleicht sogar die Grundlage für ein nachhaltigeres Wirtschaftssystem sein.
 
-* Bitcoin miners are seeking out the cheapest forms of electric energy on the planet, pretty much independent of location, and are guaranteeing a minimum price for it. This can have many interesting consequences: It builds more market demand for research and deployment of new energy sources. But without regulatory oversight, this might also make fossil energy sources even more profitable. So far, we have seen tentative examples of both: Miners have been used to [finance overprovisioning of renewable energy](https://www.forbes.com/sites/christopherhelman/2020/05/21/how-this-billionaire-backed-crypto-startup-gets-paid-to-not-mine-bitcoin/?sh=2a5016a87596) as well as [reactivating formerly unprofitable oil fields](https://www.upstreamdata.ca/post/saving-stranded-gas-distributed-bitcoin-mining-to-the-rescue).
-    
-* Since Bitcoin miners are buying cheap energy wherever it occurs, they may hasten the demise of energy subsidies by simply making them economically unbearable. Or they might just be outlawed. Either way, no more fossil energy based mining.
-    
-* Bitcoin might replace parts of the legacy financial system including gold mining. Gold mining is an environmentally hazardous process and might become less profitable if Bitcoin takes over part of the monetary premium that gold is commanding now.
-    
-* Bitcoin is implementing the idea of sound money. That is, the Bitcoin supply is scarce (even more predictably than gold). This implies that it should always become more valuable over time. Therefore, saving Bitcoin is more appealing than saving fiat money, which tends to become less valuable over time. In order not to depreciate, fiat money always has to be invested. But every investment carries both risk and environmental costs. Bitcoin might become an alternative that is both less risky (in the long run) and less environmentally problematic than the average investment. Thus, people might be incentivized to hold Bitcoin over longer time frames, and this holding time might be, say, less carbon intensive, than having the same amount of buying power being spent potentially multiple times in the economy.
-        
-* From its inception, Bitcoin has been a counter movement to the legacy banking system built on credit expansion. Many people see this system of money production as a key driver for inequality, unlimited economic growth and environmental hazards. Bitcoin might be the foundation of a different system that could address some of these problems differently.
+Viele Bitcoiner haben leidenschaftliche Abhandlungen voller Überzeugung über dieses Thema geschrieben. Hier ist eine [Sammlung von Twitter-Beiträgen](https://twitter.com/mtcbtc/status/1346813481257984001?s=2) dazu. Was ich aber an den meisten dieser Beiträge nicht mag, ist die völlige Überzeugung, die teilweise wirklich unpassend wirkt.
 
-## If Bitcoin could be eventually helpful against climate change, why do you want to do anything at all?
-  
-Notice the COULD. It means these visions are both uncertain and certainly not
-realized today. Climate change is a problem today and needs to be addressed
-ASAP. Even if Bitcoiners' visions of a better world through better money come
-true, it certainly won't be overnight, and it might be too late. In the
-meantime, there is no question that Bitcoin mining does contribute to climate
-change today.
-That's why we want to act now.  
+Es gibt tatsächlich alle möglichen Argumente, warum Bitcoin eine positive Wirkung im Kampf gegen den Klimawandel haben könnte. Sie reichen von spekulativ bis hochspekulativ aber das bedeutet nicht, dass sie nicht wahr werden könnten. Hier ist eine Auswahl:
 
-## How could we help fight against climate change?
-  
-Bitcoin is money. Bitcoiners &mdash; hodlers, miners, exchanges, businesses &mdash; are
-making money. Money can help solve problems. So we want to encourage you to give
-some of that money to causes that you believe can make a difference in the fight
-against climate change. And tell us about it, so we can count it, and one day
-tell the world that we are sure that Bitcoin is a net positive money.
-  
-## Where can I donate?
+* Bitcoin-Miner suchen sich die günstigsten elektrischen Energieformen auf dem Planeten, ziemlich unabhängig vom Standort, und garantieren einen Mindestpreis dafür. Dies kann viele interessante Konsequenzen haben: Es schafft mehr Marktnachfrage für die Erforschung und den Einsatz von neuen Energiequellen. Ohne regulatorische Aufsicht könnte dies aber auch dazu führen, dass fossile Energieträger noch profitabler werden. Bislang haben wir zaghafte Versuche in beide Richtungen gesehen: Das Minen wurden zur [Finanzierung der Überversorgung mit erneuerbaren Energien](https://www.forbes.com/sites/christopherhelman/2020/05/21/how-this-billionaire-backed-crypto-startup-gets-paid-to-not-mine-bitcoin/?sh=2a5016a87596) ebenso genutzt wie zur [Reaktivierung von ehemals unrentablen Ölfeldern](https://www.upstreamdata.ca/post/saving-stranded-gas-distributed-bitcoin-mining-to-the-rescue).
 
-We do not want to take your money. In the spirit of Bitcoin, this is a voluntary
-and decentralized effort. So ideally, you select the cause and the amount you
-want to give, estimate the amount of CO2 offset, and report that to us, as
-anonymously or publicly as you want. In order to make that easier for you, we
-are curating a [list of organisations](partners) that we believe are helpful and
-that work with us to automatically report the numbers, so we can measure our
-impact as bitcoiners. And we have made the [calculator
-page](https://netpositive.money/calculator) to give you an idea of how much CO2
-you might want to offset.
+* Da Bitcoin-Miner billige Energie nutzen, wo immer sie vorkommt, könnten sie das Ende der Energiesubventionen beschleunigen, indem sie sie einfach wirtschaftlich untragbar machen. Oder sie werden einfach geächtet. So oder so wird es kein auf fossiler Energie basierendes Mining mehr geben.
 
-In general, we'd recommend indexing risk by donating (as a community) to a wide
-array of initiatives with different approaches. You can just select those that
-you find most appealing. If they aren't on our list, just contact us to let us
-know that you want to give to them. If they meet our standards for inclusion,
-we'll gladly add your contribution to the total and maybe even add them to our
-recommendation list.
+* Bitcoin könnte Teile des bestehenden Finanzsystems ersetzen, einschließlich des Goldbergbaus. Der Goldabbau ist ein umweltgefährdender Prozess und könnte weniger profitabel werden, wenn Bitcoin einen Teil der monetären Prämie übernimmt, die Gold jetzt innehat.
 
-## How much money are we talking about?
+* Bitcoin setzt die Idee des soliden Geldes um. Das heißt, der Bitcoin-Vorrat ist knapp (sogar noch vorhersehbarer als Gold). Dies impliziert, dass es mit der Zeit immer wertvoller werden wird. Daher ist das Sparen von Bitcoin attraktiver als das Sparen von Fiat-Geld, das dazu tendiert, mit der Zeit weniger wertvoll zu werden. Um nicht an Wert zu verlieren, muss Fiat-Geld immer investiert werden. Aber jede Investition birgt sowohl Risiken als auch Umweltkosten. Bitcoin könnte eine Alternative sein, die sowohl weniger risikoreich (auf lange Sicht) als auch weniger ökologisch problematisch ist als die durchschnittliche Investition. So könnten Menschen einen Anreiz haben, Bitcoin über längere Zeiträume zu halten, und dieser Sparzeitraum wäre mit einem weniger hohen CO2-Ausstoß verbunden, als wenn die gleiche Menge an Kaufkraft potenziell mehrfach in der Wirtschaft ausgegeben werden würde.
 
-Looking at the [calculator page](https://netpositive.money/calculator), the
-current estimate of total CO2 emitted by bitcoin mining in its lifetime is close
-to 100 Mt. Classical offsetting measures or carbon credits would price this at
-about \$20 per ton of CO2 or \$2 billion. Which is less than 0.4% of the current
-value of all bitcoins in existence, or about $120 per Bitcoin.
+* Von Anfang an war Bitcoin eine Gegenbewegung zum herkömmlichen Bankensystem, das auf Kreditausweitung aufgebaut ist. Viele Menschen sehen dieses System der Geldproduktion als einen Haupttreiber für Ungleichheit, unbegrenztes Wirtschaftswachstum und Umweltgefahren. Bitcoin könnte die Grundlage für ein neues System sein, das einige dieser Probleme anders angehen könnte.
 
-However, as you can see on our list of charities, there are initiatives that
-promise a much higher impact per dollar invested, to the tune of far less than
-\$1 per ton of CO2. These tend to be a little more speculative in nature, in
-that there is more variance in the expected amount offset, which should be OK if
-we don't put all our eggs in one basket.
+## Wenn Bitcoin tatsächlich irgendwann gegen den Klimawandel helfen könnte, warum wollt Ihr dann überhaupt etwas tun?
 
-So it does seem reasonable that we might reach our goal of Bitcoin being a
-certified net positive money with less than \$100 million in total donations.
-Which is less than 0.02% of the value of all bitcoins, or about $6 per Bitcoin.
+Beachte das "könnte" in der Frage. Es bedeutet, dass diese Visionen sowohl ungewiss sind als auch sicher heute noch nicht wirksam sind. Der Klimawandel ist heute ein Problem und muss so schnell wie möglich angegangen werden. Selbst wenn die Visionen der Bitcoiner von einer besseren Welt durch besseres Geld wahr werden, wird dies sicherlich nicht über Nacht geschehen und es könnte dann zu spät sein. Bis dahin steht es außer Frage, dass Bitcoin-Mining schon heute zum Klimawandel beiträgt. Deshalb wollen wir jetzt handeln.
 
-Annual figures tend to be at about a third of the total lifetime amount at the
-current growth rate.
+## Wie können wir helfen, den Klimawandel zu bekämpfen?
 
-## Is that a lot?
+Bitcoin ist Geld. Bitcoiner - Hodler, Miner, Börsen, Unternehmen - verdienen Geld. Geld kann helfen, Probleme zu lösen. Deshalb möchten wir Dich ermutigen, etwas von diesem Geld an Organisationen zu spenden, von denen Du glaubst, dass sie einen Beitrag im Kampf gegen den Klimawandel leisten können. Und sag uns Bescheid, damit wir mitzählen können, um eines Tages der Welt berichten zu können, dass Bitcoin ein klimafreundliches Geld darstellt.
 
-Not really, considering that fiat money is losing value at a rate of at least 2%
-per year. Or that Bitcoiners are already giving [\$300 million per
-year](https://www.thegivingblock.com/) to nonprofits.
+## Wohin kann ich spenden?
+
+Wir wollen Dein Geld nicht nehmen. Im Einklang mit dem Geist von Bitcoin ist dies eine freiwillige und dezentrale Initiative. Idealerweise wählst Du also den Zweck und den Betrag, den Du spenden willst, schätzt die Menge des CO2-Ausgleichs und meldest uns das, so anonym oder öffentlich, wie Du möchtest. Um Dir das zu erleichtern, haben wir eine [Liste von Organisationen](de/partners) zusammengestellt, die wir für sinnvoll halten und die mit uns zusammenarbeiten, um die Zahlen automatisch zu melden. So können wir unsere Wirkung als Bitcoiner leicht erfassen. Darüber hinaus haben wir den [CO2-Rechner](de/calculator) erstellt, um Dir eine Vorstellung davon zu geben, wie viel CO2 Du vielleicht ausgleichen möchtest.
+
+Generell würden wir empfehlen, das Risiko zu streuen, indem wir als Gemeinschaft für eine Vielzahl von Initiativen mit unterschiedlichen Ansätzen spenden. Du kannst einfach diejenigen auswählen, die Du am ansprechendsten findest. Wenn sie nicht auf unserer Liste stehen, kontaktiere uns einfach, um uns mitzuteilen, für wen Du spenden möchtest. Wenn die Initiative unseren Standards entspricht, werden wir Deinen Beitrag gerne der Gesamtsumme hinzufügen und diese vielleicht sogar in unsere Empfehlungsliste aufnehmen.
+
+## Von wie viel Geld reden wir?
+
+Ein Blick auf die Seite des [CO2-Rechners](de/calculator) zeigt, dass die aktuelle Schätzung des gesamten CO2-Ausstoßes durch Bitcoin-Mining während seiner Lebensdauer bei etwa 100 Mt liegt. Klassische Kompensationsmaßnahmen oder Kohlenstoffgutschriften würden dies mit etwa 20 USD pro Tonne CO2 oder 2 Mrd. USD bewerten. Das sind weniger als 0,2 % des aktuellen Wertes aller existierenden Bitcoins, oder etwa 100 EUR pro Bitcoin.
+
+Wie Du jedoch auf unserer Liste der Spendenorganisationen sehen kannst, gibt es Initiativen, die einen viel höheren Wirkungsgrad pro investiertem Dollar versprechen, und zwar in einer Größenordnung von weniger als 1 USD pro Tonne CO2. Diese neigen dazu, etwas spekulativer zu sein, insofern dass es größere Abweichungen von der erwarteten Kompensationsmenge geben kann; das ist in Ordnung, sofern wir nicht alle unsere Eier in den gleichen Korb legen.
+
+Es scheint also vernünftig anzunehmen, dass wir unser Ziel, Bitcoin zu einem zertifizierten klimaneutralen Geld zu machen, mit weniger als 100 Mio. EUR an Gesamtspenden erreichen könnten. Das sind weniger als 0,01% des Wertes aller Bitcoins, oder etwa 5 EUR pro Bitcoin.
+
+Die jährlichen Zahlen liegen bei der derzeitigen Wachstumsrate bei etwa einem Drittel des gesamten Lebenszeitbetrags.
+
+## Ist das viel?
+
+Nicht wirklich, wenn man bedenkt, dass Fiat-Geld mit einer Rate von mindestens 2% pro Jahr an Wert verliert. Oder dass Bitcoiner bereits [300 Mio. USD pro Jahr](https://www.thegivingblock.com/) an gemeinnützige Organisationen spenden.
 
