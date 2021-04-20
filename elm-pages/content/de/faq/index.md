@@ -41,11 +41,11 @@ Das liegt daran, dass dies völlig verschiedene Dinge sind. Bei Visa-Transaktion
 
 Auf der anderen Seite ist eine Bitcoin-On-Chain-Transaktion eine reale Übertragung eines Vermögensgegenstands, vergleichbar mit einer Goldlieferung von einer Zentralbank zu einer anderen. Auch diese sind entsprechend teuer. Es wäre völlig übertrieben, auf diese Weise einen Kaffee kaufen zu wollen. Dafür reichte es wohl aus, einfach ein paar Zahlen bei einer (Bitcoin-)Bank zu aktualisieren. Oder  das Lightning Network zu nutzen.
 
-Wenn Sie ein wenig Zeit haben, hat Nic Carter es [viel besser erklärt als ich](https://www.coindesk.com/what-bloomberg-gets-wrong-about-bitcoins-climate-footprint).
+Wenn Du ein wenig Zeit hast: Nic Carter hat es [viel besser erklärt als ich](https://www.coindesk.com/what-bloomberg-gets-wrong-about-bitcoins-climate-footprint).
 
 ## Wird Bitcoin die Ozeane zum Überkochen bringen?
 
-Kurz: Nein. Es wird zwar viel Energie verbraucht und dies führt auch zu entsprechenden CO2-Emissionen. Die aktuell besten Schätzungen darüber, wie viel, finden Sie [hier](https://netpositive.money/de/calculator). Es ist schwer vorherzusagen, wie sich dies in Zukunft weiter entwickeln wird; allerdings wird das exponentielle Wachstum nicht ewig anhalten.
+Kurz: Nein. Es wird zwar viel Energie verbraucht und dies führt auch zu entsprechenden CO2-Emissionen. Die aktuell besten Schätzungen findest Du [hier](https://netpositive.money/de/calculator). Es ist schwer vorherzusagen, wie sich dies in Zukunft weiter entwickeln wird; allerdings wird das exponentielle Wachstum nicht ewig anhalten.
 
 Es ist schwierig, Vorhersagen zu machen, besonders über die Zukunft. Das ist der Grund, warum sich sogar innerhalb der Bitcoin Community widersprüchliche (aber todsichere) Prognosen für die zukünftige Entwicklung hinsichtlich Hash-Rate, Mining-Kosten, Energieverbrauch und CO2-Emissionen finden lassen. Aber zunächst ist es wichtig, diese vier Werte klar zu unterscheiden.
 
@@ -77,7 +77,7 @@ Womit wir bei der letzten und entscheidenden Kennzahl wären, den CO2-Emissionen
 
 * was wäre ansonsten passiert, wenn das Bitcoin-Mining nie stattgefunden hätte?
 
-Es gibt substantielle Hinweise darauf, dass der Trend bei beiden Fragen positiv ist. Staaten werden Miner, die Subventionen für fossile Energie missbrauchen, nicht lange tolerieren. Wie bereits in einer [anderen Frage](de/faq#howcouldbitcoinbeanetpositiveforcefortheenvironment) erwähnt, nutzen Energieversorger das Bitcoin-Mining, um Überschüsse an erneuerbarer Energie für Verbrauchsspitzen bereitzustellen. Mining wird anstelle des Abfackelns oder auch nur des Ablassens von überschüssigem Erdgas eingesetzt. Es gibt aber auch Berichte darüber, dass Mining stillgelegte Öl- oder Gasfelder wieder profitabel macht. Es bleibt wichtig, sich all diese Beispiele genau anzuschauen, um zu sehen, ob sie wirklich positiv sind, aber man kann durchaus optimistisch bleiben.
+Es gibt substantielle Hinweise darauf, dass der Trend bei beiden Fragen positiv ist. Staaten werden Miner, die Subventionen für fossile Energie missbrauchen, nicht lange tolerieren. Wie bereits in einer [anderen Frage](de/faq#wieknntebitcoineinepositivewirkungaufdieumwelthaben) erwähnt, nutzen Energieversorger das Bitcoin-Mining, um Überschüsse an erneuerbarer Energie für Verbrauchsspitzen bereitzustellen. Mining wird anstelle des Abfackelns oder auch nur des Ablassens von überschüssigem Erdgas eingesetzt. Es gibt aber auch Berichte darüber, dass Mining stillgelegte Öl- oder Gasfelder wieder profitabel macht. Es bleibt wichtig, sich all diese Beispiele genau anzuschauen, um zu sehen, ob sie wirklich positiv sind, aber man kann durchaus optimistisch bleiben.
 
 
 
@@ -99,7 +99,7 @@ Kurz: Soviel wir wissen, gibt es hier wie überall nichts umsonst.
 
 Proof-of-Stake ist ein ähnliches Konzept wie das des Perpetuum Mobile: Es versucht, einen Vermögenswert gegen das Fälschen mehrerer neuer Historien zu sichern, indem es die Strafe in dem Vermögenswert selbst bemisst, während es ehrliches Verhalten mit dem Vermögenswert selbst belohnt. Es gibt keinen Anhaltspunkt dafür, dass dies funktioniert, obwohl viele Marktteilnehmer das Gegenteil behaupten, genau wie beim Perpetuum Mobile.
 
-Ein beliebter irreführender Ansatz ist es, das System so komplex zu machen, dass selbst Experten nicht feststellen können, welche Sicherheitseigenschaften überhaupt angestrebt werden. Es ist möglich, alle praktischen Probleme einfach in der Theorie wegzudefinieren. Wenn diese Systeme schließlich gebaut werden, und unweigerlich Angriffe auftauchen, wird das System einfach noch komplexer gemacht, was vielleicht einen konkreten Angriff ausschließt, aber mehrere andere eröffnet. Beachte, dass dieser Taschenspielertrick in einem wirklich dezentralen System wie Bitcoin gar nicht möglich wäre, weil das System nicht einfach von ein paar Insidern [verändert werden](de/faq#cantwejustchangebitcoin?) kann.
+Ein beliebter irreführender Ansatz ist es, das System so komplex zu machen, dass selbst Experten nicht feststellen können, welche Sicherheitseigenschaften überhaupt angestrebt werden. Es ist möglich, alle praktischen Probleme einfach in der Theorie wegzudefinieren. Wenn diese Systeme schließlich gebaut werden, und unweigerlich Angriffe auftauchen, wird das System einfach noch komplexer gemacht, was vielleicht einen konkreten Angriff ausschließt, aber mehrere andere eröffnet. Beachte, dass dieser Taschenspielertrick in einem wirklich dezentralen System wie Bitcoin gar nicht möglich wäre, weil das System nicht einfach von ein paar Insidern [verändert werden](de/faq#knnenwirnichteinfachbitcoinndern) kann.
 
 Beachte auch, dass selbst wenn es möglich wäre, das Register mit Proof-of-Stake gegen Manipulation zu sichern, dies das Verteilungsproblem überhaupt nicht lösen würde.
 
