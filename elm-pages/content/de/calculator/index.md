@@ -1,51 +1,37 @@
 ---
-title: Bitcoin CO2 Footprint Calculator
+title: Bitcoin CO2-Fußabdruck-Rechner
 type: calculator
 ---
 
-The following graph shows the development of Bitcoin mining total CO2 emissions
-in megatons per month. It is derived from electricity consumption data provided
-by the [Cambridge Centre for Alternative Finance](https://cbeci.org/) by
-multiplication with a factor taken from a [paper by Stoll et al.](sources#thecarbonfootprintofbitcoin).
+Die folgende Grafik zeigt die Entwicklung der gesamten CO2-Emissionen des Bitcoin-Minings in Megatonnen pro Monat. Sie wird abgeleitet von Stromverbrauchsdaten, die vom [Cambridge Centre for Alternative Finance](https://cbeci.org/) zur Verfügung gestellt werden, durch Multiplikation mit einem Faktor, der aus einem wissenschaftlichen Aufsatz von [Stoll et al.](de/sources#thecarbonfootprintofbitcoin) stammt.
 
 <co2graph></co2graph>
 
-The second graph shows the total amount of CO2 emitted by Bitcoin miners
-obtained by summing up the above data. You can restrict the calculation to a
-time interval by clicking and dragging or entering the start and end months
-below.
-                                   
-<co2totalgraph></co2totalgraph>                                   
+Die zweite Grafik zeigt die Gesamtmenge an CO2, die von Bitcoin-Minern emittiert wurde, und wird durch Aufsummieren der obigen Daten berechnet. Du kannst die Berechnung auf ein Zeitintervall beschränken, indem Du die Grafik anklickst und mit der Maus ziehst. Alternativ kannst Du unten den Start- und Endmonat eingeben.
 
-<inputstart 
- text = "start month: "
->
+<co2totalgraph></co2totalgraph>
+
+<inputstart text="Startmonat: ">
 </inputstart>
 
-<inputend
-  text = "end month: "
->
+<inputend text="Endmonat: ">
 </inputend>
 
-Selected: <selectionstart></selectionstart> to <selectionend></selectionend>
+Ausgewählt: von <selectionstart></selectionstart> bis <selectionend></selectionend>
 
-Total CO2 emitted in this time frame: <totalco2></totalco2> Mt.
+Gesamter CO2-Ausstoß für den ausgewählten Zeitrahmen: <totalco2></totalco2> Mt
 
-Per BTC when divided by the total amount of bitcoin in existence at the time: <perbtc></perbtc> t.
+Pro BTC, also geteilt durch die Gesamtmenge der zu diesem Zeitpunkt existierenden Bitcoin: <perbtc></perbtc> t
 
-<inputbtc
- text="How many bitcoin do you want to offset? "
->
+<inputbtc text="Wieviele Bitcoin willst Du kompensieren? ">
 </inputbtc>
 
-<outputtons
- text="This is equivalent to "
->
+<outputtons text="Das entspricht ">
 </outputtons>
-Happy offsetting, and don't forget to tell us about it so we can keep count!
+Viel Spaß beim Kompensieren, und vergiss nicht, uns davon zu berichten, damit wir mitzählen können!
 
 
-The horizontal line at <outputoffset></outputoffset> Mt signifies the amount of CO2 that has already been offset today. Calculated from the Genesis block at January 3, 2009, this means we've offset Bitcoin's history approximately until <offsetdate></offsetdate>.
+Die horizontale Linie bei <outputoffset></outputoffset> Mt markiert die Menge an CO2, die heute bereits ausgeglichen wurde. Gerechnet vom Genesis-Block am 3. Januar 2009 an bedeutet dies, dass wir die Geschichte von Bitcoin ungefähr bis zum <offsetdate></offsetdate> ausgeglichen haben.
 
 
 
