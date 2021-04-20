@@ -1,31 +1,19 @@
 ---
-title: Results
+title: Ergebnisse
 type: page
 ---
 
-![a beautiful forest](images/forest-931706_640.jpg)
+![Ein natürlicher Wald](images/forest-931706_640.jpg)
 
-This is where we track our impact. Since we're only just starting out, for now
-we are lucky to stand on the shoulders of giants:
+Hier können wir unseren Beitrag nachverfolgen. Da wir noch ganz am Anfang stehen, haben wir erst einmal das Glück, auf den Schultern von Riesen stehen zu können:
 
-## Leaderboard
+## Rangliste
 
-[Offsetbitcoin.org ](http://offsetbitcoin.org/) is an earlier initiative similar
-to netpositive.money. Today, the website only forwards to a donation page for
-[Cool Earth](https://www.coolearth.org/) where you can donate in bitcoin.
+[Offsetbitcoin.org ](http://offsetbitcoin.org/) ist eine frühere Initiative ähnlich wie netpositive.money. Derzeit leitet die Website nur noch auf die Spendenseite von
+[Cool Earth](https://www.coolearth.org/) weiter, wo man Bitcoin spenden kann.
 
-They started back in 2018, however we only found out about them a few months
-ago. Unfortunately, we haven't been able to contact them and they don't appear
-very active today. We're happy to pick up the mantle, although of course we'd be
-even happier about more active similar initiatives. Because this is not about
-us, but about Bitcoin's carbon footprint. 
+Sie wurden bereits 2018 gegründet, allerdings wir haben erst vor einigen Monaten von davon erfahren. Leider haben wir sie nicht kontaktieren können und sie scheinen heute nicht mehr sehr aktiv zu sein. Nichtsdestotrotz freuen wir uns, den Gedanken weiterzutragen, obwohl wir uns noch mehr über weitere aktive Initiativen zu diesem Thema freuen würden. Immerhin geht hier es nicht um uns, sondern um den CO2-Fußabdruck von Bitcoin. 
 
-So it is with great pleasure that we report that Offsetbitcoin has collected at
-least 1.82015599 BTC and offset at least 49 kt of CO2 so far. As you can see on
-the [calculator page](calculator), this might be a small first step in a giant
-endeavour. Still, we celebrate this wonderful start and we hope we can build on
-their success.
+Es ist uns daher eine große Freude zu berichten, dass Offsetbitcoin bisher mindestens 1,82015599 BTC gesammelt und mindestens 49 kt CO2 ausgeglichen hat. Wie Du auf der [Rechnerseite](de/calculator) sehen kannst, ist dies erst ein kleiner erster Schritt in einem riesigen Unterfangen. Dennoch feiern wir diesen wunderbaren Start und hoffen, dass wir auf diesem Erfolg aufbauen können.
 
-Please inform us (on twitter [@netposmon](https://twitter.com/netposmon) or via
-email <info@netpositive.money>) if you learn about or are building other ways of
-making Bitcoin a net positive money, so we can celebrate them here!
+Bitte teile uns (auf Twitter [@netposmon](https://twitter.com/netposmon) oder per E-Mail <info@netpositive.money>) mit, wenn Du von anderen Möglichkeiten erfährst, Bitcoin zu einem klimapositiven Geld zu machen, oder selbst an solchen Projekten arbeitest, damit wir sie hier würdigen können!
