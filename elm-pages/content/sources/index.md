@@ -3,6 +3,12 @@ title: Sources
 type: tocpage
 ---
 
+## Bitcoin is Key to an Abundant, Clean Energy Future
+Square Crypto's whitepaper explains the business case for financing
+overprovisioning intermittent renewable energy with Bitcoin mining. A little
+uncritical IMHO, but a good start for asking difficult questions.
+<http://squ.re/BCEI-whitepaper>
+
 ## What People Get Wrong About Bitcoin's Climate Footprint
 
 Nic Carter explains much of what I've written on in the [FAQ](faq) concisely in this video:
