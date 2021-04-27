@@ -2,26 +2,37 @@
 title: Recommendations
 type: tocpage
 ---
+**If you have donated to the Founder's Pledge Climate Change Fund via
+effectivealtruism.org or to Tradewater before and have been using an ad blocker,
+please send us an email so we can count those donations manually! We're sorry
+we've only found out now that this could go wrong.**
+
+
 ## Shut up and take my money!
 
 If you want to get started, just use one of the links in this section! You can
 read more about our choices below.
 
 For most people we recommend just donating through [Founder's Pledge Climate
-Change
-Fund](https://app.effectivealtruism.org/funds/partners/founders-pledge-climate-change-fund?utm_source=netpositive.money&utm_medium=site&utm_campaign=bitcoin).
-They currently support CATF, Carbon180 and TerraPraxis. The above is a special
-link that enables them (via Google Analytics) to track the amount of donations
-coming from us so we can then evaluate how much Bitcoiners have contributed.
-These donations should be tax-exempt in the US and UK.
+Change Fund via
+every.org](https://www.every.org/@netpositive.money902/climate.change.fund/3).
+They currently support CATF, Carbon180 and TerraPraxis. These donations should
+be tax-exempt in the US.
 
-We have found a great alternative especially for US citizens in
+We have found a great donation vehicle especially for US citizens in
 [every.org](https://www.every.org/@netpositive.money902/). They are a
 meta-charity that is building a social network for donors. So if you go to [our
 page](https://www.every.org/@netpositive.money902/) there, you can donate to The
-Founder's Pledge Climate Change Fund, Carbon180, Climate Action Task Force, or
-Sunrise Movement, and it will get counted for us. They also accept bitcoin
-through Coinbase.
+Founder's Pledge Climate Change Fund, Carbon180, Climate Action Task Force,
+Sunrise Movement or TerraPraxis, and it will get counted for us. They also
+accept bitcoin through Coinbase.
+
+If you are from the UK and want a tax rebate, you can use [this link for the
+Founder's Pledge Climate Change
+Fund](https://app.effectivealtruism.org/funds/partners/founders-pledge-climate-change-fund?utm_source=netpositive.money&utm_medium=site&utm_campaign=bitcoin).
+However, please note that they are using Google Analytics to track our
+contribution and some ad blockers (like mine) will prevent that &mdash; so
+please disable your ad blockers if you want your contribution counted for us!
 
 For Germans (and maybe other Europeans, though they would probably not get a tax
 refund), it's more effective to go through our [special donation
@@ -38,6 +49,10 @@ Germany](https://germany.myclimate.org/en/contribution_calculators/new?ps=netpos
 
 If you want to help clean up refrigerants, here's [our link to
 Tradewater](https://tradewater.us/offsetnow/?utm_source=netpositive.money&utm_medium=site&utm_campaign=bitcoin#household).
+They, too, are using Google Analytics to track our donations, so please disable
+your ad blocker if you want your contribution counted!
+
+
 
 ## Who should you support?
 
