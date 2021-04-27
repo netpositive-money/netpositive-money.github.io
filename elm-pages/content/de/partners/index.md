@@ -214,13 +214,11 @@ positive for the climate. Of course, we're very happy if you go beyond that.
 
 ## Can I donate in Bitcoin? When Lightning, Sir?
 
-At the moment, most of our recommended organisations don't yet support directly
-giving in Bitcoin. The [Founder's Pledge Climate Change
-Fund](https://app.effectivealtruism.org/funds/partners/founders-pledge-climate-change-fund?utm_source=netpositive.money&utm_medium=site&utm_campaign=bitcoin)
-does, but only manually for donations of at least $1000 (if you do that, please
-remind them to count your donation for us!). Of course, we'd love for them all
-to accept Bitcoin payments, preferably also through Lightning, best of all
-anonymously. 
+You can give bitcoin to most of our recommended organizations via Coinbase on
+[every.org](https://www.every.org/@netpositive.money902/). 
+
+Of course, we'd love for them all to accept bitcoin directly, preferably also
+through Lightning, best of all anonymously.
 
 We've actually found a great work-around to make anonymous Lightning Network
 donations possible: Just use [paywithmoon](https://paywithmoon.com/)! It's a
