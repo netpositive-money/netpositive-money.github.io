@@ -32,7 +32,8 @@ Founder's Pledge Climate Change
 Fund](https://app.effectivealtruism.org/funds/partners/founders-pledge-climate-change-fund?utm_source=netpositive.money&utm_medium=site&utm_campaign=bitcoin).
 However, please note that they are using Google Analytics to track our
 contribution and some ad blockers (like mine) will prevent that &mdash; so
-please disable your ad blockers if you want your contribution counted for us!
+please disable your ad blockers before clicking the link if you want your
+contribution counted for us!
 
 For Germans (and maybe other Europeans, though they would probably not get a tax
 refund), it's more effective to go through our [special donation
@@ -50,7 +51,7 @@ Germany](https://germany.myclimate.org/en/contribution_calculators/new?ps=netpos
 If you want to help clean up refrigerants, here's [our link to
 Tradewater](https://tradewater.us/offsetnow/?utm_source=netpositive.money&utm_medium=site&utm_campaign=bitcoin#household).
 They, too, are using Google Analytics to track our donations, so please disable
-your ad blocker if you want your contribution counted!
+your ad blocker before clicking the link if you want your contribution counted!
 
 
 
