@@ -4,7 +4,7 @@ type: tocpage
 ---
 **If you have donated to the Founder's Pledge Climate Change Fund via
 effectivealtruism.org or to Tradewater before and have been using an ad blocker,
-please send us an email so we can count those donations manually! We're sorry
+please send us an [email](info@netpositive.money) so we can count those donations manually! We're sorry
 we've only found out now that this could go wrong.**
 
 

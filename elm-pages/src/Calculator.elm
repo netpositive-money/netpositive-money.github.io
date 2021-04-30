@@ -77,7 +77,7 @@ factor =
 
 offset : Float
 offset =
-    0.049
+    0.054
 
 
 -- MtCO2
