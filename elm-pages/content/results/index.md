@@ -8,7 +8,7 @@ type: tocpage
 ## Our impact
 
 **As of April 30th 2021, in just about 70 days, we have donated at total of
-€7968,88 or $9649,76 (or about 0.183 BTC) for an estimated positive impact of
+€7980 or $9663 (or about 0.183 BTC) for an estimated positive impact of
 5200t CO2 emissions reduced. Taken together with earlier efforts by
 Offsetbitcoin, Bitcoiners have given about 2 BTC for about 54 kt CO2 equivalent
 emissions averted or reduced.**
