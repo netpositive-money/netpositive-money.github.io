@@ -6154,7 +6154,7 @@ var $author$project$Pages$content = _List_fromArray(
 		_Utils_Tuple2(
 		_List_fromArray(
 			['de']),
-		{body: $elm$core$Maybe$Nothing, extension: 'md', frontMatter: '{\"title\":\"Welcome, friend of the earth!\",\"type\":\"page\"}'}),
+		{body: $elm$core$Maybe$Nothing, extension: 'md', frontMatter: '{\"title\":\"Willkommen, Freund der Erde!\",\"type\":\"page\"}'}),
 		_Utils_Tuple2(
 		_List_fromArray(
 			['faq']),
@@ -6166,7 +6166,7 @@ var $author$project$Pages$content = _List_fromArray(
 		_Utils_Tuple2(
 		_List_fromArray(
 			['results']),
-		{body: $elm$core$Maybe$Nothing, extension: 'md', frontMatter: '{\"title\":\"Results\",\"type\":\"page\"}'}),
+		{body: $elm$core$Maybe$Nothing, extension: 'md', frontMatter: '{\"title\":\"Results\",\"type\":\"tocpage\"}'}),
 		_Utils_Tuple2(
 		_List_fromArray(
 			['sources']),
@@ -6174,11 +6174,11 @@ var $author$project$Pages$content = _List_fromArray(
 		_Utils_Tuple2(
 		_List_fromArray(
 			['de', 'about']),
-		{body: $elm$core$Maybe$Nothing, extension: 'md', frontMatter: '{\"title\":\"About Netpositive.Money\",\"type\":\"page\"}'}),
+		{body: $elm$core$Maybe$Nothing, extension: 'md', frontMatter: '{\"title\":\"Über Netpositive.Money\",\"type\":\"page\"}'}),
 		_Utils_Tuple2(
 		_List_fromArray(
 			['de', 'calculator']),
-		{body: $elm$core$Maybe$Nothing, extension: 'md', frontMatter: '{\"title\":\"Bitcoin CO2 Footprint Calculator\",\"type\":\"calculator\"}'}),
+		{body: $elm$core$Maybe$Nothing, extension: 'md', frontMatter: '{\"title\":\"Bitcoin CO2-Fußabdruck-Rechner\",\"type\":\"calculator\"}'}),
 		_Utils_Tuple2(
 		_List_fromArray(
 			['de', 'faq']),
@@ -6190,7 +6190,7 @@ var $author$project$Pages$content = _List_fromArray(
 		_Utils_Tuple2(
 		_List_fromArray(
 			['de', 'results']),
-		{body: $elm$core$Maybe$Nothing, extension: 'md', frontMatter: '{\"title\":\"Results\",\"type\":\"page\"}'}),
+		{body: $elm$core$Maybe$Nothing, extension: 'md', frontMatter: '{\"title\":\"Ergebnisse\",\"type\":\"tocpage\"}'}),
 		_Utils_Tuple2(
 		_List_fromArray(
 			['de', 'sources']),
@@ -13331,7 +13331,7 @@ var $terezka$line_charts$Internal$Junk$custom = function (func) {
 			}));
 };
 var $terezka$line_charts$LineChart$Junk$custom = $terezka$line_charts$Internal$Junk$custom;
-var $author$project$Calculator$offset = 0.049;
+var $author$project$Calculator$offset = 0.054;
 var $author$project$Calculator$junkConfig = function (model) {
 	return $terezka$line_charts$LineChart$Junk$custom(
 		function (system) {
@@ -13864,6 +13864,349 @@ var $dillonkearns$elm_markdown$Markdown$Renderer$defaultHtmlRenderer = {
 				items));
 	}
 };
+var $author$project$Calculator$findOffsetDate = function (compound) {
+	return A2(
+		$elm$core$Maybe$withDefault,
+		'2009-03-01',
+		A2(
+			$elm$core$Maybe$map,
+			$author$project$Calculator$datumToTimeString,
+			A2(
+				$elm_community$list_extra$List$Extra$find,
+				function (d) {
+					return _Utils_cmp(d.amount, $author$project$Calculator$offset) > -1;
+				},
+				compound)));
+};
+var $elm$html$Html$Attributes$for = $elm$html$Html$Attributes$stringProperty('htmlFor');
+var $elm$html$Html$Attributes$id = $elm$html$Html$Attributes$stringProperty('id');
+var $dillonkearns$elm_pages$Pages$ImagePath$dimensions = function (imagePath) {
+	if (imagePath.$ === 'Internal') {
+		var dims = imagePath.b;
+		return $elm$core$Maybe$Just(dims);
+	} else {
+		return $elm$core$Maybe$Nothing;
+	}
+};
+var $author$project$Pages$allImages = _List_fromArray(
+	[
+		A2(
+		$author$project$Pages$buildImage,
+		_List_fromArray(
+			['android-chrome-144x144.png']),
+		{height: 144, width: 144}),
+		A2(
+		$author$project$Pages$buildImage,
+		_List_fromArray(
+			['android-chrome-192x192.png']),
+		{height: 192, width: 192}),
+		A2(
+		$author$project$Pages$buildImage,
+		_List_fromArray(
+			['android-chrome-256x256.png']),
+		{height: 256, width: 256}),
+		A2(
+		$author$project$Pages$buildImage,
+		_List_fromArray(
+			['android-chrome-36x36.png']),
+		{height: 36, width: 36}),
+		A2(
+		$author$project$Pages$buildImage,
+		_List_fromArray(
+			['android-chrome-384x384.png']),
+		{height: 384, width: 384}),
+		A2(
+		$author$project$Pages$buildImage,
+		_List_fromArray(
+			['android-chrome-48x48.png']),
+		{height: 48, width: 48}),
+		A2(
+		$author$project$Pages$buildImage,
+		_List_fromArray(
+			['android-chrome-512x512.png']),
+		{height: 512, width: 512}),
+		A2(
+		$author$project$Pages$buildImage,
+		_List_fromArray(
+			['android-chrome-72x72.png']),
+		{height: 72, width: 72}),
+		A2(
+		$author$project$Pages$buildImage,
+		_List_fromArray(
+			['android-chrome-96x96.png']),
+		{height: 96, width: 96}),
+		A2(
+		$author$project$Pages$buildImage,
+		_List_fromArray(
+			['apple-touch-icon-1024x1024.png']),
+		{height: 1024, width: 1024}),
+		A2(
+		$author$project$Pages$buildImage,
+		_List_fromArray(
+			['apple-touch-icon-114x114.png']),
+		{height: 114, width: 114}),
+		A2(
+		$author$project$Pages$buildImage,
+		_List_fromArray(
+			['apple-touch-icon-120x120.png']),
+		{height: 120, width: 120}),
+		A2(
+		$author$project$Pages$buildImage,
+		_List_fromArray(
+			['apple-touch-icon-144x144.png']),
+		{height: 144, width: 144}),
+		A2(
+		$author$project$Pages$buildImage,
+		_List_fromArray(
+			['apple-touch-icon-152x152.png']),
+		{height: 152, width: 152}),
+		A2(
+		$author$project$Pages$buildImage,
+		_List_fromArray(
+			['apple-touch-icon-167x167.png']),
+		{height: 167, width: 167}),
+		A2(
+		$author$project$Pages$buildImage,
+		_List_fromArray(
+			['apple-touch-icon-180x180.png']),
+		{height: 180, width: 180}),
+		A2(
+		$author$project$Pages$buildImage,
+		_List_fromArray(
+			['apple-touch-icon-57x57.png']),
+		{height: 57, width: 57}),
+		A2(
+		$author$project$Pages$buildImage,
+		_List_fromArray(
+			['apple-touch-icon-60x60.png']),
+		{height: 60, width: 60}),
+		A2(
+		$author$project$Pages$buildImage,
+		_List_fromArray(
+			['apple-touch-icon-72x72.png']),
+		{height: 72, width: 72}),
+		A2(
+		$author$project$Pages$buildImage,
+		_List_fromArray(
+			['apple-touch-icon-76x76.png']),
+		{height: 76, width: 76}),
+		A2(
+		$author$project$Pages$buildImage,
+		_List_fromArray(
+			['apple-touch-icon-precomposed.png']),
+		{height: 180, width: 180}),
+		A2(
+		$author$project$Pages$buildImage,
+		_List_fromArray(
+			['apple-touch-icon.png']),
+		{height: 180, width: 180}),
+		A2(
+		$author$project$Pages$buildImage,
+		_List_fromArray(
+			['elm-logo.svg']),
+		{height: 323, width: 323}),
+		A2(
+		$author$project$Pages$buildImage,
+		_List_fromArray(
+			['favicon-16x16.png']),
+		{height: 16, width: 16}),
+		A2(
+		$author$project$Pages$buildImage,
+		_List_fromArray(
+			['favicon-32x32.png']),
+		{height: 32, width: 32}),
+		A2(
+		$author$project$Pages$buildImage,
+		_List_fromArray(
+			['favicon-48x48.png']),
+		{height: 48, width: 48}),
+		A2(
+		$author$project$Pages$buildImage,
+		_List_fromArray(
+			['forest-931706_1280.jpg']),
+		{height: 720, width: 1280}),
+		A2(
+		$author$project$Pages$buildImage,
+		_List_fromArray(
+			['forest-931706_1920.jpg']),
+		{height: 1080, width: 1920}),
+		A2(
+		$author$project$Pages$buildImage,
+		_List_fromArray(
+			['forest-931706_640.jpg']),
+		{height: 360, width: 640}),
+		A2(
+		$author$project$Pages$buildImage,
+		_List_fromArray(
+			['github.svg']),
+		{height: 24, width: 24}),
+		A2(
+		$author$project$Pages$buildImage,
+		_List_fromArray(
+			['icon-png.png']),
+		{height: 75, width: 50}),
+		A2(
+		$author$project$Pages$buildImage,
+		_List_fromArray(
+			['icon.svg']),
+		{height: 75, width: 50}),
+		A2(
+		$author$project$Pages$buildImage,
+		_List_fromArray(
+			['icons8-large-tree-48.png']),
+		{height: 48, width: 48})
+	]);
+var $dillonkearns$elm_pages$Pages$ImagePath$toString = function (path) {
+	if (path.$ === 'Internal') {
+		var rawPath = path.a;
+		return A2($elm$core$String$join, '/', rawPath);
+	} else {
+		var url = path.a;
+		return url;
+	}
+};
+var $author$project$Shared$findImages = function (src) {
+	return A2(
+		$elm$core$List$filterMap,
+		function (imagepath) {
+			var path = $dillonkearns$elm_pages$Pages$ImagePath$toString(imagepath);
+			return A2(
+				$elm$core$String$contains,
+				A2(
+					$elm$core$Maybe$withDefault,
+					src,
+					$elm$core$List$head(
+						A2($elm$core$String$split, '_', src))),
+				path) ? $elm$core$Maybe$Just(imagepath) : $elm$core$Maybe$Nothing;
+		},
+		$author$project$Pages$allImages);
+};
+var $elm$html$Html$Attributes$height = function (n) {
+	return A2(
+		_VirtualDom_attribute,
+		'height',
+		$elm$core$String$fromInt(n));
+};
+var $elm$html$Html$Attributes$width = function (n) {
+	return A2(
+		_VirtualDom_attribute,
+		'width',
+		$elm$core$String$fromInt(n));
+};
+var $author$project$Shared$imageDimensions = A2(
+	$elm$core$Basics$composeR,
+	$author$project$Shared$findImages,
+	A2(
+		$elm$core$Basics$composeR,
+		$elm$core$List$head,
+		A2(
+			$elm$core$Basics$composeR,
+			$elm$core$Maybe$andThen($dillonkearns$elm_pages$Pages$ImagePath$dimensions),
+			A2(
+				$elm$core$Basics$composeR,
+				$elm$core$Maybe$map(
+					function (d) {
+						return _List_fromArray(
+							[
+								$elm$html$Html$Attributes$width(d.width),
+								$elm$html$Html$Attributes$height(d.height)
+							]);
+					}),
+				$elm$core$Maybe$withDefault(_List_Nil)))));
+var $elm$virtual_dom$VirtualDom$property = F2(
+	function (key, value) {
+		return A2(
+			_VirtualDom_property,
+			_VirtualDom_noInnerHtmlOrFormAction(key),
+			_VirtualDom_noJavaScriptOrHtmlUri(value));
+	});
+var $elm$html$Html$Attributes$property = $elm$virtual_dom$VirtualDom$property;
+var $author$project$Shared$srcset = function (set) {
+	return A2(
+		$elm$html$Html$Attributes$property,
+		'srcset',
+		$elm$json$Json$Encode$string(set));
+};
+var $author$project$Shared$srcsetstring = A2(
+	$elm$core$Basics$composeR,
+	$author$project$Shared$findImages,
+	A2(
+		$elm$core$Basics$composeR,
+		$elm$core$List$map(
+			function (img) {
+				return $dillonkearns$elm_pages$Pages$ImagePath$toString(img) + (' ' + function () {
+					var _v0 = $dillonkearns$elm_pages$Pages$ImagePath$dimensions(img);
+					if (_v0.$ === 'Just') {
+						var d = _v0.a;
+						return $elm$core$String$fromInt(d.width) + 'w';
+					} else {
+						return '';
+					}
+				}());
+			}),
+		$elm$core$String$join(',')));
+var $author$project$Shared$headingRenderer = _Utils_update(
+	$dillonkearns$elm_markdown$Markdown$Renderer$defaultHtmlRenderer,
+	{
+		heading: function (_v0) {
+			var level = _v0.level;
+			var children = _v0.children;
+			var rawText = _v0.rawText;
+			return A2(
+				function () {
+					switch (level.$) {
+						case 'H1':
+							return $elm$html$Html$h1;
+						case 'H2':
+							return $elm$html$Html$h2;
+						case 'H3':
+							return $elm$html$Html$h3;
+						case 'H4':
+							return $elm$html$Html$h4;
+						case 'H5':
+							return $elm$html$Html$h5;
+						default:
+							return $elm$html$Html$h6;
+					}
+				}(),
+				_List_fromArray(
+					[
+						$elm$html$Html$Attributes$id(
+						$author$project$Shared$rawTextToId(rawText))
+					]),
+				children);
+		},
+		image: function (imageInfo) {
+			return A2(
+				$elm$html$Html$img,
+				_Utils_ap(
+					_List_fromArray(
+						[
+							$elm$html$Html$Attributes$src(imageInfo.src),
+							$elm$html$Html$Attributes$alt(imageInfo.alt),
+							A2($elm$html$Html$Attributes$style, 'width', '100%'),
+							A2($elm$html$Html$Attributes$style, 'height', 'auto'),
+							$author$project$Shared$srcset(
+							$author$project$Shared$srcsetstring(imageInfo.src))
+						]),
+					_Utils_ap(
+						function () {
+							var _v2 = imageInfo.title;
+							if (_v2.$ === 'Just') {
+								var title = _v2.a;
+								return _List_fromArray(
+									[
+										$elm$html$Html$Attributes$title(title)
+									]);
+							} else {
+								return _List_Nil;
+							}
+						}(),
+						$author$project$Shared$imageDimensions(imageInfo.src))),
+				_List_Nil);
+		}
+	});
+var $elm$html$Html$label = _VirtualDom_node('label');
 var $elm_community$list_extra$List$Extra$last = function (items) {
 	last:
 	while (true) {
@@ -14098,7 +14441,7 @@ var $author$project$Calculator$calculatorRenderer = F3(
 			var endDatum = _v0.b.a;
 			var perBtcAmount = A3($author$project$Calculator$co2perBtcIn, perBtcComp, startDatum, endDatum);
 			return _Utils_update(
-				$dillonkearns$elm_markdown$Markdown$Renderer$defaultHtmlRenderer,
+				$author$project$Shared$headingRenderer,
 				{
 					html: $dillonkearns$elm_markdown$Markdown$Html$oneOf(
 						_List_fromArray(
@@ -14107,13 +14450,31 @@ var $author$project$Calculator$calculatorRenderer = F3(
 								$dillonkearns$elm_markdown$Markdown$Html$tag,
 								'co2graph',
 								function (children) {
-									return A2($author$project$Calculator$chart1, data, model);
+									return A2(
+										$elm$html$Html$div,
+										_List_fromArray(
+											[
+												A2($elm$html$Html$Attributes$style, 'font-size', '12px')
+											]),
+										_List_fromArray(
+											[
+												A2($author$project$Calculator$chart1, data, model)
+											]));
 								}),
 								A2(
 								$dillonkearns$elm_markdown$Markdown$Html$tag,
-								'CO2totalgraph',
+								'co2totalgraph',
 								function (children) {
-									return A2($author$project$Calculator$chart2, compound, model);
+									return A2(
+										$elm$html$Html$div,
+										_List_fromArray(
+											[
+												A2($elm$html$Html$Attributes$style, 'font-size', '12px')
+											]),
+										_List_fromArray(
+											[
+												A2($author$project$Calculator$chart2, compound, model)
+											]));
 								}),
 								A2(
 								$dillonkearns$elm_markdown$Markdown$Html$withAttribute,
@@ -14124,17 +14485,32 @@ var $author$project$Calculator$calculatorRenderer = F3(
 									F2(
 										function (txt, children) {
 											return A2(
-												$elm$html$Html$input,
+												$elm$html$Html$div,
+												_List_Nil,
 												_List_fromArray(
 													[
-														$elm$html$Html$Attributes$value(
-														A2($elm$core$String$left, 7, s)),
-														$elm$html$Html$Events$onInput(
-														$author$project$Shared$ChangeStart(compound))
-													]),
-												_List_fromArray(
-													[
-														$elm$html$Html$text(txt)
+														A2(
+														$elm$html$Html$label,
+														_List_fromArray(
+															[
+																$elm$html$Html$Attributes$for('start')
+															]),
+														_List_fromArray(
+															[
+																$elm$html$Html$text(txt)
+															])),
+														A2(
+														$elm$html$Html$input,
+														_List_fromArray(
+															[
+																$elm$html$Html$Attributes$id('start'),
+																$elm$html$Html$Attributes$type_('month'),
+																$elm$html$Html$Attributes$value(
+																A2($elm$core$String$left, 7, s)),
+																$elm$html$Html$Events$onInput(
+																$author$project$Shared$ChangeStart(compound))
+															]),
+														_List_Nil)
 													]));
 										}))),
 								A2(
@@ -14146,17 +14522,32 @@ var $author$project$Calculator$calculatorRenderer = F3(
 									F2(
 										function (txt, children) {
 											return A2(
-												$elm$html$Html$input,
+												$elm$html$Html$div,
+												_List_Nil,
 												_List_fromArray(
 													[
-														$elm$html$Html$Attributes$value(
-														A2($elm$core$String$left, 7, e)),
-														$elm$html$Html$Events$onInput(
-														$author$project$Shared$ChangeEnd(compound))
-													]),
-												_List_fromArray(
-													[
-														$elm$html$Html$text(txt)
+														A2(
+														$elm$html$Html$label,
+														_List_fromArray(
+															[
+																$elm$html$Html$Attributes$for('end')
+															]),
+														_List_fromArray(
+															[
+																$elm$html$Html$text(txt)
+															])),
+														A2(
+														$elm$html$Html$input,
+														_List_fromArray(
+															[
+																$elm$html$Html$Attributes$id('end'),
+																$elm$html$Html$Attributes$type_('month'),
+																$elm$html$Html$Attributes$value(
+																A2($elm$core$String$left, 7, e)),
+																$elm$html$Html$Events$onInput(
+																$author$project$Shared$ChangeEnd(compound))
+															]),
+														_List_Nil)
 													]));
 										}))),
 								A2(
@@ -14181,7 +14572,7 @@ var $author$project$Calculator$calculatorRenderer = F3(
 								}),
 								A2(
 								$dillonkearns$elm_markdown$Markdown$Html$tag,
-								'totalCO2',
+								'totalco2',
 								function (children) {
 									return $elm$html$Html$text(
 										$elm$core$String$fromFloat(
@@ -14190,7 +14581,7 @@ var $author$project$Calculator$calculatorRenderer = F3(
 								}),
 								A2(
 								$dillonkearns$elm_markdown$Markdown$Html$tag,
-								'perBTC',
+								'perbtc',
 								function (children) {
 									return $elm$html$Html$text(
 										$elm$core$String$fromFloat(
@@ -14201,20 +14592,35 @@ var $author$project$Calculator$calculatorRenderer = F3(
 								'text',
 								A2(
 									$dillonkearns$elm_markdown$Markdown$Html$tag,
-									'inputBTC',
+									'inputbtc',
 									F2(
 										function (txt, children) {
 											return A2(
-												$elm$html$Html$input,
+												$elm$html$Html$div,
+												_List_Nil,
 												_List_fromArray(
 													[
-														$elm$html$Html$Attributes$placeholder('0.00000001'),
-														$elm$html$Html$Attributes$value(model.btcS),
-														$elm$html$Html$Events$onInput($author$project$Shared$ChangeBtc)
-													]),
-												_List_fromArray(
-													[
-														$elm$html$Html$text(txt)
+														A2(
+														$elm$html$Html$label,
+														_List_fromArray(
+															[
+																$elm$html$Html$Attributes$for('btc')
+															]),
+														_List_fromArray(
+															[
+																$elm$html$Html$text(txt)
+															])),
+														A2(
+														$elm$html$Html$input,
+														_List_fromArray(
+															[
+																$elm$html$Html$Attributes$id('btc'),
+																$elm$html$Html$Attributes$type_('number'),
+																$elm$html$Html$Attributes$placeholder('0.00000001'),
+																$elm$html$Html$Attributes$value(model.btcS),
+																$elm$html$Html$Events$onInput($author$project$Shared$ChangeBtc)
+															]),
+														_List_Nil)
 													]));
 										}))),
 								A2(
@@ -14230,9 +14636,15 @@ var $author$project$Calculator$calculatorRenderer = F3(
 												return $elm$html$Html$text('');
 											} else {
 												var btc = _v1.a;
-												return $elm$html$Html$text(
-													txt + ($elm$core$String$fromFloat(
-														$author$project$Calculator$round100(perBtcAmount * btc)) + ' t CO2.'));
+												return A2(
+													$elm$html$Html$p,
+													_List_Nil,
+													_List_fromArray(
+														[
+															$elm$html$Html$text(
+															txt + ($elm$core$String$fromFloat(
+																$author$project$Calculator$round100(perBtcAmount * btc)) + ' t CO2.'))
+														]));
 											}
 										}))),
 								A2(
@@ -14241,6 +14653,13 @@ var $author$project$Calculator$calculatorRenderer = F3(
 								function (children) {
 									return $elm$html$Html$text(
 										$elm$core$String$fromFloat($author$project$Calculator$offset));
+								}),
+								A2(
+								$dillonkearns$elm_markdown$Markdown$Html$tag,
+								'offsetdate',
+								function (children) {
+									return $elm$html$Html$text(
+										$author$project$Calculator$findOffsetDate(compound));
 								})
 							]))
 				});
@@ -14782,13 +15201,6 @@ var $elm$virtual_dom$VirtualDom$node = function (tag) {
 	return _VirtualDom_node(
 		_VirtualDom_noScript(tag));
 };
-var $elm$virtual_dom$VirtualDom$property = F2(
-	function (key, value) {
-		return A2(
-			_VirtualDom_property,
-			_VirtualDom_noInnerHtmlOrFormAction(key),
-			_VirtualDom_noJavaScriptOrHtmlUri(value));
-	});
 var $mdgriffith$elm_ui$Internal$Style$AllChildren = F2(
 	function (a, b) {
 		return {$: 'AllChildren', a: a, b: b};
@@ -28012,7 +28424,6 @@ var $dillonkearns$elm_pages$Pages$Internal$HotReloadLoadingIndicator$circle = fu
 								attrs)))))),
 		_List_Nil);
 };
-var $elm$html$Html$Attributes$id = $elm$html$Html$Attributes$stringProperty('id');
 var $dillonkearns$elm_pages$Pages$Internal$HotReloadLoadingIndicator$view = F2(
 	function (isDebugMode, display) {
 		return A2(
@@ -31025,15 +31436,6 @@ var $dillonkearns$elm_pages$Pages$Manifest$orientationToString = function (orien
 			return 'portrait-secondary';
 	}
 };
-var $dillonkearns$elm_pages$Pages$ImagePath$toString = function (path) {
-	if (path.$ === 'Internal') {
-		var rawPath = path.a;
-		return A2($elm$core$String$join, '/', rawPath);
-	} else {
-		var url = path.a;
-		return url;
-	}
-};
 var $dillonkearns$elm_pages$Pages$Manifest$Category$toString = function (_v0) {
 	var raw = _v0.a;
 	return raw;
@@ -33227,6 +33629,26 @@ var $mdgriffith$elm_ui$Element$column = F2(
 						attrs))),
 			$mdgriffith$elm_ui$Internal$Model$Unkeyed(children));
 	});
+var $author$project$Shared$De = {$: 'De'};
+var $author$project$Shared$En = {$: 'En'};
+var $dillonkearns$elm_pages$Pages$PagePath$toPath = function (path) {
+	if (path.$ === 'Internal') {
+		var rawPath = path.a;
+		return rawPath;
+	} else {
+		var url = path.a;
+		return _List_Nil;
+	}
+};
+var $author$project$Shared$currentLang = function (key) {
+	var _v0 = $elm$core$List$head(
+		$dillonkearns$elm_pages$Pages$PagePath$toPath(key));
+	if ((_v0.$ === 'Just') && (_v0.a === 'de')) {
+		return $author$project$Shared$De;
+	} else {
+		return $author$project$Shared$En;
+	}
+};
 var $mdgriffith$elm_ui$Element$el = F2(
 	function (attrs, child) {
 		return A4(
@@ -33300,7 +33722,7 @@ var $mdgriffith$elm_ui$Element$text = function (content) {
 	return $mdgriffith$elm_ui$Internal$Model$Text(content);
 };
 var $author$project$Main$tocView = F2(
-	function (toc, url) {
+	function (toc, path) {
 		return A2(
 			$mdgriffith$elm_ui$Element$column,
 			_List_fromArray(
@@ -33317,7 +33739,15 @@ var $author$project$Main$tocView = F2(
 							$mdgriffith$elm_ui$Element$Font$bold,
 							$mdgriffith$elm_ui$Element$Font$size(22)
 						]),
-					$mdgriffith$elm_ui$Element$text('Table of Contents')),
+					$mdgriffith$elm_ui$Element$text(
+						function () {
+							var _v0 = $author$project$Shared$currentLang(path);
+							if (_v0.$ === 'En') {
+								return 'Table of Contents';
+							} else {
+								return 'Inhalt';
+							}
+						}())),
 					A2(
 					$mdgriffith$elm_ui$Element$column,
 					_List_fromArray(
@@ -33341,7 +33771,7 @@ var $author$project$Main$tocView = F2(
 											]),
 										{
 											label: $mdgriffith$elm_ui$Element$text(headingBlock.name),
-											url: url + ('#' + headingBlock.anchorId)
+											url: $dillonkearns$elm_pages$Pages$PagePath$toString(path) + ('#' + headingBlock.anchorId)
 										})
 									]));
 						},
@@ -33367,10 +33797,7 @@ var $author$project$Main$pageView = F6(
 				return {
 					body: _List_fromArray(
 						[
-							A2(
-							$author$project$Main$tocView,
-							t,
-							$dillonkearns$elm_pages$Pages$PagePath$toString(page.path)),
+							A2($author$project$Main$tocView, t, page.path),
 							bod
 						]),
 					title: metadata.title
@@ -35231,43 +35658,9 @@ var $author$project$Layout$logoLink = A2(
 				])),
 		url: '/'
 	});
-var $author$project$Layout$De = {$: 'De'};
-var $author$project$Layout$En = {$: 'En'};
-var $dillonkearns$elm_pages$Pages$PagePath$toPath = function (path) {
-	if (path.$ === 'Internal') {
-		var rawPath = path.a;
-		return rawPath;
-	} else {
-		var url = path.a;
-		return _List_Nil;
-	}
-};
-var $author$project$Layout$currentLang = function (key) {
-	var _v0 = $elm$core$List$head(
-		$dillonkearns$elm_pages$Pages$PagePath$toPath(key));
-	if ((_v0.$ === 'Just') && (_v0.a === 'de')) {
-		return $author$project$Layout$De;
-	} else {
-		return $author$project$Layout$En;
-	}
-};
 var $author$project$Palette$color = {
 	primary: A3($mdgriffith$elm_ui$Element$rgb255, 5, 117, 230),
 	secondary: A3($mdgriffith$elm_ui$Element$rgb255, 0, 242, 96)
-};
-var $dillonkearns$elm_pages$Pages$ImagePath$dimensions = function (imagePath) {
-	if (imagePath.$ === 'Internal') {
-		var dims = imagePath.b;
-		return $elm$core$Maybe$Just(dims);
-	} else {
-		return $elm$core$Maybe$Nothing;
-	}
-};
-var $elm$html$Html$Attributes$height = function (n) {
-	return A2(
-		_VirtualDom_attribute,
-		'height',
-		$elm$core$String$fromInt(n));
 };
 var $elm$html$Html$Attributes$target = $elm$html$Html$Attributes$stringProperty('target');
 var $mdgriffith$elm_ui$Element$newTabLink = F2(
@@ -35304,12 +35697,6 @@ var $mdgriffith$elm_ui$Element$newTabLink = F2(
 				_List_fromArray(
 					[label])));
 	});
-var $elm$html$Html$Attributes$width = function (n) {
-	return A2(
-		_VirtualDom_attribute,
-		'width',
-		$elm$core$String$fromInt(n));
-};
 var $author$project$Layout$githubRepoLink = A2(
 	$mdgriffith$elm_ui$Element$newTabLink,
 	_List_Nil,
@@ -35384,7 +35771,7 @@ var $author$project$Layout$highlightableLink = F3(
 			});
 	});
 var $author$project$Layout$navbarLinks = function (currentPath) {
-	var _v0 = $author$project$Layout$currentLang(currentPath);
+	var _v0 = $author$project$Shared$currentLang(currentPath);
 	if (_v0.$ === 'En') {
 		return _List_fromArray(
 			[
@@ -35406,10 +35793,7 @@ var $author$project$Layout$navbarLinks = function (currentPath) {
 						A2(
 							$elm$core$List$cons,
 							'de',
-							A2(
-								$elm$core$List$drop,
-								1,
-								$dillonkearns$elm_pages$Pages$PagePath$toPath(currentPath))))
+							$dillonkearns$elm_pages$Pages$PagePath$toPath(currentPath)))
 				})
 			]);
 	} else {

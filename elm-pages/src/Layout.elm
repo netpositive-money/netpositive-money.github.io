@@ -223,11 +223,3 @@ navbarLinks currentPath =
 
 
 
-currentLang : PagePath Pages.PathKey -> Lang
-currentLang key = case List.head (PagePath.toPath key) of
-                      Just "de" -> De
-                      _         -> En
-
-
-
-type Lang = En | De

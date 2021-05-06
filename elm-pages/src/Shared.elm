@@ -12,7 +12,7 @@ import Html.Attributes as Attr exposing (id)
 import Pages.ImagePath exposing (dimensions)
 import Html exposing (Attribute)
 import Json.Encode
-
+import Pages.PagePath as PagePath exposing (PagePath)
 
 type alias Model =
     { hovered : Maybe Datum
@@ -152,3 +152,10 @@ imageDimensions = findImages >>
                             ) >>
                   Maybe.withDefault
                         []
+
+type Lang = En | De
+
+currentLang : PagePath Pages.PathKey -> Lang
+currentLang key = case List.head (PagePath.toPath key) of
+                      Just "de" -> De
+                      _         -> En

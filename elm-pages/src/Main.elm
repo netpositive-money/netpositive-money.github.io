@@ -168,7 +168,7 @@ pageView data tbtc model siteMetadata page (t,f) =
             , body = [bod] }
         Metadata.TocPage metadata ->
             { title = metadata.title
-            , body = [(tocView t <| toString page.path),bod]
+            , body = [(tocView t page.path),bod]
             }
         Metadata.Calculator metadata ->
             { title = metadata.title
@@ -265,16 +265,21 @@ siteTagline =
 type alias TableOfContents =
     List { anchorId : String, name : String, level : Int }
 
-tocView : TableOfContents -> String -> Element Msg
-tocView toc url =
+tocView : TableOfContents -> PagePath Pages.PathKey -> Element Msg
+tocView toc path =
     Element.column [ Element.alignTop, Element.spacing 20 ]
-        [ Element.el [ Font.bold, Font.size 22 ] (Element.text "Table of Contents")
+        [ Element.el [ Font.bold, Font.size 22 ] (Element.text
+                                                      (case currentLang path of
+                                                          En -> "Table of Contents"
+                                                          De -> "Inhalt"
+                                                      )
+                                                 )
         , Element.column [ Element.spacing 10 ]
             (toc
                 |> List.map
                     (\headingBlock ->
                         Element.paragraph [] [Element.link [ Font.color (Element.rgb255 100 100 100) ]
-                            { url = url++ "#" ++ headingBlock.anchorId
+                            { url = (toString path) ++ "#" ++ headingBlock.anchorId
                             , label = Element.text headingBlock.name
                             }]
                     )
