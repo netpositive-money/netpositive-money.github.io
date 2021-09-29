@@ -1,56 +1,13 @@
-<!DOCTYPE html>
-  <html lang="en">
-  <head>
-    <link rel="preload" href="content.json" as="fetch" crossorigin="">
-    <link rel="stylesheet" href="/style.css"></link>
-    <link rel="preload" href="/elm-pages.js" as="script">
-    <link rel="preload" href="/index.js" as="script">
-    <link rel="preload" href="/elm.js" as="script">
-    <link rel="preload" href="/elm.js" as="script">
-    <script defer="defer" src="/elm.js" type="module"></script>
-    <script defer="defer" src="/elm-pages.js" type="module"></script>
-    <base href="../">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <script>
-    if ("serviceWorker" in navigator) {
+<!DOCTYPE html><html lang="en"><head><link rel="preload" href="content.json" as="fetch" crossorigin=""><base href="../"><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><script>if ("serviceWorker" in navigator) {
       window.addEventListener("load", () => {
-        navigator.serviceWorker.getRegistrations().then(function(registrations) {
-          for (let registration of registrations) {
-            registration.unregister()
-          } 
-        })
+        navigator.serviceWorker.register("service-worker.js");
       });
-    }
-    </script>
-    <title>Recommendations</title>
-    <meta name="generator" content="elm-pages v1.5.4">
-    <link rel="manifest" href="manifest.json">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="theme-color" content="#ffffff">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-
-        <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
-    <link rel="canonical" href="https://netpositive.money/partners" />
-    <meta name="description" content="Bitcoiners contributing to climate change solutions" />
-    <meta property="og:image" content="https://netpositive.money/images/forest-931706_640.jpg" />
-    <meta property="og:image:secure_url" content="https://netpositive.money/images/forest-931706_640.jpg" />
-    <meta property="og:image:alt" content="a beautiful forest" />
-    <meta property="og:title" content="Recommendations" />
-    <meta property="og:url" content="https://netpositive.money/partners" />
-    <meta property="og:description" content="Bitcoiners contributing to climate change solutions" />
-    <meta property="og:site_name" content="netpositive.money" />
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:title" content="Recommendations" />
-    <meta property="twitter:description" content="Bitcoiners contributing to climate change solutions" />
-    <meta property="twitter:image" content="https://netpositive.money/images/forest-931706_640.jpg" />
-    <meta property="twitter:image:alt" content="a beautiful forest" />
-    <meta property="og:type" content="website" />
-    </head>
-    <body>
-      <div data-url="" display="none"></div>
-      <div class="bg-255-255-255-0 font-open-sanshelveticaverdanasans-serif font-size-20 fc-0-0-0-204 s e wf ui s e"><div><style>@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {.s.r > .s { flex-basis: auto !important; } .s.r > .s.ctr { flex-basis: auto !important; }}
+    } else {
+      console.log("No service worker registered.");
+    }</script><link rel="shortcut icon" href="assets/favicon.ico"><link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png"><link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png"><link rel="icon" type="image/png" sizes="48x48" href="assets/favicon-48x48.png"><link rel="manifest" href="assets/manifest.json"><meta name="mobile-web-app-capable" content="yes"><meta name="theme-color" content="#ffffff"><meta name="application-name" content="netpositive.money"><link rel="apple-touch-icon" sizes="57x57" href="assets/apple-touch-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="assets/apple-touch-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="assets/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="assets/apple-touch-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="assets/apple-touch-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="assets/apple-touch-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="assets/apple-touch-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="assets/apple-touch-icon-152x152.png"><link rel="apple-touch-icon" sizes="167x167" href="assets/apple-touch-icon-167x167.png"><link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon-180x180.png"><link rel="apple-touch-icon" sizes="1024x1024" href="assets/apple-touch-icon-1024x1024.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="netpositive.money"><script defer="defer" src="main.js"></script><link rel="preload" href="main.js" as="script"><style>@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto&display=swap);</style><style>.avatar img {
+  border-radius: 50%;
+}
+</style><title>Recommendations</title><meta name="generator" content="elm-pages v1.5.4"><link rel="sitemap" type="application/xml" href="/sitemap.xml"><link rel="canonical" href="https://netpositive.money/partners"><meta name="description" content="Bitcoiners contributing to climate change solutions"><meta property="og:image" content="https://netpositive.money/images/forest-931706_640.jpg"><meta property="og:image:secure_url" content="https://netpositive.money/images/forest-931706_640.jpg"><meta property="og:image:alt" content="a beautiful forest"><meta property="og:title" content="Recommendations"><meta property="og:url" content="https://netpositive.money/partners"><meta property="og:description" content="Bitcoiners contributing to climate change solutions"><meta property="og:site_name" content="netpositive.money"><meta property="twitter:card" content="summary_large_image"><meta property="twitter:title" content="Recommendations"><meta property="twitter:description" content="Bitcoiners contributing to climate change solutions"><meta property="twitter:image" content="https://netpositive.money/images/forest-931706_640.jpg"><meta property="twitter:image:alt" content="a beautiful forest"><meta property="og:type" content="website"></head><body><div data-url="http://localhost:8000/partners" display="none"></div><div class="bg-255-255-255-0 font-open-sanshelveticaverdanasans-serif font-size-20 fc-0-0-0-204 s e wf ui s e"><div><style>@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {.s.r > .s { flex-basis: auto !important; } .s.r > .s.ctr { flex-basis: auto !important; }}
 input[type="search"],
 input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button,
@@ -360,7 +317,7 @@ html,body{height:100%;padding:0;margin:0;}.s.e.ic{display:block;}.s.e.ic.hf > im
 }.s:focus .focusable, .s.focusable:focus, .ui-slide-bar:focus + .s .focusable-thumb{
   box-shadow: 0px 0px 0px 3px rgba(155,203,255,1);
   outline: none;
-}</style></div><div class="hc s c wf ct cl"><div class="hc s c wf ct cl"><div class="hc sev p-20 s r wf cl ccy responsive-mobile"><a class="hc s e wc ccx ccy lnk" href="/" rel="noopener noreferrer"><div class="hc font-size-30 spacing-16-16 s r wc cl ccy navbar-title"><div class="s t wc hc">netpositive.money</div></div></a><u class="s e ctr ccy acr"><div class="hc ah ar s e wc"><i class="fas fa-bars"></i></div></u></div><div class="hc s c wf ct cl responsive-desktop"><div class="he height-px-4px bg-grad-51-0-242-96-255-5-117-230-255 s e wf"></div><nav class="hc p-25-4 sev b-0-0-1-0 bc-40-80-40-102 s r wf cl ccy"><a class="hc s e wc ccx ccy lnk" href="/" rel="noopener noreferrer"><div class="hc font-size-30 spacing-16-16 s r wc cl ccy navbar-title"><div class="s t wc hc">netpositive.money</div></div></a><div class="hc spacing-15-15 s r wc cl ccy"><a class="hc s e wc ccx ccy lnk" href="about" rel="noopener noreferrer"><div class="s t wf hf">about</div></a><a class="hc s e wc ccx ccy lnk" href="faq" rel="noopener noreferrer"><div class="s t wf hf">FAQ</div></a><a class="hc s e wc ccx ccy lnk" href="calculator" rel="noopener noreferrer"><div class="s t wf hf">calculator</div></a><a class="hc fc-5-117-230-255 s e wc ccx ccy lnk u" href="partners" rel="noopener noreferrer"><div class="s t wf hf">recommendations</div></a><a class="hc s e wc ccx ccy lnk" href="sources" rel="noopener noreferrer"><div class="s t wf hf">sources</div></a><a class="hc s e wc ccx ccy lnk" href="results" rel="noopener noreferrer"><div class="s t wf hf">results</div></a><a class="hc s e wc ccx ccy lnk" href="https://github.com/netpositive-money/netpositive-money.github.io" rel="noopener noreferrer" target="_blank"><div class="hc fc-5-117-230-255 s e wc"><img style="width:20px;" alt="Github repo" height="24" src="images/github.svg" width="24"></div></a><a class="hc s e wc ccx ccy lnk" href="de/partners" rel="noopener noreferrer"><div class="s t wf hf">DE</div></a></div></nav></div></div><main class="hc p-30 spacing-40-40 ah cx s c max-width-1000 wf ct cl"><div class="spacing-5-5 s p wf"><h1>Recommendations</h1></div><div class="hc av at spacing-20-20 s c wc ct cl"><div class="hc w7 font-size-22 s e wc"><div class="s t wf hf">Table of Contents</div></div><div class="hc spacing-10-10 s c wc ct cl"><div class="spacing-5-5 s p wf"><a class="hc fc-100-100-100-255 s e wc ccx ccy lnk" href="partners#shutupandtakemymoney" rel="noopener noreferrer"><div class="s t wf hf">Shut up and take my money!</div></a></div><div class="spacing-5-5 s p wf"><a class="hc fc-100-100-100-255 s e wc ccx ccy lnk" href="partners#whoshouldyousupport" rel="noopener noreferrer"><div class="s t wf hf">Who should you support?</div></a></div><div class="spacing-5-5 s p wf"><a class="hc fc-100-100-100-255 s e wc ccx ccy lnk" href="partners#ourrecommendations" rel="noopener noreferrer"><div class="s t wf hf">Our recommendations</div></a></div><div class="spacing-5-5 s p wf"><a class="hc fc-100-100-100-255 s e wc ccx ccy lnk" href="partners#howmuchshouldigive" rel="noopener noreferrer"><div class="s t wf hf">How much should I give?</div></a></div><div class="spacing-5-5 s p wf"><a class="hc fc-100-100-100-255 s e wc ccx ccy lnk" href="partners#canidonateinbitcoinwhenlightningsir" rel="noopener noreferrer"><div class="s t wf hf">Can I donate in Bitcoin? When Lightning, Sir?</div></a></div><div class="spacing-5-5 s p wf"><a class="hc fc-100-100-100-255 s e wc ccx ccy lnk" href="partners#whereismyfavoriteorganisationmycountry" rel="noopener noreferrer"><div class="s t wf hf">Where is my favorite organisation/my country?</div></a></div></div></div><div class="spacing-5-5 s p wf"><div><p><strong>If you have donated to the Founder's Pledge Climate Change Fund via
+}</style></div><div class="hc s c wf ct cl"><div class="hc s c wf ct cl"><div class="hc sev p-20 s r wf cl ccy responsive-mobile"><a class="hc s e wc ccx ccy lnk" href="/" rel="noopener noreferrer"><div class="hc font-size-30 spacing-16-16 s r wc cl ccy navbar-title"><div class="s t wc hc">netpositive.money</div></div></a><u class="s e ctr ccy acr"><div class="hc ah ar s e wc"><i class="fas fa-bars"></i></div></u></div><div class="hc s c wf ct cl responsive-desktop"><div class="he height-px-4px bg-grad-51-0-242-96-255-5-117-230-255 s e wf"></div><nav class="hc p-25-4 sev b-0-0-1-0 bc-40-80-40-102 s r wf cl ccy"><a class="hc s e wc ccx ccy lnk" href="/" rel="noopener noreferrer"><div class="hc font-size-30 spacing-16-16 s r wc cl ccy navbar-title"><div class="s t wc hc">netpositive.money</div></div></a><div class="hc spacing-15-15 s r wc cl ccy"><a class="hc s e wc ccx ccy lnk" href="about" rel="noopener noreferrer"><div class="s t wf hf">about</div></a><a class="hc s e wc ccx ccy lnk" href="faq" rel="noopener noreferrer"><div class="s t wf hf">FAQ</div></a><a class="hc s e wc ccx ccy lnk" href="calculator" rel="noopener noreferrer"><div class="s t wf hf">calculator</div></a><a class="hc fc-5-117-230-255 s e wc ccx ccy lnk u" href="partners" rel="noopener noreferrer"><div class="s t wf hf">recommendations</div></a><a class="hc s e wc ccx ccy lnk" href="sources" rel="noopener noreferrer"><div class="s t wf hf">sources</div></a><a class="hc s e wc ccx ccy lnk" href="results" rel="noopener noreferrer"><div class="s t wf hf">results</div></a><a class="hc s e wc ccx ccy lnk" href="https://github.com/netpositive-money/netpositive-money.github.io" rel="noopener noreferrer" target="_blank"><div class="hc fc-5-117-230-255 s e wc"><img src="images/github.svg" alt="Github repo" width="24" height="24" style="width: 20px;"></div></a><a class="hc s e wc ccx ccy lnk" href="de/partners" rel="noopener noreferrer"><div class="s t wf hf">DE</div></a></div></nav></div></div><main class="hc p-30 spacing-40-40 ah cx s c max-width-1000 wf ct cl"><div class="spacing-5-5 s p wf"><h1>Recommendations</h1></div><div class="hc av at spacing-20-20 s c wc ct cl"><div class="hc w7 font-size-22 s e wc"><div class="s t wf hf">Table of Contents</div></div><div class="hc spacing-10-10 s c wc ct cl"><div class="spacing-5-5 s p wf"><a class="hc fc-100-100-100-255 s e wc ccx ccy lnk" href="partners#shutupandtakemymoney" rel="noopener noreferrer"><div class="s t wf hf">Shut up and take my money!</div></a></div><div class="spacing-5-5 s p wf"><a class="hc fc-100-100-100-255 s e wc ccx ccy lnk" href="partners#whoshouldyousupport" rel="noopener noreferrer"><div class="s t wf hf">Who should you support?</div></a></div><div class="spacing-5-5 s p wf"><a class="hc fc-100-100-100-255 s e wc ccx ccy lnk" href="partners#ourrecommendations" rel="noopener noreferrer"><div class="s t wf hf">Our recommendations</div></a></div><div class="spacing-5-5 s p wf"><a class="hc fc-100-100-100-255 s e wc ccx ccy lnk" href="partners#howmuchshouldigive" rel="noopener noreferrer"><div class="s t wf hf">How much should I give?</div></a></div><div class="spacing-5-5 s p wf"><a class="hc fc-100-100-100-255 s e wc ccx ccy lnk" href="partners#canidonateinbitcoinwhenlightningsir" rel="noopener noreferrer"><div class="s t wf hf">Can I donate in Bitcoin? When Lightning, Sir?</div></a></div><div class="spacing-5-5 s p wf"><a class="hc fc-100-100-100-255 s e wc ccx ccy lnk" href="partners#whereismyfavoriteorganisationmycountry" rel="noopener noreferrer"><div class="s t wf hf">Where is my favorite organisation/my country?</div></a></div></div></div><div class="spacing-5-5 s p wf"><div><p><strong>If you have donated to the Founder's Pledge Climate Change Fund via
 effectivealtruism.org or to Tradewater before and have been using an ad blocker,
 please send us an <a href="info@netpositive.money">email</a> so we can count those donations manually! We're sorry
 we've only found out now that this could go wrong.</strong></p><h2 id="shutupandtakemymoney">Shut up and take my money!</h2><p>If you want to get started, just use one of the links in this section! You can
@@ -374,7 +331,7 @@ meta-charity that is building a social network for donors. So if you go to <a hr
 page</a> there, you can donate to The
 Founder's Pledge Climate Change Fund, Carbon180, Climate Action Task Force,
 Sunrise Movement or TerraPraxis, and it will get counted for us. They also
-accept bitcoin through Coinbase.</p><p>If you are from the UK and want a tax rebate, you can use <a href="https://app.effectivealtruism.org/funds/partners/founders-pledge-climate-change-fund?utm_source=netpositive.money&utm_medium=site&utm_campaign=bitcoin">this link for the
+accept bitcoin through Coinbase.</p><p>If you are from the UK and want a tax rebate, you can use <a href="https://app.effectivealtruism.org/funds/partners/founders-pledge-climate-change-fund?utm_source=netpositive.money&amp;utm_medium=site&amp;utm_campaign=bitcoin">this link for the
 Founder's Pledge Climate Change
 Fund</a>.
 However, please note that they are using Google Analytics to track our
@@ -387,7 +344,7 @@ Effektiv-Spenden, which supports CATF, Carbon180 and the ITIF Clean Energy
 Program.</p><p>If you prefer classical offsetting, here's <a href="https://co2.myclimate.org/en/contribution_calculators/new?ps=netpositiv_money">our link to myclimate
 International</a>.
 Donations should be tax-deductible at least in Switzerland.</p><p>Again, Germans get a different link, <a href="https://germany.myclimate.org/en/contribution_calculators/new?ps=netpositiv_money">this one is for myclimate
-Germany</a>.</p><p>If you want to help clean up refrigerants, here's <a href="https://tradewater.us/offsetnow/?utm_source=netpositive.money&utm_medium=site&utm_campaign=bitcoin#household">our link to
+Germany</a>.</p><p>If you want to help clean up refrigerants, here's <a href="https://tradewater.us/offsetnow/?utm_source=netpositive.money&amp;utm_medium=site&amp;utm_campaign=bitcoin#household">our link to
 Tradewater</a>.
 They, too, are using Google Analytics to track our donations, so please disable
 your ad blocker before clicking the link if you want your contribution counted!</p><h2 id="whoshouldyousupport">Who should you support?</h2><p>Of course, that is your decision alone. When we started researching this
@@ -499,7 +456,4 @@ your precious Bitcoin? Or just contact them and ask if you could lend them a
 hand in getting it done!</p><h2 id="whereismyfavoriteorganisationmycountry">Where is my favorite organisation/my country?</h2><p>If you want to support a different organisation or fund that, say, might be
 tax-free in your country, please let us know so we can try and build the
 infrastructure to make that easier — or even better, just do it yourself
-and let us know about it.</p></div></div></main></div></div>
-    </body>
-  </html>
-  
+and let us know about it.</p></div></div></main></div></div></body></html>
