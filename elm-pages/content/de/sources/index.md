@@ -3,6 +3,15 @@ title: Sources
 type: tocpage
 ---
 
+## Bitcoin Net Zero
+doesn't deliver on the promise of the title, but is otherwise a great report of
+the current estimates and sensible extrapolation of Bitcoin's climate impact.
+<https://t.co/fKCh6ZQUoB?amp=1>
+
+## This Machine Greens
+a well-made documentary serving as an (one-sided) industry counterpoint to the usual FUD. Beware, this is not science but marketing. But it's well-made:
+<https://t.co/XtgZAAsmiP?amp=1>
+
 ## Bitcoin is Key to an Abundant, Clean Energy Future
 Square Crypto's whitepaper explains the business case for financing
 overprovisioning intermittent renewable energy with Bitcoin mining. A little
