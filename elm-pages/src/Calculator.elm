@@ -363,7 +363,7 @@ parseData : String -> (List String -> Maybe Datum) -> Result String Data
 parseData s f =
     case Csv.parse s of
         Ok c ->
-            Ok (List.filterMap f c.records)
+            Ok (List.filterMap f c.records |> List.sortBy(\d->Time.posixToMillis(d.time)))
 
         Err _ ->
             Err "Parsing error"
