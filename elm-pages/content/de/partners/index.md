@@ -4,7 +4,7 @@ type: tocpage
 ---
 **If you have donated to the Founder's Pledge Climate Change Fund via
 effectivealtruism.org or to Tradewater before and have been using an ad blocker,
-please send us an email so we can count those donations manually! We're sorry
+please send us an [email](info@netpositive.money) so we can count those donations manually! We're sorry
 we've only found out now that this could go wrong.**
 
 
@@ -35,17 +35,11 @@ contribution and some ad blockers (like mine) will prevent that &mdash; so
 please disable your ad blockers before clicking the link if you want your
 contribution counted for us!
 
-For Germans (and maybe other Europeans, though they would probably not get a tax
-refund), it's more effective to go through our [special donation
-page](https://www.effektiv-spenden.org/spendenaktionen/?cfd=11dfe) at
-Effektiv-Spenden, which supports CATF, Carbon180 and the ITIF Clean Energy
-Program. 
-
 If you prefer classical offsetting, here's [our link to myclimate
 International](https://co2.myclimate.org/en/contribution_calculators/new?ps=netpositiv_money).
 Donations should be tax-deductible at least in Switzerland.
 
-Again, Germans get a different link, [this one is for myclimate
+Germans get a different link, [this one is for myclimate
 Germany](https://germany.myclimate.org/en/contribution_calculators/new?ps=netpositiv_money).
 
 If you want to help clean up refrigerants, here's [our link to

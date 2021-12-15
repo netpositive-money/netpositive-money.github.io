@@ -139,13 +139,15 @@ request1 = StaticHttp.map
 
 request2: StaticHttp.Request Data
 request2 = StaticHttp.map
-    (filter (\d -> (toDay utc d.time) == 1))
-    (StaticHttp.get
-        (Secrets.succeed
-             "https://api.blockchain.info/charts/total-bitcoins?timespan=13years&format=json&cors=true"
-        )
-    (field "values" <| list <| map2 Datum (field "x" <| map (\i -> millisToPosix (1000 * i)) int) (field "y" float))
-    )
+           (List.sortBy(\d->Time.posixToMillis(d.time)))
+               (-- StaticHttp.map
+                --    (filter (\d -> (toDay utc d.time) == 1))
+                   (StaticHttp.get
+                        (Secrets.succeed
+                             "https://api.blockchain.info/charts/total-bitcoins?timespan=15years&format=json&cors=true"
+                        )
+                        (field "values" <| list <| map2 Datum (field "x" <| map (\i -> millisToPosix (1000 * i)) int) (field "y" float))
+                   ))
 
 
 
@@ -343,7 +345,7 @@ mkPerBtcData nd amts =
             in
             case rest of
                 [] ->
-                    { time = x.time, amount = x.amount / 21000 } :: mkPerBtcData xs []
+                    { time = x.time, amount = x.amount / 21 } :: mkPerBtcData xs []
 
                 y :: ys ->
                     { time = x.time, amount = x.amount / (y.amount / 1000000) } :: mkPerBtcData xs rest
