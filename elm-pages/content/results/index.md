@@ -9,8 +9,7 @@ type: tocpage
 
 **As of December 16th 2021, in our first year, we have donated at total of
 $26,249 (or about 0.5 BTC) for an estimated positive impact of
-19,379t CO2 emissions reduced. Taken together with efforts by Gemini, BitMEX and others, Bitcoiners have given more than \$4,158,016 or 121 BTC for about 368,454t CO2 equivalent
-emissions averted or reduced.**
+19,379t CO2 emissions reduced. Taken together with efforts by Gemini, FTX, BitMEX and others, Bitcoiners have given more than \$5,174,016 or 147 BTC for about 468,454t CO2 equivalent emissions averted or reduced.**
 
 In the second half of the year 2021, donations to effektiv-spenden.de have again been the strongest with a total of 12593€, for about the same amount of tons CO2 equivalent reduced. 
 
@@ -26,9 +25,13 @@ While we like to think this has been an impressive year for us, somebody else to
 
 The Winklevoss twins have really taken the lead in Bitcoin mining offsets by [buying and retiring 4 million dollars worth of carbon credits](https://www.gemini.com/blog/introducing-gemini-green-offsetting-bitcoin-carbon-emissions) representing 341,965t of CO2 in order to offset the Gemini exchange impact. While one can be critical both of their calculations and carbon credits, the sheer magnitude of this effort is to be applauded, and we really hope that others will follow suit.
 
+## FTX
+
+Not to be outdone, derivatives exchange FTX [launched a climate website, pledged ongoing carbon neutrality and offset their current estimated impact to the Bitcoin mining ecosystem](https://www.ftx-climate.com/offsets) of 100,000t CO2 to the tune of $1,016,000. And with a good-looking choice of offset providers as well. Bravo!
+
 ## BitMEX
 
-On a slightly smaller scale, but with a well-researched choice of offset provider, [BitMEX has spent $100,000 so far](https://blog.bitmex.com/why-weve-gone-carbon-neutral-and-why-thats-not-enough/) on offsetting 7,110t of CO2 as a part of their ongoing effort to become carbon neutral. 
+On a slightly smaller scale, but also with a well-researched choice of offset provider, [BitMEX has spent $100,000 so far](https://blog.bitmex.com/why-weve-gone-carbon-neutral-and-why-thats-not-enough/) on offsetting 7,110t of CO2 as a part of their ongoing effort to become carbon neutral. 
 
 Thank you all for your efforts to make Bitcoin a net positive money! Please
 continue to donate, spread the word, and inform us (on twitter
