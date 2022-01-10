@@ -22,7 +22,7 @@ type: page
 **Vorgehensweise**
 
 1. Wir gestalten eine Website und Social-Media-Kanäle, um Informationen über das Problem, den aktuellen Stand der Forschung und der Diskussion darüber sowie unseren Lösungsansatz zu verbreiten:
-2. Wir erarbeiten eine Einschätzung darüber, welche Maßnahmen (wie Offsetting, Zertifikate, etc.) zur CO2-Kompensation angemessen erscheinen. Sodann wollen wir Bitcoin-Stakeholder ([Hodler](https://en.wikipedia.org/wiki/Hodl), Miner, Börsen, Unternehmen, etc.) dazu motivieren, an Anbieter solcher ebensolcher Maßnahmen zu spenden.
+2. Wir erarbeiten eine Einschätzung darüber, welche Maßnahmen (wie Offsetting, Zertifikate, etc.) zur CO2-Kompensation angemessen erscheinen. Sodann wollen wir Bitcoin-Stakeholder ([Hodler](https://en.wikipedia.org/wiki/Hodl), Miner, Börsen, Unternehmen, etc.) dazu motivieren, an Anbieter ebensolcher Maßnahmen zu spenden.
 3. Wir legen öffentlich Rechenschaft darüber ab, wie viel gespendet wurde, wie viel CO2 dadurch kompensiert wird und welchen Anteil das am geschätzten CO2-Ausstoß von Bitcoin ausmacht; gemessen in Zeit vom Genesis-Block an. Wir tun dies, während wir einerseits die Privatsphäre der anonymen Spender schützen und andererseits den öffentlichen Spendern helfen, ihren Beitrag für PR zu nutzen.
 
 ## Wie du uns unterstützen kannst
@@ -42,9 +42,9 @@ Diese Website wurde in [elm](https://elm-lang.org/) unter Verwendung von [elm-pa
 [line-charts](https://terezka.github.io/line-charts/),
 [elm-ui](https://package.elm-lang.org/packages/mdgriffith/elm-ui/latest/) und einigen kleineren Bibliotheken erstellt.
 
-[Großer Baum Symbol](https://icons8.com/icons/set/large-tree) von [Icons8](https://icons8.com)
+[Large Tree icon](https://icons8.com/icons/set/large-tree) von [Icons8](https://icons8.com)
 
-[Waldbild](https://pixabay.com/photos/forest-mist-nature-trees-mystic-931706) von [Pixabay](https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=931706)
+[Forest summary card photo](https://pixabay.com/photos/forest-mist-nature-trees-mystic-931706) von [Pixabay](https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=931706)
 
 Die Daten auf unserer [Rechner-Seite](de/calculator) wurden über die APIs des [Cambridge Centre for Alternative Finance](https://cbeci.org/) (Stromverbrauch) und [blockchain.info](https://blockchain.info) (Anzahl der geminten Bitcoins) bezogen.
 
