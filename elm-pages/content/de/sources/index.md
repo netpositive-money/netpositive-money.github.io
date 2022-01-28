@@ -3,6 +3,10 @@ title: Sources
 type: tocpage
 ---
 
+## Bitcoin investments and climate change: A financial and carbon intensity perspective
+by Dirk G.Baur and Josua Oll. Compares Bitcoin's carbon impact as an investment to that of the S&P 500. 
+<https://doi.org/10.1016/j.frl.2021.102575>
+
 ## Bitcoin Net Zero
 doesn't deliver on the promise of the title, but is otherwise a great report of
 the current estimates and sensible extrapolation of Bitcoin's climate impact.
@@ -68,15 +72,6 @@ explains seasonalities in Bitcoin Mining
 
 current mining stats  
 <http://bitooda.io/public-files/Bitcoin%20Mining%20Hashrate%20and%20Power%20Analysis.pdf>
-
-
-<!---<a id="orgd609b76"></a>--->
-
-## Digiconomist
-
-Alex de Vries&rsquo; very biased views on the topic. But it does include links to further studies (those that support his views, mostly his own), and his estimations are getting
-closer to cbeci&rsquo;s and others&rsquo;
-<https://digiconomist.net/bitcoin-energy-consumption>
 
 
 <!---<a id="org3633fab"></a>--->
