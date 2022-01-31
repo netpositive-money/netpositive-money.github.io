@@ -11,7 +11,7 @@ We're happy that you have found your way to us.
 
 netpositive.money is an initiative by bitcoiners who want to contribute to
 climate change solutions. Our goal is to make Bitcoin a net positive money. If
-you want to read a more about our approach, please visit our [about
+you want to read more about our approach, please visit our [about
 page.](about)
 
 ## What can you do for me?
