@@ -95,11 +95,12 @@ block reward, which in turn is composed of the block subsidy ("new bitcoins
 being mined") and the mining fees ("what people pay to get their transactions
 into a block"). The block subsidy is halving every 210.000 blocks (about 4
 years), which has happened thrice already, so it has gone down from 50 BTC to
-6.25 bitcoin today and is further exponentially declining &mdash; when calculated in
-BTC. The mining fees have substantially picked up over the last few years and
-are now at about 15% of the block reward. It is important for Bitcoin's future
-security (when the subsidy has declined further) that these remain substantial.
-How substantial? Nobody knows. The hope is that the market will find out.
+6.25 bitcoin today and is further exponentially declining &mdash; when
+calculated in BTC. The mining fees have varied considerably over the last few
+years. They are now about 1% of the block reward most of the time, but can reach
+more than 30% in hype phases. It is important for Bitcoin's future security
+(when the subsidy has declined further) that these remain substantial. How
+substantial? Nobody knows. The hope is that the market will find out.
 
 Of course, when denominated in, say, USD, the cost of mining has not fallen but
 risen exponentially in the past 12 years, because the price of bitcoin has risen
