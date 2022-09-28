@@ -4,9 +4,8 @@ type: calculator
 ---
 
 The following graph shows the development of Bitcoin mining total CO2 emissions
-in megatons per month. It is derived from electricity consumption data provided
-by the [Cambridge Centre for Alternative Finance](https://cbeci.org/) by
-multiplication with a factor taken from a [paper by Stoll et al.](sources#thecarbonfootprintofbitcoin).
+in megatons per year. It is derived from data provided
+by the [Cambridge Centre for Alternative Finance](https://cbeci.org/).
 
 <co2graph></co2graph>
 

@@ -64,20 +64,9 @@ subscriptions model =
     Sub.batch [ onResize SetScreenSize ]
 
 
-
-factor : Float
-factor =
-    1.34
-
-
-
---ktCO2/day/Twh/year
---
-
-
 offset : Float
 offset =
-    0.468
+    0.68
 
 
 -- MtCO2
@@ -118,23 +107,22 @@ request1: StaticHttp.Request Data
 request1 = StaticHttp.map
         (groupWhile (\a b -> (toMonth utc a.time) == (toMonth utc b.time))
            >> filterMap
-            (\(s,l) -> if length l < 27 then Nothing
-                                  else Just
-                                        { amount = (s.amount + (sum <| (List.map .amount l)))/1000 ,
+            (\(s,l) ->  Just
+                                        { amount = (s.amount + (sum <| (List.map .amount l)))/toFloat (1+List.length l) ,
                                             time = s.time
                                         }
             )
         )
         (StaticHttp.unoptimizedRequest
          (Secrets.succeed
-              { url = "https://cbeci.org/api/csv"
+              { url = "https://ccaf.io/cbeci/api/v1.1.1/download/bitcoin_greenhouse_gas_emissions"
               , method = "GET"
               , headers = []
               , body = StaticHttp.emptyBody
               }
          )
          (StaticHttp.expectString
-              (\content -> parseData content (parsePowRecord factor))
+              (\content -> parseData content parsePowRecord)
          ))
 
 request2: StaticHttp.Request Data
@@ -325,7 +313,7 @@ mkcompound nd =
         f d ( s, l ) =
             let
                 ns =
-                    s + d.amount
+                    s + d.amount/12.0
             in
             ( ns, l ++ [ { d | amount = ns } ] )
     in
@@ -371,21 +359,20 @@ parseData s f =
             Err "Parsing error"
 
 
-parsePowRecord : Float -> List String -> Maybe Datum
-parsePowRecord f l =
+parsePowRecord : List String -> Maybe Datum
+parsePowRecord l =
     case l of
-        [ ts, dat, max, min, guess ] ->
-            let
-                time =
-                    millisToPosix (1000 * Maybe.withDefault 0 (String.toInt ts))
-
-                amount =
-                    f * Maybe.withDefault 0 (String.toFloat guess)
-            in
+        [ dat, max, guess, min ] ->
+            case toTime dat of
+                Ok (time) ->
+                    let
+                        amount = Maybe.withDefault 0 (String.toFloat guess)
+                    in
             -- if Time.toWeekday Time.utc time == Time.Mon then
-            Just { time = time, amount = amount }
+                        Just { time = time, amount = amount }
 
-        -- else Nothing
+            -- else Nothing
+                _ -> Nothing
         _ ->
             Nothing
 
@@ -473,7 +460,7 @@ chart1 data model =
             , junk =
                 Junk.hoverOne model.hinted
                     [ ( "date", datumToTimeString )
-                    , ( "Mt/month", String.fromFloat << round100 << .amount )
+                    , ( "Mt/year", String.fromFloat << round100 << .amount )
                     ]
             , events = Events.hoverOne Hint
             , legends = Legends.default
@@ -584,7 +571,7 @@ chartConfig { y, range, junk, events, legends, dots, id, area, width } =
 
 yAxis1 : Int -> Axis.Config Datum Msg
 yAxis1 h =
-    Axis.full (h // 2) "Mt/month" .amount
+    Axis.full (h // 2) "Mt/year" .amount
 
 
 yAxis2 : Int -> Axis.Config Datum Msg
