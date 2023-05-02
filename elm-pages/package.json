@@ -9,7 +9,8 @@
   },
   "postinstall": "elm-tooling install",
   "dependencies": {
-    "elm-pages": "^2.1.12"
+    "elm-pages": "^2.1.12",
+    "npm": "^9.6.5"
   },
   "devDependencies": {
     "elm-optimize-level-2": "^0.1.5",
